@@ -35,12 +35,12 @@ rescue e
 end
 
 # For testing that this thing works
-prospects = client.prospects.query(:assigned => false, :sort_by => "last_activity_at", :limit => 20)
+prospects = client.prospects.query(:list_id => 613, :sort_by => "last_activity_at")
 
-prospects["total_results"] # number of prospects found
+puts prospects["total_results"] # number of prospects found
 
 prospects["prospect"].each do |prospect|
-  puts prospect["first_name"]
+  puts prospect["email"]
 end
 
 logger.info("End of run -----------------------------")
