@@ -6,7 +6,7 @@ require 'net/http'
 
 # Gets the email from prospects list sent in from pardot
 def email_grab(prospects)
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/log.log", 0, 100 * 1024 * 1024)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
   signups = []
@@ -20,7 +20,7 @@ end
 
 # Gets pardot configuration key and password data
 def grab_pardot_config
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/log.log", 0, 100 * 1024 * 1024)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
   config = Hash.new
@@ -42,7 +42,7 @@ end
 
 # Gets the list of the most recent newsletter from Pardot
 def recent_newsletter_list
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/log.log", 0, 100 * 1024 * 1024)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
   # Starts by getting Pardot config
@@ -71,7 +71,7 @@ end
 
 # Gets the woodpecker configuration api key
 def grab_woodpecker_config
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/log.log", 0, 100 * 1024 * 1024)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
   key = ""
@@ -99,7 +99,7 @@ end
 
 # Will be where I put the actual blacklisting of contacts in Woodpecker
 def woodpecker_update(news_list)
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/log.log", 0, 100 * 1024 * 1024)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
   key = grab_woodpecker_config[0]

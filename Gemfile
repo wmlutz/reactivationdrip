@@ -6,3 +6,4 @@ git_source(:github) do |repo_name|
 end
 
 gem "ruby-pardot"
+gem 'restforce', '~> 2.5.3'
