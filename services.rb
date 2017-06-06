@@ -1,6 +1,18 @@
 require 'ruby-pardot'
 require 'logger'
 
+def email_grab(prospects)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/log.log", 0, 100 * 1024 * 1024)
+  logger.level = Logger::DEBUG
+  signups = []
+  prospects["prospect"].each do |prospect|
+    logger.info("Getting #{prospect['email']} Prospect")
+    signups << prospect["email"]
+  end
+  logger.info("Got signups #{signups}")
+  signups
+end
+
 def recent_newsletter_list
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/log.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
@@ -35,17 +47,11 @@ def recent_newsletter_list
 
   begin
     prospects = client.prospects.query(:list_id => 613, :sort_by => "last_activity_at")
-
     logger.info("Found #{prospects["total_results"]} Prospects")
-
-    signups = []
-    prospects["prospect"].each do |prospect|
-      logger.info("Getting #{prospect['email']} Prospect")
-      signups << prospect["email"]
-    end
-    logger.info("Got signups #{signups}")
-    return signups
   rescue f
     logger.info("Could not get prospects: #{f}")
   end
+  
+  signups = email_grab(prospects)
+  signups
 end
