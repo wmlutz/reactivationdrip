@@ -88,6 +88,15 @@ def grab_woodpecker_config
   key
 end
 
+# converts a string to a json object for woodpecker
+def wp_json(email)
+  json_to_go = {
+    "prospect":{
+      "email":email
+    }
+  }
+end
+
 # Will be where I put the actual blacklisting of contacts in Woodpecker
 def woodpecker_update(news_list)
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/log.log", 0, 100 * 1024 * 1024)
@@ -95,6 +104,10 @@ def woodpecker_update(news_list)
 
   key = grab_woodpecker_config[0]
   pass = "X"
+
+  news_list.each do |x|
+    pros_json = wp_json(x)
+
 
   uri = URI("https://api.woodpecker.co/rest/v1/campaign_list")
 
