@@ -7,11 +7,11 @@ def grab_salesforce_config
   config = Hash.new
 
   logger.info('getting config file')
-  open "#{File.dirname(__FILE__)}/etc/pardot.conf" do |config_file|
+  open "#{File.dirname(__FILE__)}/etc/salesforce.conf" do |config_file|
     config_file.each_line do |line|
       unless line.chomp.empty? || line =~ /^#/
         username, pass, sec, client_id, client_sec = line.split ','
-        config = { user_name: username,
+        config = { username: username,
                    password: pass,
                    security_token: sec,
                    client_id: client_id,

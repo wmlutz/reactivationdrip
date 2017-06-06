@@ -1,0 +1,7 @@
+# Logfile created on 2017-06-06 17:42:50 -0400 by logger.rb/56504
+I, [2017-06-06T17:42:50.490956 #9128]  INFO -- : getting config file
+I, [2017-06-06T17:42:50.491956 #9128]  INFO -- : got config for will@twentypine.com
+I, [2017-06-06T17:43:00.819150 #5288]  INFO -- : getting config file
+I, [2017-06-06T17:43:00.819318 #5288]  INFO -- : got config for will@twentypine.com
+I, [2017-06-06T17:43:43.435655 #7604]  INFO -- : getting config file
+I, [2017-06-06T17:43:43.435655 #7604]  INFO -- : got config for will1@twentypine.com
