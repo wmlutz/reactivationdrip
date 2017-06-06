@@ -1,5 +1,8 @@
 require 'ruby-pardot'
 require 'logger'
+require 'json'
+require 'uri'
+require 'net/http'
 
 def email_grab(prospects)
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/log.log", 0, 100 * 1024 * 1024)
@@ -80,4 +83,26 @@ def grab_woodpecker_config
   end
   logger.info("got key")
   key
+end
+
+def woodpecker_update
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/log.log", 0, 100 * 1024 * 1024)
+  logger.level = Logger::DEBUG
+
+  key = grab_woodpecker_config[0]
+  pass = "X"
+
+  uri = URI("https://api.woodpecker.co/rest/v1/campaign_list")
+
+  Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
+    :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
+
+    request = Net::HTTP::Get.new uri.request_uri
+    request.basic_auth key, pass
+
+    response = http.request request # Net::HTTPResponse object
+
+    puts response
+    puts response.body
+  end
 end

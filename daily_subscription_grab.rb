@@ -9,6 +9,6 @@ logger.level = Logger::DEBUG
 # turn on when ready to actuall do api calls from pardot
 # news_list = recent_newsletter_list
 
-puts grab_woodpecker_config
+woodpecker_update
 
 logger.info("End of run -----------------------------")
