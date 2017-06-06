@@ -1,0 +1,10 @@
+# Logfile created on 2017-06-06 10:47:44 -0400 by logger.rb/56504
+I, [2017-06-06T10:47:44.429309 #11104]  INFO -- : getting config file
+I, [2017-06-06T10:48:23.846188 #5876]  INFO -- : getting config file
+I, [2017-06-06T10:48:23.846188 #5876]  INFO -- : got config for will@twentypine.com
+I, [2017-06-06T11:22:59.143510 #9784]  INFO -- : getting config file
+I, [2017-06-06T11:22:59.143510 #9784]  INFO -- : got config for will@twentypine.com
+I, [2017-06-06T11:24:26.625464 #11944]  INFO -- : getting config file
+I, [2017-06-06T11:24:26.625873 #11944]  INFO -- : got config for will@twentypine.com
+I, [2017-06-06T11:24:26.626302 #11944]  INFO -- : Attempting authentication . . .
+I, [2017-06-06T11:24:34.159122 #11944]  INFO -- : Authentication successful

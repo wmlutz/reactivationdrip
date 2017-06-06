@@ -1,0 +1,21 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    crack (0.4.3)
+      safe_yaml (~> 1.0.0)
+    httparty (0.15.5)
+      multi_xml (>= 0.5.2)
+    multi_xml (0.6.0)
+    ruby-pardot (1.1.0)
+      crack
+      httparty
+    safe_yaml (1.0.4)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  ruby-pardot
+
+BUNDLED WITH
+   1.15.0
