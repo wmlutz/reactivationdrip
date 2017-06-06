@@ -66,3 +66,29 @@ I, [2017-06-06T11:46:49.528506 #1632]  INFO -- : Getting fleigirl@gmail.com Pros
 I, [2017-06-06T11:46:49.528506 #1632]  INFO -- : Getting rclarke@livingstonintl.com Prospect
 I, [2017-06-06T11:46:49.528506 #1632]  INFO -- : Got signups ["wlutz@tepper.cmu.edu", "guiseppehammer@gmail.com", "jim@leads4growth.com", "katiezinman@gmail.com", "bjquesen@gmail.com", "jason@twentypine.com", "wbrproductions@gmail.com", "mcrdjr@sfdc2max.com", "kshockenberry@gmail.com", "sriramlns+twentypine@gmail.com", "Steven.taunk@fivestars.com", "swatijc@gmail.com", "sbone27@comcast.net", "Awilber@wiredtriangle.com", "simone_tauriac@outlook.com", "fleigirl@gmail.com", "rclarke@livingstonintl.com"]
 I, [2017-06-06T11:46:49.530508 #1632]  INFO -- : End of run -----------------------------
+I, [2017-06-06T11:57:05.513090 #5112]  INFO -- : getting config file
+I, [2017-06-06T11:57:05.513570 #5112]  INFO -- : got config for will@twentypine.com
+I, [2017-06-06T11:57:05.513570 #5112]  INFO -- : Attempting authentication . . .
+I, [2017-06-06T11:57:11.122136 #5112]  INFO -- : Authentication successful
+I, [2017-06-06T11:57:12.906985 #5112]  INFO -- : Found 17 Prospects
+I, [2017-06-06T11:57:12.907486 #5112]  INFO -- : Getting wlutz@tepper.cmu.edu Prospect
+I, [2017-06-06T11:57:12.907486 #5112]  INFO -- : Getting guiseppehammer@gmail.com Prospect
+I, [2017-06-06T11:57:12.907976 #5112]  INFO -- : Getting jim@leads4growth.com Prospect
+I, [2017-06-06T11:57:12.907976 #5112]  INFO -- : Getting katiezinman@gmail.com Prospect
+I, [2017-06-06T11:57:12.907976 #5112]  INFO -- : Getting bjquesen@gmail.com Prospect
+I, [2017-06-06T11:57:12.908485 #5112]  INFO -- : Getting jason@twentypine.com Prospect
+I, [2017-06-06T11:57:12.908485 #5112]  INFO -- : Getting wbrproductions@gmail.com Prospect
+I, [2017-06-06T11:57:12.908485 #5112]  INFO -- : Getting mcrdjr@sfdc2max.com Prospect
+I, [2017-06-06T11:57:12.908485 #5112]  INFO -- : Getting kshockenberry@gmail.com Prospect
+I, [2017-06-06T11:57:12.908974 #5112]  INFO -- : Getting sriramlns+twentypine@gmail.com Prospect
+I, [2017-06-06T11:57:12.908974 #5112]  INFO -- : Getting Steven.taunk@fivestars.com Prospect
+I, [2017-06-06T11:57:12.908974 #5112]  INFO -- : Getting swatijc@gmail.com Prospect
+I, [2017-06-06T11:57:12.909496 #5112]  INFO -- : Getting sbone27@comcast.net Prospect
+I, [2017-06-06T11:57:12.909689 #5112]  INFO -- : Getting Awilber@wiredtriangle.com Prospect
+I, [2017-06-06T11:57:12.909877 #5112]  INFO -- : Getting simone_tauriac@outlook.com Prospect
+I, [2017-06-06T11:57:12.910114 #5112]  INFO -- : Getting fleigirl@gmail.com Prospect
+I, [2017-06-06T11:57:12.910306 #5112]  INFO -- : Getting rclarke@livingstonintl.com Prospect
+I, [2017-06-06T11:57:12.910442 #5112]  INFO -- : Got signups ["wlutz@tepper.cmu.edu", "guiseppehammer@gmail.com", "jim@leads4growth.com", "katiezinman@gmail.com", "bjquesen@gmail.com", "jason@twentypine.com", "wbrproductions@gmail.com", "mcrdjr@sfdc2max.com", "kshockenberry@gmail.com", "sriramlns+twentypine@gmail.com", "Steven.taunk@fivestars.com", "swatijc@gmail.com", "sbone27@comcast.net", "Awilber@wiredtriangle.com", "simone_tauriac@outlook.com", "fleigirl@gmail.com", "rclarke@livingstonintl.com"]
+I, [2017-06-06T11:57:12.910959 #5112]  INFO -- : getting woodpecker config file
+I, [2017-06-06T11:57:12.910959 #5112]  INFO -- : got key
+I, [2017-06-06T11:57:12.911958 #5112]  INFO -- : End of run -----------------------------
