@@ -14,7 +14,7 @@ def turn_JSON(arr)
   jsonStr = jsonStr[0, jsonStr.length - 1]
   jsonStr = jsonStr + '}}'
   logger.info("converted to JSON String #{jsonStr}")
-  jsonStr
+  return jsonStr
 end
 
 # Gets the email from prospects list sent in from pardot
@@ -114,15 +114,23 @@ def put_into_blacklist(payload)
 
   uri = URI("https://api.woodpecker.co/rest/v1/stop_followups")
 
-  Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
-    :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
+  begin
+    Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
+                    :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
 
-    req = Net::HTTP::Post.new(uri.request_uri, payload, 'Content-Type' => 'application/json')
-    req.basic_auth key, pass
-    res = http.request req
+      req = Net::HTTP::Post.new(uri.request_uri, payload)
+      req.basic_auth key, pass
+      res = http.request req
 
-    puts res
-    puts res.body
+      logger.info("Got response of: #{res}")
+      logger.info("Got response body of: #{res.body}")
+      puts res
+      puts res.body
+    end
+  rescue => j
+    logger.info("Rescuing: #{j}")
+    logger.info("Backtrace: #{j.backtrace}")
+    puts "Rescue: #{j}"
   end
 end
 
