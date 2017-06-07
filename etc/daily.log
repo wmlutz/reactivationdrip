@@ -1,0 +1,50 @@
+# Logfile created on 2017-06-07 10:23:20 -0400 by logger.rb/56504
+I, [2017-06-07T10:23:20.283507 #12784]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T10:23:20.284509 #12784]  INFO -- : getting woodpecker config file
+I, [2017-06-07T10:23:20.285009 #12784]  INFO -- : got key
+I, [2017-06-07T10:23:23.049312 #12784]  INFO -- : Grabbed 1 woodies
+I, [2017-06-07T10:23:23.050291 #12784]  INFO -- : End of run -----------------------------
+I, [2017-06-07T10:23:51.419166 #7820]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T10:23:51.419666 #7820]  INFO -- : getting woodpecker config file
+I, [2017-06-07T10:23:51.420166 #7820]  INFO -- : got key
+I, [2017-06-07T10:23:54.284437 #7820]  INFO -- : Grabbed 1 woodies
+I, [2017-06-07T10:23:54.286438 #7820]  INFO -- : End of run -----------------------------
+I, [2017-06-07T10:32:22.827799 #6012]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T10:32:22.828297 #6012]  INFO -- : getting woodpecker config file
+I, [2017-06-07T10:32:22.829308 #6012]  INFO -- : got key
+I, [2017-06-07T10:32:31.006230 #6012]  INFO -- : End of run -----------------------------
+I, [2017-06-07T10:36:12.130471 #13188]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T10:36:12.130989 #13188]  INFO -- : getting woodpecker config file
+I, [2017-06-07T10:36:12.131474 #13188]  INFO -- : got key
+I, [2017-06-07T10:36:15.803749 #13188]  INFO -- : End of run -----------------------------
+I, [2017-06-07T10:38:00.913400 #728]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T10:38:00.913898 #728]  INFO -- : getting woodpecker config file
+I, [2017-06-07T10:38:00.914408 #728]  INFO -- : got key
+I, [2017-06-07T10:38:04.123574 #728]  INFO -- : End of run -----------------------------
+I, [2017-06-07T10:38:22.189066 #12984]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T10:38:22.189557 #12984]  INFO -- : getting woodpecker config file
+I, [2017-06-07T10:38:22.190064 #12984]  INFO -- : got key
+I, [2017-06-07T10:38:24.794593 #12984]  INFO -- : End of run -----------------------------
+I, [2017-06-07T10:45:03.280500 #11412]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T10:45:03.281001 #11412]  INFO -- : getting woodpecker config file
+I, [2017-06-07T10:45:03.281501 #11412]  INFO -- : got key
+I, [2017-06-07T10:45:03.282001 #11412]  INFO -- : grabbing from URI of https://api.woodpecker.co/rest/v1/prospects?page=1&per_page=500
+I, [2017-06-07T10:45:09.779214 #11412]  INFO -- : Grabbed 500 woodies
+I, [2017-06-07T10:50:12.721421 #6000]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T10:50:12.721922 #6000]  INFO -- : getting woodpecker config file
+I, [2017-06-07T10:50:12.722423 #6000]  INFO -- : got key
+I, [2017-06-07T10:50:12.723704 #6000]  INFO -- : grabbing from URI of https://api.woodpecker.co/rest/v1/prospects?page=1&per_page=500
+I, [2017-06-07T10:50:17.413847 #6000]  INFO -- : Grabbed 500 woodies
+I, [2017-06-07T10:50:17.415059 #6000]  INFO -- : grabbing from URI of https://api.woodpecker.co/rest/v1/prospects?page=2&per_page=500
+I, [2017-06-07T10:50:20.163019 #6000]  INFO -- : Grabbed 500 woodies
+I, [2017-06-07T10:50:20.163522 #6000]  INFO -- : grabbing from URI of https://api.woodpecker.co/rest/v1/prospects?page=3&per_page=500
+I, [2017-06-07T10:50:22.827771 #6000]  INFO -- : Grabbed 349 woodies
+I, [2017-06-07T10:50:22.828772 #6000]  INFO -- : End of run -----------------------------
+I, [2017-06-07T10:50:54.851419 #10348]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T10:50:54.851938 #10348]  INFO -- : getting woodpecker config file
+I, [2017-06-07T10:50:54.852439 #10348]  INFO -- : got key
+I, [2017-06-07T10:50:54.853890 #10348]  INFO -- : grabbing from URI of https://api.woodpecker.co/rest/v1/prospects?page=1&per_page=500
+I, [2017-06-07T10:50:58.646153 #10348]  INFO -- : Grabbed 500 woodies
+I, [2017-06-07T10:50:58.646328 #10348]  INFO -- : grabbing from URI of https://api.woodpecker.co/rest/v1/prospects?page=2&per_page=500
+I, [2017-06-07T10:51:01.244944 #10348]  INFO -- : Grabbed 500 woodies
+I, [2017-06-07T10:51:01.245943 #10348]  INFO -- : grabbing from URI of https://api.woodpecker.co/rest/v1/prospects?page=3&per_page=500

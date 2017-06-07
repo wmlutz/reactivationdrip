@@ -89,13 +89,13 @@ def grab_woodpecker_config
 end
 
 # converts a string to a json object for woodpecker
-def wp_json(email)
-  json_to_go = {
-    "prospect":{
-      "email":email
-    }
-  }
-end
+# def wp_json(email)
+#   json_to_go = {
+#     "prospect":{
+#       "email":email
+#     }
+#   }
+# end
 
 # Will be where I put the actual blacklisting of contacts in Woodpecker
 def woodpecker_update(news_list)
@@ -105,9 +105,8 @@ def woodpecker_update(news_list)
   key = grab_woodpecker_config[0]
   pass = "X"
 
-  news_list.each do |x|
-    pros_json = wp_json(x)
-
+  # news_list.each do |x|
+  #   pros_json = wp_json(x)
 
   uri = URI("https://api.woodpecker.co/rest/v1/campaign_list")
 
@@ -122,4 +121,37 @@ def woodpecker_update(news_list)
     puts response
     puts response.body
   end
+end
+
+# Grabs the woodpecker propsect list
+def grab_woodies()
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
+  logger.level = Logger::DEBUG
+
+  key = grab_woodpecker_config[0]
+  pass = 'X'
+  woodies = []
+  pullrun = []
+  num = 1
+  loop do
+    uri = URI("https://api.woodpecker.co/rest/v1/prospects?page=#{num}&per_page=500")
+    puts "URI of #{uri}"
+    logger.info("grabbing from URI of #{uri}")
+    Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
+      :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
+      request = Net::HTTP::Get.new uri.request_uri
+      sleep(1)
+      request.basic_auth key, pass
+      response = http.request request # Net::HTTPResponse object
+
+      pullrun = JSON.parse(response.body)
+      puts "Grabbed #{pullrun.length} woodies"
+      logger.info("Grabbed #{pullrun.length} woodies")
+      woodies << pullrun
+    end
+    break if pullrun.length < 500
+    num = num + 1
+  end
+  puts woodies
+  puts "End of grabbing woodies"
 end
