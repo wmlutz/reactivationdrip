@@ -7,10 +7,15 @@ logger.level = Logger::DEBUG
 
 puts "Starting . . ."
 # Get contacts from SFDC
-contacts = grab_SFDC_contacts
-# logger.info("Contacts: #{contacts}")
+logger.info('starting the SFDC Contact grab')
+prospects = grab_SFDC_contacts
 
-# format for woodpecker
+# formats contacts for woodpecker
+logger.info('Starting the SFDC Hashify grab')
+logger.info("Testing hashify on first el: #{hashify([prospects[0]])}")
+prehash = hashify(prospects)
+puts prehash
+
 # send that list to woodpecker
 
 puts "And we're done."
