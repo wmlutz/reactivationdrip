@@ -14,10 +14,11 @@ woodies = grab_woodies
 blacklist = []
 
 news_list.each do |prospect|
-  blacklist << prospect unless woodies.grep(/#{prospect}/).empty?
+  blacklist << prospect unless woodies.select {|w| w["email"] == prospect }.empty?
 end
 
-puts blacklist
+payload = turn_JSON(blacklist)
+puts "blacklist: #{blacklist}"
 puts "Blacklist length: #{blacklist.length}"
 logger.info("Blacklist length: #{blacklist.length}")
 logger.info("End of run -----------------------------")

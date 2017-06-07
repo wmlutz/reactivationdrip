@@ -270,3 +270,30 @@ I, [2017-06-07T11:45:08.904274 #13276]  INFO -- : Grabbed 349 woodies
 I, [2017-06-07T11:45:08.905330 #13276]  INFO -- : Grabbed 1349 Woodies in total
 I, [2017-06-07T11:45:08.915312 #13276]  INFO -- : Blacklist length: 0
 I, [2017-06-07T11:45:08.915312 #13276]  INFO -- : End of run -----------------------------
+I, [2017-06-07T14:00:47.133605 #504]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T14:01:55.114391 #3744]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T14:01:55.115389 #3744]  INFO -- : Blacklist length: 2
+I, [2017-06-07T14:01:55.115389 #3744]  INFO -- : End of run -----------------------------
+I, [2017-06-07T14:10:41.564519 #6252]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T14:10:41.566373 #6252]  INFO -- : Blacklist length: 2
+I, [2017-06-07T14:10:41.566500 #6252]  INFO -- : End of run -----------------------------
+I, [2017-06-07T14:11:12.539294 #11868]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T14:11:12.539294 #11868]  INFO -- : Blacklist length: 2
+I, [2017-06-07T14:11:12.539294 #11868]  INFO -- : End of run -----------------------------
+I, [2017-06-07T14:13:10.023101 #5820]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T14:13:10.024510 #5820]  INFO -- : Blacklist length: 2
+I, [2017-06-07T14:13:10.024510 #5820]  INFO -- : End of run -----------------------------
+I, [2017-06-07T14:21:55.768594 #12764]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T14:29:28.847429 #13192]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T14:29:28.848932 #13192]  INFO -- : Blacklist length: 2
+I, [2017-06-07T14:29:28.848932 #13192]  INFO -- : End of run -----------------------------
+I, [2017-06-07T14:32:27.684226 #3924]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T14:32:27.684726 #3924]  INFO -- : converted to JSON String {'prospect':{'email':'wlutz@twentypine.com','email':'test@gmail.com'}}
+I, [2017-06-07T14:37:40.569670 #7104]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T14:37:40.570171 #7104]  INFO -- : converted to JSON String {'prospect':{'email':'wlutz@twentypine.com','email':'test@gmail.com'}}
+I, [2017-06-07T14:37:40.570671 #7104]  INFO -- : Blacklist length: 2
+I, [2017-06-07T14:37:40.570671 #7104]  INFO -- : End of run -----------------------------
+I, [2017-06-07T14:38:37.703360 #11692]  INFO -- : Beginning of run ----------------
+I, [2017-06-07T14:38:37.703865 #11692]  INFO -- : converted to JSON String {'prospect':{'email':'wlutz@twentypine.com','email':'test@gmail.com'}}
+I, [2017-06-07T14:38:37.705364 #11692]  INFO -- : Blacklist length: 2
+I, [2017-06-07T14:38:37.705364 #11692]  INFO -- : End of run -----------------------------
