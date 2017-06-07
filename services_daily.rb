@@ -4,7 +4,7 @@ require 'json'
 require 'uri'
 require 'net/http'
 
-#
+# turns array into json formatted string for passing to woodpecker blacklist
 def turn_JSON(arr)
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
@@ -105,25 +105,24 @@ def grab_woodpecker_config
 end
 
 # Will be where I put the actual blacklisting of contacts in Woodpecker
-def woodpecker_update(news_list)
+def put_into_blacklist(payload)
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
   key = grab_woodpecker_config[0]
   pass = "X"
 
-  uri = URI("https://api.woodpecker.co/rest/v1/campaign_list")
+  uri = URI("https://api.woodpecker.co/rest/v1/stop_followups")
 
   Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
     :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
 
-    request = Net::HTTP::Get.new uri.request_uri
-    request.basic_auth key, pass
+    req = Net::HTTP::Post.new(uri.request_uri, payload, 'Content-Type' => 'application/json')
+    req.basic_auth key, pass
+    res = http.request req
 
-    response = http.request request # Net::HTTPResponse object
-
-    puts response
-    puts response.body
+    puts res
+    puts res.body
   end
 end
 

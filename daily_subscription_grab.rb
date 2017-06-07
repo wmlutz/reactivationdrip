@@ -17,8 +17,10 @@ news_list.each do |prospect|
   blacklist << prospect unless woodies.select {|w| w["email"] == prospect }.empty?
 end
 
-payload = turn_JSON(blacklist)
-puts "blacklist: #{blacklist}"
-puts "Blacklist length: #{blacklist.length}"
+logger.info("blacklist: #{blacklist}")
 logger.info("Blacklist length: #{blacklist.length}")
+
+payload = turn_JSON(blacklist)
+# put_into_blacklist(payload)
+
 logger.info("End of run -----------------------------")
