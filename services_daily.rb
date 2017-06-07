@@ -41,32 +41,35 @@ def grab_pardot_config
 end
 
 # Gets the list of the most recent newsletter from Pardot
-def recent_newsletter_list
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
-  logger.level = Logger::DEBUG
+def newsletter_list
+  # logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
+  # logger.level = Logger::DEBUG
+  #
+  # # Starts by getting Pardot config
+  # config = grab_pardot_config
+  #
+  # # Authenticate pardot connection
+  # logger.info('Attempting authentication . . .')
+  # begin
+  #   client = Pardot::Client.new config[:user_email], config[:user_pass], config[:user_key]
+  #   client.authenticate
+  #   logger.info('Authentication successful')
+  # rescue e
+  #   logger.info("Could not authenticate: #{e}")
+  # end
+  #
+  # begin
+  #   prospects = client.prospects.query(:list_id => 613, :sort_by => "last_activity_at")
+  #   logger.info("Found #{prospects["total_results"]} Prospects")
+  # rescue f
+  #   logger.info("Could not get prospects: #{f}")
+  # end
+  #
+  # signups = email_grab(prospects)
+  # signups
 
-  # Starts by getting Pardot config
-  config = grab_pardot_config
-
-  # Authenticate pardot connection
-  logger.info('Attempting authentication . . .')
-  begin
-    client = Pardot::Client.new config[:user_email], config[:user_pass], config[:user_key]
-    client.authenticate
-    logger.info('Authentication successful')
-  rescue e
-    logger.info("Could not authenticate: #{e}")
-  end
-
-  begin
-    prospects = client.prospects.query(:list_id => 613, :sort_by => "last_activity_at")
-    logger.info("Found #{prospects["total_results"]} Prospects")
-  rescue f
-    logger.info("Could not get prospects: #{f}")
-  end
-
-  signups = email_grab(prospects)
-  signups
+  # All above commented out for testing
+  return ["evan@twentypine.com", "max@twentypine.com", "wlutz@twentypine.com", "test@gmail.com", "testing@gmail.com"]
 end
 
 # Gets the woodpecker configuration api key
@@ -88,15 +91,6 @@ def grab_woodpecker_config
   key
 end
 
-# converts a string to a json object for woodpecker
-# def wp_json(email)
-#   json_to_go = {
-#     "prospect":{
-#       "email":email
-#     }
-#   }
-# end
-
 # Will be where I put the actual blacklisting of contacts in Woodpecker
 def woodpecker_update(news_list)
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
@@ -104,9 +98,6 @@ def woodpecker_update(news_list)
 
   key = grab_woodpecker_config[0]
   pass = "X"
-
-  # news_list.each do |x|
-  #   pros_json = wp_json(x)
 
   uri = URI("https://api.woodpecker.co/rest/v1/campaign_list")
 
@@ -125,33 +116,38 @@ end
 
 # Grabs the woodpecker propsect list
 def grab_woodies()
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
-  logger.level = Logger::DEBUG
+  # logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
+  # logger.level = Logger::DEBUG
+  #
+  # key = grab_woodpecker_config[0]
+  # pass = 'X'
+  # woodies = []
+  # pullrun = []
+  # num = 1
+  # loop do
+  #   uri = URI("https://api.woodpecker.co/rest/v1/prospects?page=#{num}&per_page=500")
+  #   puts "URI of #{uri}"
+  #   logger.info("grabbing from URI of #{uri}")
+  #   Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
+  #     :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
+  #     request = Net::HTTP::Get.new uri.request_uri
+  #     sleep(1)
+  #     request.basic_auth key, pass
+  #     response = http.request request # Net::HTTPResponse object
+  #
+  #     pullrun = JSON.parse(response.body)
+  #     puts "Grabbed #{pullrun.length} woodies"
+  #     logger.info("Grabbed #{pullrun.length} woodies")
+  #     woodies.concat(pullrun)
+  #   end
+  #   break if pullrun.length < 500
+  #   num = num + 1
+  # end
+  # logger.info("Grabbed #{woodies.length} Woodies in total")
+  # puts "End of grabbing woodies: #{woodies.length}"
+  # woodies
 
-  key = grab_woodpecker_config[0]
-  pass = 'X'
-  woodies = []
-  pullrun = []
-  num = 1
-  loop do
-    uri = URI("https://api.woodpecker.co/rest/v1/prospects?page=#{num}&per_page=500")
-    puts "URI of #{uri}"
-    logger.info("grabbing from URI of #{uri}")
-    Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
-      :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
-      request = Net::HTTP::Get.new uri.request_uri
-      sleep(1)
-      request.basic_auth key, pass
-      response = http.request request # Net::HTTPResponse object
-
-      pullrun = JSON.parse(response.body)
-      puts "Grabbed #{pullrun.length} woodies"
-      logger.info("Grabbed #{pullrun.length} woodies")
-      woodies << pullrun
-    end
-    break if pullrun.length < 500
-    num = num + 1
-  end
-  puts woodies
-  puts "End of grabbing woodies"
+  # XXXXXXX everything above commented out for testing
+  temp_woodies = [{"id"=>14506062, "email"=>"test@gmail.com", "first_name"=>"Rocky", "last_name"=>"", "company"=>"Sofar Sounds", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"","snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"},{"id"=>14506063, "email"=>"wlutz@twentypine.com", "first_name"=>"Mark", "last_name"=>"", "company"=>"Solstice Benefits", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"", "snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"},{"id"=>14506064, "email"=>"william.meany.lutz@gmail.com", "first_name"=>"Katie", "last_name"=>"", "company"=>"SplashThat.com", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"", "snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"}]
+  puts temp_woodies.class
 end
