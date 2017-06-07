@@ -22,5 +22,13 @@ rescue g
 end
 
 # Get the contacts between 120 and 127 days since last activity
+begin
+  contacts = client.query("SELECT FirstName,LastName,email,Last_Activity_Date__c FROM contact WHERE Last_Activity_Date__c < N_DAYS_AGO:120 AND Last_Activity_Date__c > N_DAYS_AGO:128 ORDER BY Last_Activity_Date__c ASC")
+rescue h
+  logger.info("Failed to grab query: #{h}")
+end
+
+puts contacts
+
 # format for woodpecker
 # send that list to woodpecker
