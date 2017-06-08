@@ -1,421 +1,429 @@
-# Logfile created on 2017-06-07 18:24:12 -0400 by logger.rb/56504
-I, [2017-06-07T18:24:12.881070 #11552]  INFO -- : getting config file
-I, [2017-06-07T18:24:12.882070 #11552]  INFO -- : got config for 
-I, [2017-06-07T18:24:43.073947 #11552]  INFO -- : Got 416 contacts.
-I, [2017-06-07T18:24:43.073947 #11552]  INFO -- : grabbed contacts: #<Restforce::Collection:0x31567e0>
-I, [2017-06-07T18:24:43.076949 #11552]  INFO -- : Contact 0: Aadinath
-I, [2017-06-07T18:24:43.076949 #11552]  INFO -- : Contact 1: Michelle
-I, [2017-06-07T18:24:43.076949 #11552]  INFO -- : Contact 2: Siva
-I, [2017-06-07T18:24:43.076949 #11552]  INFO -- : Contact 3: Rangesh
-I, [2017-06-07T18:24:43.076949 #11552]  INFO -- : Contact 4: Michael
-I, [2017-06-07T18:24:43.076949 #11552]  INFO -- : Contact 5: Roberta
-I, [2017-06-07T18:24:43.077950 #11552]  INFO -- : Contact 6: Adam
-I, [2017-06-07T18:24:43.077950 #11552]  INFO -- : Contact 7: Jacob
-I, [2017-06-07T18:24:43.077950 #11552]  INFO -- : Contact 8: Michael
-I, [2017-06-07T18:24:43.077950 #11552]  INFO -- : Contact 9: Dominick
-I, [2017-06-07T18:24:43.077950 #11552]  INFO -- : Contact 10: Jalil
-I, [2017-06-07T18:24:43.077950 #11552]  INFO -- : Contact 11: Neil
-I, [2017-06-07T18:24:43.078949 #11552]  INFO -- : Contact 12: Michele
-I, [2017-06-07T18:24:43.078949 #11552]  INFO -- : Contact 13: John
-I, [2017-06-07T18:24:43.078949 #11552]  INFO -- : Contact 14: Michael
-I, [2017-06-07T18:24:43.078949 #11552]  INFO -- : Contact 15: Daniel
-I, [2017-06-07T18:24:43.078949 #11552]  INFO -- : Contact 16: Dan
-I, [2017-06-07T18:24:43.078949 #11552]  INFO -- : Contact 17: Matthew
-I, [2017-06-07T18:24:43.079950 #11552]  INFO -- : Contact 18: Mike
-I, [2017-06-07T18:24:43.080951 #11552]  INFO -- : Contact 19: Lisa
-I, [2017-06-07T18:24:43.082952 #11552]  INFO -- : Contact 20: Thomas
-I, [2017-06-07T18:24:43.083953 #11552]  INFO -- : Contact 21: Kevin
-I, [2017-06-07T18:24:43.083953 #11552]  INFO -- : Contact 22: Stephanie
-I, [2017-06-07T18:24:43.083953 #11552]  INFO -- : Contact 23: Rich
-I, [2017-06-07T18:24:43.083953 #11552]  INFO -- : Contact 24: Steve
-I, [2017-06-07T18:24:43.083953 #11552]  INFO -- : Contact 25: Russ
-I, [2017-06-07T18:24:43.083953 #11552]  INFO -- : Contact 26: Jeff
-I, [2017-06-07T18:24:43.084953 #11552]  INFO -- : Contact 27: Itai
-I, [2017-06-07T18:24:43.084953 #11552]  INFO -- : Contact 28: Christina
-I, [2017-06-07T18:24:43.084953 #11552]  INFO -- : Contact 29: Lesa
-I, [2017-06-07T18:24:43.084953 #11552]  INFO -- : Contact 30: Vinod
-I, [2017-06-07T18:24:43.084953 #11552]  INFO -- : Contact 31: Josh
-I, [2017-06-07T18:24:43.084953 #11552]  INFO -- : Contact 32: John
-I, [2017-06-07T18:24:43.085954 #11552]  INFO -- : Contact 33: Phillip
-I, [2017-06-07T18:24:43.085954 #11552]  INFO -- : Contact 34: Diana
-I, [2017-06-07T18:24:43.085954 #11552]  INFO -- : Contact 35: Keith
-I, [2017-06-07T18:24:43.085954 #11552]  INFO -- : Contact 36: Jen
-I, [2017-06-07T18:24:43.085954 #11552]  INFO -- : Contact 37: Dhana
-I, [2017-06-07T18:24:43.085954 #11552]  INFO -- : Contact 38: Mark
-I, [2017-06-07T18:24:43.085954 #11552]  INFO -- : Contact 39: Joshua
-I, [2017-06-07T18:24:43.086954 #11552]  INFO -- : Contact 40: Brett
-I, [2017-06-07T18:24:43.086954 #11552]  INFO -- : Contact 41: Caelyn
-I, [2017-06-07T18:24:43.086954 #11552]  INFO -- : Contact 42: Kestryl
-I, [2017-06-07T18:24:43.086954 #11552]  INFO -- : Contact 43: Ashley
-I, [2017-06-07T18:24:43.086954 #11552]  INFO -- : Contact 44: Ashley
-I, [2017-06-07T18:24:43.086954 #11552]  INFO -- : Contact 45: Joe
-I, [2017-06-07T18:24:43.086954 #11552]  INFO -- : Contact 46: Liz
-I, [2017-06-07T18:24:43.087955 #11552]  INFO -- : Contact 47: Justin
-I, [2017-06-07T18:24:43.087955 #11552]  INFO -- : Contact 48: Debdeep
-I, [2017-06-07T18:24:43.087955 #11552]  INFO -- : Contact 49: Zeeshan
-I, [2017-06-07T18:24:43.087955 #11552]  INFO -- : Contact 50: Steven
-I, [2017-06-07T18:24:43.087955 #11552]  INFO -- : Contact 51: Jennifer
-I, [2017-06-07T18:24:43.087955 #11552]  INFO -- : Contact 52: Mark
-I, [2017-06-07T18:24:43.087955 #11552]  INFO -- : Contact 53: Sravanthi
-I, [2017-06-07T18:24:43.087955 #11552]  INFO -- : Contact 54: Hristo
-I, [2017-06-07T18:24:43.088955 #11552]  INFO -- : Contact 55: Shelly
-I, [2017-06-07T18:24:43.088955 #11552]  INFO -- : Contact 56: Neelima
-I, [2017-06-07T18:24:43.088955 #11552]  INFO -- : Contact 57: Paul
-I, [2017-06-07T18:24:43.088955 #11552]  INFO -- : Contact 58: Val
-I, [2017-06-07T18:24:43.088955 #11552]  INFO -- : Contact 59: William
-I, [2017-06-07T18:24:43.088955 #11552]  INFO -- : Contact 60: Scott
-I, [2017-06-07T18:24:43.088955 #11552]  INFO -- : Contact 61: Vijay
-I, [2017-06-07T18:24:43.088955 #11552]  INFO -- : Contact 62: Vivek
-I, [2017-06-07T18:24:43.088955 #11552]  INFO -- : Contact 63: Christian
-I, [2017-06-07T18:24:43.089956 #11552]  INFO -- : Contact 64: Teardra
-I, [2017-06-07T18:24:43.089956 #11552]  INFO -- : Contact 65: Aaron
-I, [2017-06-07T18:24:43.089956 #11552]  INFO -- : Contact 66: Trevor
-I, [2017-06-07T18:24:43.089956 #11552]  INFO -- : Contact 67: DaNae
-I, [2017-06-07T18:24:43.089956 #11552]  INFO -- : Contact 68: Danelle
-I, [2017-06-07T18:24:43.089956 #11552]  INFO -- : Contact 69: Adam
-I, [2017-06-07T18:24:43.089956 #11552]  INFO -- : Contact 70: Michael
-I, [2017-06-07T18:24:43.089956 #11552]  INFO -- : Contact 71: Brian
-I, [2017-06-07T18:24:43.089956 #11552]  INFO -- : Contact 72: Erin
-I, [2017-06-07T18:24:43.089956 #11552]  INFO -- : Contact 73: Kelly
-I, [2017-06-07T18:24:43.090958 #11552]  INFO -- : Contact 74: Bernie
-I, [2017-06-07T18:24:43.090958 #11552]  INFO -- : Contact 75: Brad
-I, [2017-06-07T18:24:43.090958 #11552]  INFO -- : Contact 76: Gabriel
-I, [2017-06-07T18:24:43.090958 #11552]  INFO -- : Contact 77: Joyce
-I, [2017-06-07T18:24:43.090958 #11552]  INFO -- : Contact 78: Amanda
-I, [2017-06-07T18:24:43.090958 #11552]  INFO -- : Contact 79: Ulagammai
-I, [2017-06-07T18:24:43.090958 #11552]  INFO -- : Contact 80: Diavonna
-I, [2017-06-07T18:24:43.090958 #11552]  INFO -- : Contact 81: Bradley
-I, [2017-06-07T18:24:43.090958 #11552]  INFO -- : Contact 82: Don
-I, [2017-06-07T18:24:43.091957 #11552]  INFO -- : Contact 83: John
-I, [2017-06-07T18:24:43.091957 #11552]  INFO -- : Contact 84: Nicole
-I, [2017-06-07T18:24:43.091957 #11552]  INFO -- : Contact 85: Thanh
-I, [2017-06-07T18:24:43.091957 #11552]  INFO -- : Contact 86: sundeep
-I, [2017-06-07T18:24:43.091957 #11552]  INFO -- : Contact 87: Colin
-I, [2017-06-07T18:24:43.091957 #11552]  INFO -- : Contact 88: Amy Jo
-I, [2017-06-07T18:24:43.091957 #11552]  INFO -- : Contact 89: Anjali
-I, [2017-06-07T18:24:43.091957 #11552]  INFO -- : Contact 90: Teresa
-I, [2017-06-07T18:24:43.091957 #11552]  INFO -- : Contact 91: Yadavan
-I, [2017-06-07T18:24:43.091957 #11552]  INFO -- : Contact 92: Carly
-I, [2017-06-07T18:24:43.092958 #11552]  INFO -- : Contact 93: Steve
-I, [2017-06-07T18:24:43.092958 #11552]  INFO -- : Contact 94: Dee
-I, [2017-06-07T18:24:43.092958 #11552]  INFO -- : Contact 95: Raj
-I, [2017-06-07T18:24:43.092958 #11552]  INFO -- : Contact 96: Trey
-I, [2017-06-07T18:24:43.092958 #11552]  INFO -- : Contact 97: Jason
-I, [2017-06-07T18:24:43.092958 #11552]  INFO -- : Contact 98: Sirish
-I, [2017-06-07T18:24:43.092958 #11552]  INFO -- : Contact 99: Philip
-I, [2017-06-07T18:24:43.092958 #11552]  INFO -- : Contact 100: Ilene
-I, [2017-06-07T18:24:43.093959 #11552]  INFO -- : Contact 101: Rebecca
-I, [2017-06-07T18:24:43.098963 #11552]  INFO -- : Contact 102: Chris
-I, [2017-06-07T18:24:43.098963 #11552]  INFO -- : Contact 103: Max
-I, [2017-06-07T18:24:43.099964 #11552]  INFO -- : Contact 104: Shirelle
-I, [2017-06-07T18:24:43.099964 #11552]  INFO -- : Contact 105: Shawn
-I, [2017-06-07T18:24:43.099964 #11552]  INFO -- : Contact 106: Adrian
-I, [2017-06-07T18:24:43.099964 #11552]  INFO -- : Contact 107: Matt
-I, [2017-06-07T18:24:43.100965 #11552]  INFO -- : Contact 108: Mike
-I, [2017-06-07T18:24:43.100965 #11552]  INFO -- : Contact 109: John
-I, [2017-06-07T18:24:43.100965 #11552]  INFO -- : Contact 110: John
-I, [2017-06-07T18:24:43.100965 #11552]  INFO -- : Contact 111: Adam
-I, [2017-06-07T18:24:43.100965 #11552]  INFO -- : Contact 112: Sathiya
-I, [2017-06-07T18:24:43.100965 #11552]  INFO -- : Contact 113: Andrew
-I, [2017-06-07T18:24:43.100965 #11552]  INFO -- : Contact 114: Simon
-I, [2017-06-07T18:24:43.101965 #11552]  INFO -- : Contact 115: Matt
-I, [2017-06-07T18:24:43.101965 #11552]  INFO -- : Contact 116: Nicholas
-I, [2017-06-07T18:24:43.101965 #11552]  INFO -- : Contact 117: Alan
-I, [2017-06-07T18:24:43.101965 #11552]  INFO -- : Contact 118: Elena
-I, [2017-06-07T18:24:43.101965 #11552]  INFO -- : Contact 119: Avinash
-I, [2017-06-07T18:24:43.102966 #11552]  INFO -- : Contact 120: Garrett
-I, [2017-06-07T18:24:43.103967 #11552]  INFO -- : Contact 121: Alex
-I, [2017-06-07T18:24:43.103967 #11552]  INFO -- : Contact 122: Rama
-I, [2017-06-07T18:24:43.103967 #11552]  INFO -- : Contact 123: Himanshu
-I, [2017-06-07T18:24:43.104968 #11552]  INFO -- : Contact 124: Devon
-I, [2017-06-07T18:24:43.105969 #11552]  INFO -- : Contact 125: Kory
-I, [2017-06-07T18:24:43.107969 #11552]  INFO -- : Contact 126: Scott
-I, [2017-06-07T18:24:43.107969 #11552]  INFO -- : Contact 127: Daniel
-I, [2017-06-07T18:24:43.108970 #11552]  INFO -- : Contact 128: Madeline
-I, [2017-06-07T18:24:43.108970 #11552]  INFO -- : Contact 129: Frank
-I, [2017-06-07T18:24:43.109971 #11552]  INFO -- : Contact 130: Jessica
-I, [2017-06-07T18:24:43.109971 #11552]  INFO -- : Contact 131: Douglas
-I, [2017-06-07T18:24:43.110971 #11552]  INFO -- : Contact 132: Andrew
-I, [2017-06-07T18:24:43.111972 #11552]  INFO -- : Contact 133: Mike
-I, [2017-06-07T18:24:43.111972 #11552]  INFO -- : Contact 134: Josh
-I, [2017-06-07T18:24:43.111972 #11552]  INFO -- : Contact 135: Sushrut
-I, [2017-06-07T18:24:43.114974 #11552]  INFO -- : Contact 136: Dimitri
-I, [2017-06-07T18:24:43.115975 #11552]  INFO -- : Contact 137: Rajiv
-I, [2017-06-07T18:24:43.116976 #11552]  INFO -- : Contact 138: Kimberly
-I, [2017-06-07T18:24:43.117976 #11552]  INFO -- : Contact 139: Kam
-I, [2017-06-07T18:24:43.117976 #11552]  INFO -- : Contact 140: James
-I, [2017-06-07T18:24:43.118977 #11552]  INFO -- : Contact 141: Kortney
-I, [2017-06-07T18:24:43.118977 #11552]  INFO -- : Contact 142: Taylor
-I, [2017-06-07T18:24:43.120979 #11552]  INFO -- : Contact 143: Andrew
-I, [2017-06-07T18:24:43.120979 #11552]  INFO -- : Contact 144: Kevin
-I, [2017-06-07T18:24:43.121980 #11552]  INFO -- : Contact 145: Sandy
-I, [2017-06-07T18:24:43.121980 #11552]  INFO -- : Contact 146: Nathan
-I, [2017-06-07T18:24:43.121980 #11552]  INFO -- : Contact 147: Dawn
-I, [2017-06-07T18:24:43.121980 #11552]  INFO -- : Contact 148: Michelle
-I, [2017-06-07T18:24:43.121980 #11552]  INFO -- : Contact 149: Alex
-I, [2017-06-07T18:24:43.122984 #11552]  INFO -- : Contact 150: Agape
-I, [2017-06-07T18:24:43.122984 #11552]  INFO -- : Contact 151: Pascal
-I, [2017-06-07T18:24:43.122984 #11552]  INFO -- : Contact 152: Shane
-I, [2017-06-07T18:24:43.123984 #11552]  INFO -- : Contact 153: Kristin
-I, [2017-06-07T18:24:43.123984 #11552]  INFO -- : Contact 154: Shelby
-I, [2017-06-07T18:24:43.123984 #11552]  INFO -- : Contact 155: Travis
-I, [2017-06-07T18:24:43.123984 #11552]  INFO -- : Contact 156: Jose
-I, [2017-06-07T18:24:43.123984 #11552]  INFO -- : Contact 157: Sarah
-I, [2017-06-07T18:24:43.123984 #11552]  INFO -- : Contact 158: Jamie
-I, [2017-06-07T18:24:43.123984 #11552]  INFO -- : Contact 159: Angie
-I, [2017-06-07T18:24:43.123984 #11552]  INFO -- : Contact 160: Michael
-I, [2017-06-07T18:24:43.124981 #11552]  INFO -- : Contact 161: Eric
-I, [2017-06-07T18:24:43.124981 #11552]  INFO -- : Contact 162: Mike
-I, [2017-06-07T18:24:43.124981 #11552]  INFO -- : Contact 163: Stephen
-I, [2017-06-07T18:24:43.124981 #11552]  INFO -- : Contact 164: Gita
-I, [2017-06-07T18:24:43.124981 #11552]  INFO -- : Contact 165: Christopher
-I, [2017-06-07T18:24:43.124981 #11552]  INFO -- : Contact 166: Paul
-I, [2017-06-07T18:24:43.125982 #11552]  INFO -- : Contact 167: Hani
-I, [2017-06-07T18:24:43.125982 #11552]  INFO -- : Contact 168: Brian
-I, [2017-06-07T18:24:43.125982 #11552]  INFO -- : Contact 169: Brinder
-I, [2017-06-07T18:24:43.125982 #11552]  INFO -- : Contact 170: Todd
-I, [2017-06-07T18:24:43.125982 #11552]  INFO -- : Contact 171: Tim
-I, [2017-06-07T18:24:43.125982 #11552]  INFO -- : Contact 172: Beca
-I, [2017-06-07T18:24:43.125982 #11552]  INFO -- : Contact 173: Chris
-I, [2017-06-07T18:24:43.125982 #11552]  INFO -- : Contact 174: Steven
-I, [2017-06-07T18:24:43.126983 #11552]  INFO -- : Contact 175: Chris
-I, [2017-06-07T18:24:43.126983 #11552]  INFO -- : Contact 176: Lori
-I, [2017-06-07T18:24:43.126983 #11552]  INFO -- : Contact 177: Megan
-I, [2017-06-07T18:24:43.126983 #11552]  INFO -- : Contact 178: John
-I, [2017-06-07T18:24:43.126983 #11552]  INFO -- : Contact 179: Robbie
-I, [2017-06-07T18:24:43.127986 #11552]  INFO -- : Contact 180: Jason
-I, [2017-06-07T18:24:43.129984 #11552]  INFO -- : Contact 181: Doug
-I, [2017-06-07T18:24:43.129984 #11552]  INFO -- : Contact 182: Shruti
-I, [2017-06-07T18:24:43.129984 #11552]  INFO -- : Contact 183: Mekhala
-I, [2017-06-07T18:24:43.129984 #11552]  INFO -- : Contact 184: Poornima
-I, [2017-06-07T18:24:43.129984 #11552]  INFO -- : Contact 185: Kemi
-I, [2017-06-07T18:24:43.130986 #11552]  INFO -- : Contact 186: Paula
-I, [2017-06-07T18:24:43.130986 #11552]  INFO -- : Contact 187: Emily
-I, [2017-06-07T18:24:43.131987 #11552]  INFO -- : Contact 188: Ravi
-I, [2017-06-07T18:24:43.131987 #11552]  INFO -- : Contact 189: Chase
-I, [2017-06-07T18:24:43.131987 #11552]  INFO -- : Contact 190: Adi
-I, [2017-06-07T18:24:43.131987 #11552]  INFO -- : Contact 191: lizaveta
-I, [2017-06-07T18:24:43.131987 #11552]  INFO -- : Contact 192: Bharath
-I, [2017-06-07T18:24:43.132988 #11552]  INFO -- : Contact 193: Scottie
-I, [2017-06-07T18:24:43.132988 #11552]  INFO -- : Contact 194: Erik
-I, [2017-06-07T18:24:43.132988 #11552]  INFO -- : Contact 195: Andrew
-I, [2017-06-07T18:24:43.132988 #11552]  INFO -- : Contact 196: Rodney
-I, [2017-06-07T18:24:43.132988 #11552]  INFO -- : Contact 197: Samir
-I, [2017-06-07T18:24:43.132988 #11552]  INFO -- : Contact 198: Bryan
-I, [2017-06-07T18:24:43.133990 #11552]  INFO -- : Contact 199: Matt
-I, [2017-06-07T18:24:43.133990 #11552]  INFO -- : Contact 200: Rebecca
-I, [2017-06-07T18:24:43.133990 #11552]  INFO -- : Contact 201: Ravi
-I, [2017-06-07T18:24:43.133990 #11552]  INFO -- : Contact 202: Spencer
-I, [2017-06-07T18:24:43.133990 #11552]  INFO -- : Contact 203: Brandon
-I, [2017-06-07T18:24:43.133990 #11552]  INFO -- : Contact 204: Samuel
-I, [2017-06-07T18:24:43.134989 #11552]  INFO -- : Contact 205: Roman
-I, [2017-06-07T18:24:43.134989 #11552]  INFO -- : Contact 206: Anne
-I, [2017-06-07T18:24:43.134989 #11552]  INFO -- : Contact 207: Jim
-I, [2017-06-07T18:24:43.134989 #11552]  INFO -- : Contact 208: Ashlynn
-I, [2017-06-07T18:24:43.135990 #11552]  INFO -- : Contact 209: Andrew
-I, [2017-06-07T18:24:43.137991 #11552]  INFO -- : Contact 210: Jay
-I, [2017-06-07T18:24:43.137991 #11552]  INFO -- : Contact 211: MURALI
-I, [2017-06-07T18:24:43.138991 #11552]  INFO -- : Contact 212: Luke
-I, [2017-06-07T18:24:43.138991 #11552]  INFO -- : Contact 213: Kate
-I, [2017-06-07T18:24:43.138991 #11552]  INFO -- : Contact 214: Andrew
-I, [2017-06-07T18:24:43.138991 #11552]  INFO -- : Contact 215: Jude
-I, [2017-06-07T18:24:43.138991 #11552]  INFO -- : Contact 216: Joseph
-I, [2017-06-07T18:24:43.138991 #11552]  INFO -- : Contact 217: Steve
-I, [2017-06-07T18:24:43.139992 #11552]  INFO -- : Contact 218: Kaysser
-I, [2017-06-07T18:24:43.139992 #11552]  INFO -- : Contact 219: James
-I, [2017-06-07T18:24:43.139992 #11552]  INFO -- : Contact 220: Gordon
-I, [2017-06-07T18:24:43.139992 #11552]  INFO -- : Contact 221: Priya
-I, [2017-06-07T18:24:43.139992 #11552]  INFO -- : Contact 222: Brian
-I, [2017-06-07T18:24:43.140993 #11552]  INFO -- : Contact 223: Derek
-I, [2017-06-07T18:24:43.140993 #11552]  INFO -- : Contact 224: Randall
-I, [2017-06-07T18:24:43.140993 #11552]  INFO -- : Contact 225: Kyle
-I, [2017-06-07T18:24:43.140993 #11552]  INFO -- : Contact 226: Mike
-I, [2017-06-07T18:24:43.140993 #11552]  INFO -- : Contact 227: Andy
-I, [2017-06-07T18:24:43.140993 #11552]  INFO -- : Contact 228: Alexander
-I, [2017-06-07T18:24:43.141996 #11552]  INFO -- : Contact 229: Ron
-I, [2017-06-07T18:24:43.141996 #11552]  INFO -- : Contact 230: Myles
-I, [2017-06-07T18:24:43.141996 #11552]  INFO -- : Contact 231: Jay
-I, [2017-06-07T18:24:43.141996 #11552]  INFO -- : Contact 232: Jitender
-I, [2017-06-07T18:24:43.141996 #11552]  INFO -- : Contact 233: David
-I, [2017-06-07T18:24:43.141996 #11552]  INFO -- : Contact 234: Rajni
-I, [2017-06-07T18:24:43.141996 #11552]  INFO -- : Contact 235: Lauren
-I, [2017-06-07T18:24:43.141996 #11552]  INFO -- : Contact 236: Derick
-I, [2017-06-07T18:24:43.141996 #11552]  INFO -- : Contact 237: Leonard
-I, [2017-06-07T18:24:43.142994 #11552]  INFO -- : Contact 238: Naren
-I, [2017-06-07T18:24:43.142994 #11552]  INFO -- : Contact 239: Niraj
-I, [2017-06-07T18:24:43.142994 #11552]  INFO -- : Contact 240: Christopher
-I, [2017-06-07T18:24:43.142994 #11552]  INFO -- : Contact 241: Jeff
-I, [2017-06-07T18:24:43.142994 #11552]  INFO -- : Contact 242: Nattapong
-I, [2017-06-07T18:24:43.142994 #11552]  INFO -- : Contact 243: Dmytro
-I, [2017-06-07T18:24:43.143996 #11552]  INFO -- : Contact 244: Jeff
-I, [2017-06-07T18:24:43.143996 #11552]  INFO -- : Contact 245: Bethany-Jo
-I, [2017-06-07T18:24:43.143996 #11552]  INFO -- : Contact 246: Akil
-I, [2017-06-07T18:24:43.143996 #11552]  INFO -- : Contact 247: Stewart
-I, [2017-06-07T18:24:43.143996 #11552]  INFO -- : Contact 248: Janae
-I, [2017-06-07T18:24:43.143996 #11552]  INFO -- : Contact 249: Tiffany
-I, [2017-06-07T18:24:43.143996 #11552]  INFO -- : Contact 250: Kristin
-I, [2017-06-07T18:24:43.143996 #11552]  INFO -- : Contact 251: Stuart
-I, [2017-06-07T18:24:43.144996 #11552]  INFO -- : Contact 252: Josh
-I, [2017-06-07T18:24:43.144996 #11552]  INFO -- : Contact 253: Becky
-I, [2017-06-07T18:24:43.144996 #11552]  INFO -- : Contact 254: Heather
-I, [2017-06-07T18:24:43.144996 #11552]  INFO -- : Contact 255: Julie
-I, [2017-06-07T18:24:43.144996 #11552]  INFO -- : Contact 256: Kishore
-I, [2017-06-07T18:24:43.144996 #11552]  INFO -- : Contact 257: Erica
-I, [2017-06-07T18:24:43.144996 #11552]  INFO -- : Contact 258: Sarah
-I, [2017-06-07T18:24:43.145996 #11552]  INFO -- : Contact 259: Andrew
-I, [2017-06-07T18:24:43.145996 #11552]  INFO -- : Contact 260: Dennis
-I, [2017-06-07T18:24:43.145996 #11552]  INFO -- : Contact 261: Jay
-I, [2017-06-07T18:24:43.145996 #11552]  INFO -- : Contact 262: Brandon
-I, [2017-06-07T18:24:43.145996 #11552]  INFO -- : Contact 263: Jason
-I, [2017-06-07T18:24:43.145996 #11552]  INFO -- : Contact 264: Magdiel
-I, [2017-06-07T18:24:43.146997 #11552]  INFO -- : Contact 265: Jake
-I, [2017-06-07T18:24:43.146997 #11552]  INFO -- : Contact 266: Alexandra
-I, [2017-06-07T18:24:43.146997 #11552]  INFO -- : Contact 267: Aayush
-I, [2017-06-07T18:24:43.146997 #11552]  INFO -- : Contact 268: Matt
-I, [2017-06-07T18:24:43.146997 #11552]  INFO -- : Contact 269: Rob
-I, [2017-06-07T18:24:43.147999 #11552]  INFO -- : Contact 270: Emily
-I, [2017-06-07T18:24:43.147999 #11552]  INFO -- : Contact 271: Jared
-I, [2017-06-07T18:24:43.147999 #11552]  INFO -- : Contact 272: Koto
-I, [2017-06-07T18:24:43.147999 #11552]  INFO -- : Contact 273: Ariana
-I, [2017-06-07T18:24:43.148998 #11552]  INFO -- : Contact 274: Jaron
-I, [2017-06-07T18:24:43.148998 #11552]  INFO -- : Contact 275: Craig
-I, [2017-06-07T18:24:43.148998 #11552]  INFO -- : Contact 276: Denise
-I, [2017-06-07T18:24:43.148998 #11552]  INFO -- : Contact 277: Ridhima
-I, [2017-06-07T18:24:43.148998 #11552]  INFO -- : Contact 278: Divya
-I, [2017-06-07T18:24:43.148998 #11552]  INFO -- : Contact 279: Beau
-I, [2017-06-07T18:24:43.150001 #11552]  INFO -- : Contact 280: Hai
-I, [2017-06-07T18:24:43.150001 #11552]  INFO -- : Contact 281: Ryan
-I, [2017-06-07T18:24:43.150001 #11552]  INFO -- : Contact 282: Neha
-I, [2017-06-07T18:24:43.150001 #11552]  INFO -- : Contact 283: Conor
-I, [2017-06-07T18:24:43.150001 #11552]  INFO -- : Contact 284: Mark
-I, [2017-06-07T18:24:43.150001 #11552]  INFO -- : Contact 285: Brian
-I, [2017-06-07T18:24:43.150001 #11552]  INFO -- : Contact 286: Michelle
-I, [2017-06-07T18:24:43.151001 #11552]  INFO -- : Contact 287: Meredith
-I, [2017-06-07T18:24:43.151001 #11552]  INFO -- : Contact 288: Peter
-I, [2017-06-07T18:24:43.151001 #11552]  INFO -- : Contact 289: Gene
-I, [2017-06-07T18:24:43.151001 #11552]  INFO -- : Contact 290: Debdip
-I, [2017-06-07T18:24:43.151001 #11552]  INFO -- : Contact 291: Chana
-I, [2017-06-07T18:24:43.151001 #11552]  INFO -- : Contact 292: Steven
-I, [2017-06-07T18:24:43.151001 #11552]  INFO -- : Contact 293: Sheila
-I, [2017-06-07T18:24:43.152001 #11552]  INFO -- : Contact 294: Darlene
-I, [2017-06-07T18:24:43.152001 #11552]  INFO -- : Contact 295: Alex
-I, [2017-06-07T18:24:43.152001 #11552]  INFO -- : Contact 296: Sara
-I, [2017-06-07T18:24:43.152001 #11552]  INFO -- : Contact 297: Oskar
-I, [2017-06-07T18:24:43.152001 #11552]  INFO -- : Contact 298: Stephen
-I, [2017-06-07T18:24:43.152001 #11552]  INFO -- : Contact 299: Bal
-I, [2017-06-07T18:24:43.152001 #11552]  INFO -- : Contact 300: Lisa
-I, [2017-06-07T18:24:43.152001 #11552]  INFO -- : Contact 301: Chris
-I, [2017-06-07T18:24:43.153001 #11552]  INFO -- : Contact 302: Benjamin
-I, [2017-06-07T18:24:43.153001 #11552]  INFO -- : Contact 303: Mitchell
-I, [2017-06-07T18:24:43.153001 #11552]  INFO -- : Contact 304: Priyanka
-I, [2017-06-07T18:24:43.153001 #11552]  INFO -- : Contact 305: Venkatesh
-I, [2017-06-07T18:24:43.153001 #11552]  INFO -- : Contact 306: Gustavo
-I, [2017-06-07T18:24:43.153001 #11552]  INFO -- : Contact 307: Annie
-I, [2017-06-07T18:24:43.153001 #11552]  INFO -- : Contact 308: Mark
-I, [2017-06-07T18:24:43.153001 #11552]  INFO -- : Contact 309: Grace
-I, [2017-06-07T18:24:43.154002 #11552]  INFO -- : Contact 310: Preeti
-I, [2017-06-07T18:24:43.154002 #11552]  INFO -- : Contact 311: Martijn
-I, [2017-06-07T18:24:43.154002 #11552]  INFO -- : Contact 312: Christopher
-I, [2017-06-07T18:24:43.154002 #11552]  INFO -- : Contact 313: Tracy
-I, [2017-06-07T18:24:43.154002 #11552]  INFO -- : Contact 314: Jay
-I, [2017-06-07T18:24:43.154002 #11552]  INFO -- : Contact 315: Melanie
-I, [2017-06-07T18:24:43.154002 #11552]  INFO -- : Contact 316: Sami
-I, [2017-06-07T18:24:43.154002 #11552]  INFO -- : Contact 317: Judd
-I, [2017-06-07T18:24:43.154002 #11552]  INFO -- : Contact 318: Bill
-I, [2017-06-07T18:24:43.155004 #11552]  INFO -- : Contact 319: Karen
-I, [2017-06-07T18:24:43.155004 #11552]  INFO -- : Contact 320: Heather
-I, [2017-06-07T18:24:43.155004 #11552]  INFO -- : Contact 321: Matthew
-I, [2017-06-07T18:24:43.155004 #11552]  INFO -- : Contact 322: Karina
-I, [2017-06-07T18:24:43.155004 #11552]  INFO -- : Contact 323: David
-I, [2017-06-07T18:24:43.155004 #11552]  INFO -- : Contact 324: Bill
-I, [2017-06-07T18:24:43.155004 #11552]  INFO -- : Contact 325: Ted
-I, [2017-06-07T18:24:43.156003 #11552]  INFO -- : Contact 326: William
-I, [2017-06-07T18:24:43.156003 #11552]  INFO -- : Contact 327: Eesha
-I, [2017-06-07T18:24:43.156003 #11552]  INFO -- : Contact 328: Francisco
-I, [2017-06-07T18:24:43.156003 #11552]  INFO -- : Contact 329: Corinne
-I, [2017-06-07T18:24:43.156003 #11552]  INFO -- : Contact 330: Rosalin
-I, [2017-06-07T18:24:43.156003 #11552]  INFO -- : Contact 331: Anandhakumar
-I, [2017-06-07T18:24:43.157004 #11552]  INFO -- : Contact 332: Alexis
-I, [2017-06-07T18:24:43.157004 #11552]  INFO -- : Contact 333: Courtney
-I, [2017-06-07T18:24:43.157004 #11552]  INFO -- : Contact 334: Andres
-I, [2017-06-07T18:24:43.157004 #11552]  INFO -- : Contact 335: Kristen
-I, [2017-06-07T18:24:43.157004 #11552]  INFO -- : Contact 336: Pavel
-I, [2017-06-07T18:24:43.157004 #11552]  INFO -- : Contact 337: Eric
-I, [2017-06-07T18:24:43.157004 #11552]  INFO -- : Contact 338: Dianne
-I, [2017-06-07T18:24:43.158006 #11552]  INFO -- : Contact 339: Karen
-I, [2017-06-07T18:24:43.158006 #11552]  INFO -- : Contact 340: Lisa
-I, [2017-06-07T18:24:43.158006 #11552]  INFO -- : Contact 341: Mohan
-I, [2017-06-07T18:24:43.158006 #11552]  INFO -- : Contact 342: Katie
-I, [2017-06-07T18:24:43.158006 #11552]  INFO -- : Contact 343: William
-I, [2017-06-07T18:24:43.158006 #11552]  INFO -- : Contact 344: Scott
-I, [2017-06-07T18:24:43.158006 #11552]  INFO -- : Contact 345: Chris
-I, [2017-06-07T18:24:43.158006 #11552]  INFO -- : Contact 346: Caleb
-I, [2017-06-07T18:24:43.159007 #11552]  INFO -- : Contact 347: Melissa
-I, [2017-06-07T18:24:43.159007 #11552]  INFO -- : Contact 348: Shelley
-I, [2017-06-07T18:24:43.159007 #11552]  INFO -- : Contact 349: Mai
-I, [2017-06-07T18:24:43.159007 #11552]  INFO -- : Contact 350: Libby
-I, [2017-06-07T18:24:43.159007 #11552]  INFO -- : Contact 351: Vipin
-I, [2017-06-07T18:24:43.159007 #11552]  INFO -- : Contact 352: Tom
-I, [2017-06-07T18:24:43.159007 #11552]  INFO -- : Contact 353: Victoria
-I, [2017-06-07T18:24:43.159007 #11552]  INFO -- : Contact 354: Zachary
-I, [2017-06-07T18:24:43.160006 #11552]  INFO -- : Contact 355: Stephen
-I, [2017-06-07T18:24:43.160006 #11552]  INFO -- : Contact 356: Bryan
-I, [2017-06-07T18:24:43.160006 #11552]  INFO -- : Contact 357: Satina
-I, [2017-06-07T18:24:43.160006 #11552]  INFO -- : Contact 358: Kristin
-I, [2017-06-07T18:24:43.160006 #11552]  INFO -- : Contact 359: Viral
-I, [2017-06-07T18:24:43.161007 #11552]  INFO -- : Contact 360: Emmy
-I, [2017-06-07T18:24:43.161007 #11552]  INFO -- : Contact 361: Judd
-I, [2017-06-07T18:24:43.161007 #11552]  INFO -- : Contact 362: Steven
-I, [2017-06-07T18:24:43.161007 #11552]  INFO -- : Contact 363: Caitlin
-I, [2017-06-07T18:24:43.161007 #11552]  INFO -- : Contact 364: David
-I, [2017-06-07T18:24:43.161007 #11552]  INFO -- : Contact 365: Max
-I, [2017-06-07T18:24:43.161007 #11552]  INFO -- : Contact 366: Kristina
-I, [2017-06-07T18:24:43.161007 #11552]  INFO -- : Contact 367: Kris
-I, [2017-06-07T18:24:43.162008 #11552]  INFO -- : Contact 368: Benjamin
-I, [2017-06-07T18:24:43.162008 #11552]  INFO -- : Contact 369: Leslie
-I, [2017-06-07T18:24:43.162008 #11552]  INFO -- : Contact 370: Todd
-I, [2017-06-07T18:24:43.162008 #11552]  INFO -- : Contact 371: Mifta
-I, [2017-06-07T18:24:43.162008 #11552]  INFO -- : Contact 372: Akhilesh
-I, [2017-06-07T18:24:43.162008 #11552]  INFO -- : Contact 373: Bryon
-I, [2017-06-07T18:24:43.162008 #11552]  INFO -- : Contact 374: Carol
-I, [2017-06-07T18:24:43.163011 #11552]  INFO -- : Contact 375: Hugh
-I, [2017-06-07T18:24:43.163011 #11552]  INFO -- : Contact 376: Kristin
-I, [2017-06-07T18:24:43.163011 #11552]  INFO -- : Contact 377: Hanif
-I, [2017-06-07T18:24:43.163011 #11552]  INFO -- : Contact 378: Michelle
-I, [2017-06-07T18:24:43.163011 #11552]  INFO -- : Contact 379: Gregg
-I, [2017-06-07T18:24:43.163011 #11552]  INFO -- : Contact 380: Pooja
-I, [2017-06-07T18:24:43.164009 #11552]  INFO -- : Contact 381: Tad
-I, [2017-06-07T18:24:43.164009 #11552]  INFO -- : Contact 382: James
-I, [2017-06-07T18:24:43.164009 #11552]  INFO -- : Contact 383: Oleg
-I, [2017-06-07T18:24:43.165010 #11552]  INFO -- : Contact 384: Erin
-I, [2017-06-07T18:24:43.165010 #11552]  INFO -- : Contact 385: Dave
-I, [2017-06-07T18:24:43.165010 #11552]  INFO -- : Contact 386: John
-I, [2017-06-07T18:24:43.165010 #11552]  INFO -- : Contact 387: Lena
-I, [2017-06-07T18:24:43.165010 #11552]  INFO -- : Contact 388: Marcus
-I, [2017-06-07T18:24:43.165010 #11552]  INFO -- : Contact 389: Alfredo
-I, [2017-06-07T18:24:43.165010 #11552]  INFO -- : Contact 390: Jeff
-I, [2017-06-07T18:24:43.166011 #11552]  INFO -- : Contact 391: Emmanuel
-I, [2017-06-07T18:24:43.166011 #11552]  INFO -- : Contact 392: Stephanie
-I, [2017-06-07T18:24:43.166011 #11552]  INFO -- : Contact 393: Artem
-I, [2017-06-07T18:24:43.166011 #11552]  INFO -- : Contact 394: Francisco
-I, [2017-06-07T18:24:43.166011 #11552]  INFO -- : Contact 395: Pooja
-I, [2017-06-07T18:24:43.166011 #11552]  INFO -- : Contact 396: Ray
-I, [2017-06-07T18:24:43.166011 #11552]  INFO -- : Contact 397: Nicole
-I, [2017-06-07T18:24:43.166011 #11552]  INFO -- : Contact 398: Andrew
-I, [2017-06-07T18:24:43.167013 #11552]  INFO -- : Contact 399: Rachna
-I, [2017-06-07T18:24:43.167013 #11552]  INFO -- : Contact 400: Mike
-I, [2017-06-07T18:24:43.167013 #11552]  INFO -- : Contact 401: RaviKiran
-I, [2017-06-07T18:24:43.167013 #11552]  INFO -- : Contact 402: Apple
-I, [2017-06-07T18:24:43.167013 #11552]  INFO -- : Contact 403: Laura
-I, [2017-06-07T18:24:43.168013 #11552]  INFO -- : Contact 404: Sean
-I, [2017-06-07T18:24:43.168013 #11552]  INFO -- : Contact 405: Randy
-I, [2017-06-07T18:24:43.168013 #11552]  INFO -- : Contact 406: Alicia
-I, [2017-06-07T18:24:43.168013 #11552]  INFO -- : Contact 407: Anthony
-I, [2017-06-07T18:24:43.168013 #11552]  INFO -- : Contact 408: Teffani
-I, [2017-06-07T18:24:43.168013 #11552]  INFO -- : Contact 409: David
-I, [2017-06-07T18:24:43.168013 #11552]  INFO -- : Contact 410: Mike
-I, [2017-06-07T18:24:43.169014 #11552]  INFO -- : Contact 411: Gregory
-I, [2017-06-07T18:24:43.169014 #11552]  INFO -- : Contact 412: Edward
-I, [2017-06-07T18:24:43.169014 #11552]  INFO -- : Contact 413: Brynna
-I, [2017-06-07T18:24:43.169014 #11552]  INFO -- : Contact 414: Dan
-I, [2017-06-07T18:24:43.169014 #11552]  INFO -- : Contact 415: Patricia
+# Logfile created on 2017-06-08 09:08:55 -0400 by logger.rb/56504
+I, [2017-06-08T09:08:55.057447 #11744]  INFO -- : starting the SFDC Contact grab
+I, [2017-06-08T09:08:55.058446 #11744]  INFO -- : getting config file
+I, [2017-06-08T09:08:55.062451 #11744]  INFO -- : got config for 
+I, [2017-06-08T09:08:59.143920 #11744]  INFO -- : Got 412 rawContacts.
+I, [2017-06-08T09:08:59.144922 #11744]  INFO -- : grabbed rawContacts: #<Restforce::Collection:0x311acf0>
+I, [2017-06-08T09:08:59.144922 #11744]  INFO -- : Starting array hasher
+I, [2017-06-08T09:08:59.155547 #11744]  INFO -- : Running flat_email on ["gabe.e.rod@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:48.252564 #13180]  INFO -- : starting the SFDC Contact grab
+I, [2017-06-08T09:09:48.255595 #13180]  INFO -- : getting config file
+I, [2017-06-08T09:09:48.256550 #13180]  INFO -- : got config for 
+I, [2017-06-08T09:09:52.023498 #13180]  INFO -- : Got 412 rawContacts.
+I, [2017-06-08T09:09:52.024493 #13180]  INFO -- : grabbed rawContacts: #<Restforce::Collection:0x316e828>
+I, [2017-06-08T09:09:52.025494 #13180]  INFO -- : Starting array hasher
+I, [2017-06-08T09:09:52.031498 #13180]  INFO -- : Running flat_email on ["gabe.e.rod@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.032502 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.032502 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.033501 #13180]  INFO -- : Running flat_email on ["ulaguluv@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.033501 #13180]  INFO -- : Running flat_email on ["diavonna.spivey@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.034516 #13180]  INFO -- : Running flat_email on ["brad4ce@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.034516 #13180]  INFO -- : Running flat_email on ["iudesha@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.035516 #13180]  INFO -- : Running flat_email on ["johncoultis3@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.035516 #13180]  INFO -- : Running flat_email on ["ndp75@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.036518 #13180]  INFO -- : Running flat_email on ["ngvt@live.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.036518 #13180]  INFO -- : Running flat_email on ["svootla@deloitte.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.037518 #13180]  INFO -- : Running flat_email on ["cjonespsu33@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.037518 #13180]  INFO -- : Running flat_email on ["amyjo@amyjoyates.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.037518 #13180]  INFO -- : Running flat_email on ["anjaliguptait@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.038502 #13180]  INFO -- : Running flat_email on ["tjohnson@merit.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.038502 #13180]  INFO -- : Running flat_email on ["ymahendraraj@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.038502 #13180]  INFO -- : Running flat_email on ["mandel.carly@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.039551 #13180]  INFO -- : Running flat_email on ["stevemolis@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.039927 #13180]  INFO -- : Running flat_email on ["dee.berhan@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.040312 #13180]  INFO -- : Running flat_email on ["raj.ahuja567@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.040654 #13180]  INFO -- : Running flat_email on ["trey@dicksondev.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.040654 #13180]  INFO -- : Running flat_email on ["jmck1982@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.041656 #13180]  INFO -- : Running flat_email on ["sirish.tenneti@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.041656 #13180]  INFO -- : Running flat_email on ["phil.wang89@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.041656 #13180]  INFO -- : Running flat_email on ["jobsearch@weatherangel.com", nil, "ijones@flvs.net", nil]
+I, [2017-06-08T09:09:52.042696 #13180]  INFO -- : Running flat_email on ["rmglasser1@verizon.net", nil, nil, nil]
+I, [2017-06-08T09:09:52.043117 #13180]  INFO -- : Running flat_email on ["cbrand010@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.043117 #13180]  INFO -- : Running flat_email on ["maxinfrared@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.044120 #13180]  INFO -- : Running flat_email on ["shirelle.n.aiken@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.044120 #13180]  INFO -- : Running flat_email on [nil, nil, "shawn.harrs@lennar.com", nil]
+I, [2017-06-08T09:09:52.044120 #13180]  INFO -- : Running flat_email on ["ajagnanan@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.045120 #13180]  INFO -- : Running flat_email on ["thinkfirst29@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.045120 #13180]  INFO -- : Running flat_email on ["mherlihy002@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.046139 #13180]  INFO -- : Running flat_email on ["john.lyons@pridedata.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.046139 #13180]  INFO -- : Running flat_email on ["jbpiii@embarqmail.com", nil, "jpridgen@parata.com", nil]
+I, [2017-06-08T09:09:52.047139 #13180]  INFO -- : Running flat_email on [nil, nil, "aconde@sequenom.com", nil]
+I, [2017-06-08T09:09:52.047139 #13180]  INFO -- : Running flat_email on [nil, nil, "ssubramanian@datastax.com", nil]
+I, [2017-06-08T09:09:52.048140 #13180]  INFO -- : Running flat_email on ["smith196872as@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.048140 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.049141 #13180]  INFO -- : Running flat_email on ["mattdeanekins@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.049141 #13180]  INFO -- : Running flat_email on ["nicholasmaloney24@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.049141 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.050133 #13180]  INFO -- : Running flat_email on ["prove001@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.050133 #13180]  INFO -- : Running flat_email on ["avinashrao.us@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.051141 #13180]  INFO -- : Running flat_email on ["erny1500@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.051141 #13180]  INFO -- : Running flat_email on [nil, nil, "adickson@performancetrust.com", nil]
+I, [2017-06-08T09:09:52.051141 #13180]  INFO -- : Running flat_email on ["ramakrishna99.sfdc@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.052127 #13180]  INFO -- : Running flat_email on ["hpatel20@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.052127 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.053147 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.053147 #13180]  INFO -- : Running flat_email on [nil, nil, "scott.sims@victorytailgate.com", nil]
+I, [2017-06-08T09:09:52.053147 #13180]  INFO -- : Running flat_email on [nil, nil, "daniel.merz@pressganey.com", nil]
+I, [2017-06-08T09:09:52.054150 #13180]  INFO -- : Running flat_email on ["madelinelmiller@me.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.054150 #13180]  INFO -- : Running flat_email on ["frankaponce@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.055144 #13180]  INFO -- : Running flat_email on [nil, nil, "jmcnabb@erecruit.com", nil]
+I, [2017-06-08T09:09:52.055144 #13180]  INFO -- : Running flat_email on ["dougpierce1@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.055144 #13180]  INFO -- : Running flat_email on [nil, nil, "aroof@godigitalmarketing.com", nil]
+I, [2017-06-08T09:09:52.056128 #13180]  INFO -- : Running flat_email on ["mike.agrapides@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.056128 #13180]  INFO -- : Running flat_email on [nil, nil, "jlatham@roamingaround.com", nil]
+I, [2017-06-08T09:09:52.056128 #13180]  INFO -- : Running flat_email on ["sushrut.govindwar@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.057128 #13180]  INFO -- : Running flat_email on ["dimitri.udis@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.057128 #13180]  INFO -- : Running flat_email on ["rajivsundar@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.058129 #13180]  INFO -- : Running flat_email on [nil, nil, "kimberly@squaretrade.com", nil]
+I, [2017-06-08T09:09:52.058129 #13180]  INFO -- : Running flat_email on ["v_2kamd@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.058129 #13180]  INFO -- : Running flat_email on ["jmadderra@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.059131 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.059131 #13180]  INFO -- : Running flat_email on [nil, nil, "tbarrett@yelp.com", nil]
+I, [2017-06-08T09:09:52.060149 #13180]  INFO -- : Running flat_email on ["astapleton@salesforce.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.060149 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.061132 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.061132 #13180]  INFO -- : Running flat_email on ["nbayles@crestfinancial.com", nil, "nbayles@crestfinancial.com", nil]
+I, [2017-06-08T09:09:52.061132 #13180]  INFO -- : Running flat_email on ["d7edwards@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.062138 #13180]  INFO -- : Running flat_email on [nil, nil, "michelle.hermansen@altium.com", nil]
+I, [2017-06-08T09:09:52.062138 #13180]  INFO -- : Running flat_email on ["killpack@adobe.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.063162 #13180]  INFO -- : Running flat_email on ["agape@si-bone.com", nil, "agape@si-bone.com", nil]
+I, [2017-06-08T09:09:52.064134 #13180]  INFO -- : Running flat_email on [nil, nil, "ppodvin@threatmetrix.com", nil]
+I, [2017-06-08T09:09:52.064134 #13180]  INFO -- : Running flat_email on [nil, nil, "shane.winegard@panduit.com", nil]
+I, [2017-06-08T09:09:52.065135 #13180]  INFO -- : Running flat_email on [nil, nil, "kristin@nexuminc.com", nil]
+I, [2017-06-08T09:09:52.065135 #13180]  INFO -- : Running flat_email on ["shelby.spears@helix.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.066135 #13180]  INFO -- : Running flat_email on ["travis.sanford@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.066135 #13180]  INFO -- : Running flat_email on ["sotomayor430@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.067136 #13180]  INFO -- : Running flat_email on ["srohn@acfsolutions.com", nil, "srohn@acfsolutions.com", nil]
+I, [2017-06-08T09:09:52.067136 #13180]  INFO -- : Running flat_email on [nil, nil, "jamie.dennis@quickpivot.com", nil]
+I, [2017-06-08T09:09:52.068137 #13180]  INFO -- : Running flat_email on [nil, nil, "amay@consultems.com", nil]
+I, [2017-06-08T09:09:52.068137 #13180]  INFO -- : Running flat_email on ["corleone4life2003@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.068137 #13180]  INFO -- : Running flat_email on [nil, nil, "enelson@hirevue.com", nil]
+I, [2017-06-08T09:09:52.069142 #13180]  INFO -- : Running flat_email on ["mike.henderson@simplefinance.com", nil, "mike.henderson@simplefinance.com", nil]
+I, [2017-06-08T09:09:52.069142 #13180]  INFO -- : Running flat_email on [nil, nil, "stephen.schilling@lennar.com", nil]
+I, [2017-06-08T09:09:52.070138 #13180]  INFO -- : Running flat_email on ["gita.borovsky@gmail.com", nil, "gita.borovsky@redcross.org", nil]
+I, [2017-06-08T09:09:52.070138 #13180]  INFO -- : Running flat_email on [nil, nil, "ckapcar@ezlinksgolf.com", nil]
+I, [2017-06-08T09:09:52.071138 #13180]  INFO -- : Running flat_email on [nil, nil, "pprickett@ezlinksgolf.com", nil]
+I, [2017-06-08T09:09:52.071138 #13180]  INFO -- : Running flat_email on [nil, nil, "helias@procuredhealth.com", nil]
+I, [2017-06-08T09:09:52.071138 #13180]  INFO -- : Running flat_email on [nil, nil, "bcampbell@clearcompany.com", nil]
+I, [2017-06-08T09:09:52.072143 #13180]  INFO -- : Running flat_email on [nil, nil, "bnijjar@entelli.com", nil]
+I, [2017-06-08T09:09:52.072143 #13180]  INFO -- : Running flat_email on [nil, nil, "todd@yelp.com", nil]
+I, [2017-06-08T09:09:52.073163 #13180]  INFO -- : Running flat_email on [nil, nil, "tim.dee@panduit.com", nil]
+I, [2017-06-08T09:09:52.073163 #13180]  INFO -- : Running flat_email on [nil, nil, "bsipraga@theounce.org", nil]
+I, [2017-06-08T09:09:52.073163 #13180]  INFO -- : Running flat_email on [nil, nil, "chris.ksoll@firstmidwest.com", nil]
+I, [2017-06-08T09:09:52.074150 #13180]  INFO -- : Running flat_email on [nil, nil, "sbackman@dbdes.com", nil]
+I, [2017-06-08T09:09:52.074150 #13180]  INFO -- : Running flat_email on [nil, nil, "chris.ireland@taxware.com", nil]
+I, [2017-06-08T09:09:52.075163 #13180]  INFO -- : Running flat_email on [nil, nil, "lpugh@deseretdigital.com", nil]
+I, [2017-06-08T09:09:52.075163 #13180]  INFO -- : Running flat_email on ["megankleary@gmail.com", nil, "megankleary@gmail.com", nil]
+I, [2017-06-08T09:09:52.076158 #13180]  INFO -- : Running flat_email on [nil, nil, "john.kouzoukas@hospira.com", nil]
+I, [2017-06-08T09:09:52.076158 #13180]  INFO -- : Running flat_email on [nil, nil, "robbie.evans@invitae.com", nil]
+I, [2017-06-08T09:09:52.077165 #13180]  INFO -- : Running flat_email on ["jason.wagner@actian.com", nil, "jason.wagner@actian.com", nil]
+I, [2017-06-08T09:09:52.077768 #13180]  INFO -- : Running flat_email on [nil, nil, "dbesso@hightoweradvisors.com", nil]
+I, [2017-06-08T09:09:52.078148 #13180]  INFO -- : Running flat_email on [nil, nil, "shruti.rawoot@westernunion.com", nil]
+I, [2017-06-08T09:09:52.078148 #13180]  INFO -- : Running flat_email on ["mekhala.k@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.079150 #13180]  INFO -- : Running flat_email on ["poornimadinu@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.079150 #13180]  INFO -- : Running flat_email on ["kle711@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.079150 #13180]  INFO -- : Running flat_email on ["pjputter@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.080158 #13180]  INFO -- : Running flat_email on ["emnshump@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.080616 #13180]  INFO -- : Running flat_email on ["ravigadwal@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.081014 #13180]  INFO -- : Running flat_email on ["chase.h.stewart@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.081430 #13180]  INFO -- : Running flat_email on ["adirao9@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.081430 #13180]  INFO -- : Running flat_email on ["melisaed@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.082433 #13180]  INFO -- : Running flat_email on ["bharathkiran@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.082433 #13180]  INFO -- : Running flat_email on ["scottie42@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.083433 #13180]  INFO -- : Running flat_email on ["erikchase@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.083553 #13180]  INFO -- : Running flat_email on ["andy_foulger@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.083955 #13180]  INFO -- : Running flat_email on ["rodney.farach@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.083955 #13180]  INFO -- : Running flat_email on ["samir8787@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.084957 #13180]  INFO -- : Running flat_email on ["becoen@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.084957 #13180]  INFO -- : Running flat_email on ["matt.moynihan@gmail.com", nil, "mmm23@ntrs.com", nil]
+I, [2017-06-08T09:09:52.084957 #13180]  INFO -- : Running flat_email on ["rschuh129@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.086959 #13180]  INFO -- : Running flat_email on ["ravi@symbioticconsultinggroup.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.086959 #13180]  INFO -- : Running flat_email on ["spencerusher@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.087960 #13180]  INFO -- : Running flat_email on ["bmartin.it@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.087960 #13180]  INFO -- : Running flat_email on ["smorinjr@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.087960 #13180]  INFO -- : Running flat_email on ["roman.a.sloan@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.088992 #13180]  INFO -- : Running flat_email on ["atwalke@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.088992 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.089961 #13180]  INFO -- : Running flat_email on ["33ashlynn33@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.090190 #13180]  INFO -- : Running flat_email on ["andrewhayes1801@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.090665 #13180]  INFO -- : Running flat_email on ["jai.parikhsf@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.090665 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.091668 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.091668 #13180]  INFO -- : Running flat_email on ["katek@keyevents.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.091668 #13180]  INFO -- : Running flat_email on ["andrew.goldberg@ncsolutions.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.092676 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.092676 #13180]  INFO -- : Running flat_email on [nil, nil, "joseph.kreitzer@enablon.com", nil]
+I, [2017-06-08T09:09:52.092676 #13180]  INFO -- : Running flat_email on ["steve@aylanetworks.com", nil, "steve@aylanetworks.com", nil]
+I, [2017-06-08T09:09:52.093669 #13180]  INFO -- : Running flat_email on ["kaykayyali@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.093669 #13180]  INFO -- : Running flat_email on [nil, nil, "james.fike@incontact.com", nil]
+I, [2017-06-08T09:09:52.093669 #13180]  INFO -- : Running flat_email on [nil, nil, "gatkin@instructure.com", nil]
+I, [2017-06-08T09:09:52.094671 #13180]  INFO -- : Running flat_email on [nil, nil, "priya.cochran@ggp.com", nil]
+I, [2017-06-08T09:09:52.096073 #13180]  INFO -- : Running flat_email on ["bvannoni@guidewire.com", nil, "bvannoni@guidewire.com", nil]
+I, [2017-06-08T09:09:52.096073 #13180]  INFO -- : Running flat_email on [nil, nil, "dnewbold@inmoment.com", nil]
+I, [2017-06-08T09:09:52.097078 #13180]  INFO -- : Running flat_email on [nil, nil, "rrobinson@enphase.com", nil]
+I, [2017-06-08T09:09:52.097078 #13180]  INFO -- : Running flat_email on [nil, nil, "kyle.andersen@imail.org", nil]
+I, [2017-06-08T09:09:52.098074 #13180]  INFO -- : Running flat_email on [nil, nil, "mike.harmer@imail.org", nil]
+I, [2017-06-08T09:09:52.098305 #13180]  INFO -- : Running flat_email on [nil, nil, "andy.bogart@lifefitness.com", nil]
+I, [2017-06-08T09:09:52.098719 #13180]  INFO -- : Running flat_email on ["alex.stinson12@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.099115 #13180]  INFO -- : Running flat_email on ["poulsonrs@ldschurch.org", nil, nil, nil]
+I, [2017-06-08T09:09:52.099115 #13180]  INFO -- : Running flat_email on ["myles.grossblatt@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.100128 #13180]  INFO -- : Running flat_email on ["jay.d.herrera@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.100128 #13180]  INFO -- : Running flat_email on ["chahaljitender@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.101118 #13180]  INFO -- : Running flat_email on ["dsjanke@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.101320 #13180]  INFO -- : Running flat_email on ["rpalikhey@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.101717 #13180]  INFO -- : Running flat_email on ["rego.lauren@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.101717 #13180]  INFO -- : Running flat_email on ["derick.ratliff@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.102719 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.102719 #13180]  INFO -- : Running flat_email on ["narensf@outlook.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.102719 #13180]  INFO -- : Running flat_email on ["niraj.shrikhande@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.103727 #13180]  INFO -- : Running flat_email on ["cgaca@ameritech.net", nil, nil, nil]
+I, [2017-06-08T09:09:52.103727 #13180]  INFO -- : Running flat_email on ["jeffkhill@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.104721 #13180]  INFO -- : Running flat_email on ["mingarmy@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.104721 #13180]  INFO -- : Running flat_email on ["dmytro.voznyak@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.105722 #13180]  INFO -- : Running flat_email on ["jhunt12345@mac.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.105722 #13180]  INFO -- : Running flat_email on ["bethanyjo.a.johnson@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.105722 #13180]  INFO -- : Running flat_email on ["akilchisholm@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.106722 #13180]  INFO -- : Running flat_email on ["utahstew@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.106722 #13180]  INFO -- : Running flat_email on ["janae.galindo@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.106722 #13180]  INFO -- : Running flat_email on ["thaskins2@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.107723 #13180]  INFO -- : Running flat_email on ["kristin44hubbard@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.107723 #13180]  INFO -- : Running flat_email on ["sgmorrell@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.107723 #13180]  INFO -- : Running flat_email on ["russell.josh@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.108723 #13180]  INFO -- : Running flat_email on ["paluchbecky@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.108723 #13180]  INFO -- : Running flat_email on ["haleyheather27@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.108723 #13180]  INFO -- : Running flat_email on ["juliebialek@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.109724 #13180]  INFO -- : Running flat_email on ["kishorejena@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.109724 #13180]  INFO -- : Running flat_email on ["erica.champine@coastalcloud.us", nil, nil, nil]
+I, [2017-06-08T09:09:52.109724 #13180]  INFO -- : Running flat_email on ["sarahz@asicorp.org", nil, nil, nil]
+I, [2017-06-08T09:09:52.110724 #13180]  INFO -- : Running flat_email on ["andrew.lane@fmr.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.110724 #13180]  INFO -- : Running flat_email on ["dschnell78@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.110724 #13180]  INFO -- : Running flat_email on ["ajzap@msn.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.111730 #13180]  INFO -- : Running flat_email on ["bmjames82@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.111730 #13180]  INFO -- : Running flat_email on ["jlongsjo@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.112743 #13180]  INFO -- : Running flat_email on ["magdielhf@gmail.com", nil, "mherrera@adt.com", nil]
+I, [2017-06-08T09:09:52.112743 #13180]  INFO -- : Running flat_email on ["dutsonx48@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.112743 #13180]  INFO -- : Running flat_email on ["rutled47@msu.edu", nil, nil, nil]
+I, [2017-06-08T09:09:52.113744 #13180]  INFO -- : Running flat_email on ["aayushkaistha@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.113744 #13180]  INFO -- : Running flat_email on ["matthew_garrison@rocketmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.113744 #13180]  INFO -- : Running flat_email on ["rbvaldez07@gmail.com", nil, "rvaldez@salesforce.com", nil]
+I, [2017-06-08T09:09:52.114733 #13180]  INFO -- : Running flat_email on ["dizzyemjohnson@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.114733 #13180]  INFO -- : Running flat_email on ["jaredljones@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.114733 #13180]  INFO -- : Running flat_email on ["koto.morioka@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.115735 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.116159 #13180]  INFO -- : Running flat_email on ["jaron.janson@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.116159 #13180]  INFO -- : Running flat_email on ["craig_grove@pediatrix.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.117163 #13180]  INFO -- : Running flat_email on ["garlocd@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.117163 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.118162 #13180]  INFO -- : Running flat_email on ["divyasmail09@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.118162 #13180]  INFO -- : Running flat_email on ["beau.gordon@landesk.com", nil, "beau.gordon@landesk.com", nil]
+I, [2017-06-08T09:09:52.119163 #13180]  INFO -- : Running flat_email on ["hai_k_tran@yahoo.com", nil, "hai.tran@easterseals.com", nil]
+I, [2017-06-08T09:09:52.119163 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.120164 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.120164 #13180]  INFO -- : Running flat_email on ["ctuttle@tuttle.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.120164 #13180]  INFO -- : Running flat_email on [nil, nil, "mnelson@columnit.com", nil]
+I, [2017-06-08T09:09:52.121164 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.121164 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.122166 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.122166 #13180]  INFO -- : Running flat_email on [nil, nil, "pete@wistia.com", nil]
+I, [2017-06-08T09:09:52.122923 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.127423 #13180]  INFO -- : Running flat_email on ["debdip_mukherjee@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.127423 #13180]  INFO -- : Running flat_email on ["chanale97@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.128428 #13180]  INFO -- : Running flat_email on [nil, nil, "sschwartz@dataminr.com", nil]
+I, [2017-06-08T09:09:52.128428 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.129426 #13180]  INFO -- : Running flat_email on ["darlene.byrne23@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.129426 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.129426 #13180]  INFO -- : Running flat_email on ["sara.hosley@altium.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.132426 #13180]  INFO -- : Running flat_email on ["oskardiazdeleon@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.132426 #13180]  INFO -- : Running flat_email on ["stephenjmcclureit@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.133428 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.133428 #13180]  INFO -- : Running flat_email on ["lisaluczyk@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.138431 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.143433 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.148437 #13180]  INFO -- : Running flat_email on ["mitchell.lecrone@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.148437 #13180]  INFO -- : Running flat_email on ["priyanka_verma_20@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.154443 #13180]  INFO -- : Running flat_email on ["aji.venki@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.154443 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.159445 #13180]  INFO -- : Running flat_email on [nil, nil, "annie.cai@allstate.com", nil]
+I, [2017-06-08T09:09:52.160448 #13180]  INFO -- : Running flat_email on [nil, nil, "m.coutre@interactivehealthinc.com", nil]
+I, [2017-06-08T09:09:52.165449 #13180]  INFO -- : Running flat_email on [nil, nil, "grace.goralik@lafargeholcim.com", nil]
+I, [2017-06-08T09:09:52.169454 #13180]  INFO -- : Running flat_email on ["pp2chawla@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.170455 #13180]  INFO -- : Running flat_email on [nil, nil, "martjin@blueconic.com", nil]
+I, [2017-06-08T09:09:52.174455 #13180]  INFO -- : Running flat_email on [nil, nil, "cyu@launchpointcorporation.com", nil]
+I, [2017-06-08T09:09:52.174455 #13180]  INFO -- : Running flat_email on ["tng@zenefits.com", nil, "tng@zenefits.com", nil]
+I, [2017-06-08T09:09:52.179461 #13180]  INFO -- : Running flat_email on [nil, nil, "jay.bahel@karauctionservices.com", nil]
+I, [2017-06-08T09:09:52.184465 #13180]  INFO -- : Running flat_email on ["chaoslfg@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.184465 #13180]  INFO -- : Running flat_email on [nil, nil, "sami.mohammed@interactivehealthinc.com", nil]
+I, [2017-06-08T09:09:52.189470 #13180]  INFO -- : Running flat_email on [nil, nil, "jhoffman@erecruit.com", nil]
+I, [2017-06-08T09:09:52.190468 #13180]  INFO -- : Running flat_email on [nil, nil, "carinob@89degrees.com", nil]
+I, [2017-06-08T09:09:52.193469 #13180]  INFO -- : Running flat_email on [nil, nil, "kdamico@devrygroup.com", nil]
+I, [2017-06-08T09:09:52.193469 #13180]  INFO -- : Running flat_email on [nil, nil, "hboucher@hanover.com", nil]
+I, [2017-06-08T09:09:52.197494 #13180]  INFO -- : Running flat_email on ["mgsherm@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.201497 #13180]  INFO -- : Running flat_email on ["karinamcortez@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.205480 #13180]  INFO -- : Running flat_email on ["luguana22@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.209502 #13180]  INFO -- : Running flat_email on ["wcc1954@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.214486 #13180]  INFO -- : Running flat_email on ["edward.salek@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.214486 #13180]  INFO -- : Running flat_email on ["wmark@groupon.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.214486 #13180]  INFO -- : Running flat_email on ["eeshasingh88@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.220488 #13180]  INFO -- : Running flat_email on ["francisco.gaona@neogenia.com.mx", nil, nil, nil]
+I, [2017-06-08T09:09:52.220488 #13180]  INFO -- : Running flat_email on ["corinneme@aol.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.221490 #13180]  INFO -- : Running flat_email on ["rosalin_charath@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.225493 #13180]  INFO -- : Running flat_email on ["anandan02.gce@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.225493 #13180]  INFO -- : Running flat_email on ["alexis.feczko@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.225493 #13180]  INFO -- : Running flat_email on ["courtneylestarge@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.228517 #13180]  INFO -- : Running flat_email on ["aciteli@aol.com", nil, "andres.citeli@ccm.edu", nil]
+I, [2017-06-08T09:09:52.228517 #13180]  INFO -- : Running flat_email on ["krunyon85@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.229495 #13180]  INFO -- : Running flat_email on ["paulvas@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.229495 #13180]  INFO -- : Running flat_email on ["eochoco@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.232498 #13180]  INFO -- : Running flat_email on ["d.kittinger@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.232498 #13180]  INFO -- : Running flat_email on ["karenxiao@hotmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.233500 #13180]  INFO -- : Running flat_email on ["lscardino23@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.237503 #13180]  INFO -- : Running flat_email on ["mdevalla@gmail.com", nil, "mohana.k.devalla@aexp.com", nil]
+I, [2017-06-08T09:09:52.237503 #13180]  INFO -- : Running flat_email on ["khamberg82@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.242504 #13180]  INFO -- : Running flat_email on ["work.williammerritt@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.243505 #13180]  INFO -- : Running flat_email on ["scott.armitage@mac.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.243505 #13180]  INFO -- : Running flat_email on ["choffman1@sbcglobal.net", nil, nil, nil]
+I, [2017-06-08T09:09:52.243505 #13180]  INFO -- : Running flat_email on ["cpoitevien@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.244508 #13180]  INFO -- : Running flat_email on ["melissa.m.hudgens@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.246508 #13180]  INFO -- : Running flat_email on [nil, nil, "sbransten@salesforce.com", nil]
+I, [2017-06-08T09:09:52.247508 #13180]  INFO -- : Running flat_email on ["deptroi2002@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.247508 #13180]  INFO -- : Running flat_email on [nil, nil, "lrapin@procuredhealth.com", nil]
+I, [2017-06-08T09:09:52.252512 #13180]  INFO -- : Running flat_email on ["vipinwagh@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.252512 #13180]  INFO -- : Running flat_email on ["tom.codd@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.253513 #13180]  INFO -- : Running flat_email on ["witkewitz@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.256515 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.256515 #13180]  INFO -- : Running flat_email on ["stephen.newhauser@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.262525 #13180]  INFO -- : Running flat_email on [nil, nil, "bryan.luvison@acco.com", nil]
+I, [2017-06-08T09:09:52.262525 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.263522 #13180]  INFO -- : Running flat_email on [nil, nil, "kmaloney@ceannate.com", nil]
+I, [2017-06-08T09:09:52.268523 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.269526 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.269526 #13180]  INFO -- : Running flat_email on [nil, nil, "judd.reiffin@anaplan.com", nil]
+I, [2017-06-08T09:09:52.274529 #13180]  INFO -- : Running flat_email on [nil, nil, "steven@litify.com", nil]
+I, [2017-06-08T09:09:52.275530 #13180]  INFO -- : Running flat_email on [nil, nil, "caitlin@mixpanel.com", nil]
+I, [2017-06-08T09:09:52.275530 #13180]  INFO -- : Running flat_email on [nil, nil, "david.lichtman@americanwell.com", nil]
+I, [2017-06-08T09:09:52.275530 #13180]  INFO -- : Running flat_email on [nil, nil, "max.christopoulos@brafton.com", nil]
+I, [2017-06-08T09:09:52.278531 #13180]  INFO -- : Running flat_email on ["kristinafine@gmail.com", nil, "kristinafine@gmail.com", nil]
+I, [2017-06-08T09:09:52.278531 #13180]  INFO -- : Running flat_email on [nil, nil, "kris_ryan@npd.com", nil]
+I, [2017-06-08T09:09:52.278531 #13180]  INFO -- : Running flat_email on ["benjamin.ndubisi@bauintegrated.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.279532 #13180]  INFO -- : Running flat_email on [nil, nil, "loneil@appneta.com", nil]
+I, [2017-06-08T09:09:52.283535 #13180]  INFO -- : Running flat_email on [nil, nil, "todd.markson@cengage.com", nil]
+I, [2017-06-08T09:09:52.283535 #13180]  INFO -- : Running flat_email on [nil, nil, "miftahul.bari@ggp.com", nil]
+I, [2017-06-08T09:09:52.284536 #13180]  INFO -- : Running flat_email on [nil, nil, "akhilesh.jaiswal@synopsys.com", nil]
+I, [2017-06-08T09:09:52.287537 #13180]  INFO -- : Running flat_email on [nil, nil, "bbua@admiralsbank.com", nil]
+I, [2017-06-08T09:09:52.287537 #13180]  INFO -- : Running flat_email on [nil, nil, "cgudeczauskas@admiralsbank.com", nil]
+I, [2017-06-08T09:09:52.291539 #13180]  INFO -- : Running flat_email on [nil, nil, "hugh.munoz@ampf.com", nil]
+I, [2017-06-08T09:09:52.292539 #13180]  INFO -- : Running flat_email on ["kristin_kiester@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.292539 #13180]  INFO -- : Running flat_email on ["justicepsych@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.292539 #13180]  INFO -- : Running flat_email on ["motero777@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.296544 #13180]  INFO -- : Running flat_email on ["gkvanvoorhis@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.296544 #13180]  INFO -- : Running flat_email on ["pooja7051.salesforce@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.297547 #13180]  INFO -- : Running flat_email on ["yolabas@aim.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.297547 #13180]  INFO -- : Running flat_email on ["james.moore.iii@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.297547 #13180]  INFO -- : Running flat_email on ["okuchkin@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.303548 #13180]  INFO -- : Running flat_email on ["enathan24@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.304549 #13180]  INFO -- : Running flat_email on ["daveo03@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.308551 #13180]  INFO -- : Running flat_email on ["johnkuhl@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.309554 #13180]  INFO -- : Running flat_email on ["lenarunestad@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.313555 #13180]  INFO -- : Running flat_email on ["marcusdietz@me.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.313555 #13180]  INFO -- : Running flat_email on ["abrisenojr@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.318559 #13180]  INFO -- : Running flat_email on ["jeff.rogers@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.318559 #13180]  INFO -- : Running flat_email on ["emma.adewale@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.318559 #13180]  INFO -- : Running flat_email on ["lanata75@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.319561 #13180]  INFO -- : Running flat_email on ["artemanikitin@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.319561 #13180]  INFO -- : Running flat_email on ["riccomagno82@yahoo.com.ar", nil, nil, nil]
+I, [2017-06-08T09:09:52.319561 #13180]  INFO -- : Running flat_email on ["pooj2003@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.324564 #13180]  INFO -- : Running flat_email on ["rmora1117@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.324564 #13180]  INFO -- : Running flat_email on ["nicole.bright@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.325564 #13180]  INFO -- : Running flat_email on ["andy@centericeofdupage.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.325564 #13180]  INFO -- : Running flat_email on ["vashistha.rachna12@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.325564 #13180]  INFO -- : Running flat_email on ["mike.demille@observepoint.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.325564 #13180]  INFO -- : Running flat_email on ["rvkswe@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.326564 #13180]  INFO -- : Running flat_email on ["achuayap@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.330569 #13180]  INFO -- : Running flat_email on ["lauramckevitt@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.331567 #13180]  INFO -- : Running flat_email on ["seankbeckett@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.331567 #13180]  INFO -- : Running flat_email on ["rerice@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.331567 #13180]  INFO -- : Running flat_email on ["avsaltarelli@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.332569 #13180]  INFO -- : Running flat_email on [nil, nil, "aridolfi@ceannate.com", nil]
+I, [2017-06-08T09:09:52.332569 #13180]  INFO -- : Running flat_email on [nil, nil, "teffani.zadeh@aon.com", nil]
+I, [2017-06-08T09:09:52.332569 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.335571 #13180]  INFO -- : Running flat_email on ["mlocascio3@comcast.net", nil, "mlocascio@flexerasoftware.com", nil]
+I, [2017-06-08T09:09:52.336574 #13180]  INFO -- : Running flat_email on [nil, nil, "gbaran@tenable.com", nil]
+I, [2017-06-08T09:09:52.336574 #13180]  INFO -- : Running flat_email on [nil, nil, "ed.avila@synaptics.com", nil]
+I, [2017-06-08T09:09:52.336574 #13180]  INFO -- : Running flat_email on ["bevans@vlocity.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.337572 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.337572 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.338573 #13180]  INFO -- : Running flat_email on ["rob.h.gilmore@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.340574 #13180]  INFO -- : Running flat_email on ["jake.backues@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.340574 #13180]  INFO -- : Running flat_email on ["yash.dct@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.341574 #13180]  INFO -- : Running flat_email on ["naterichardson2007@gmail.com", nil, "nrichardson@xmatters.com", nil]
+I, [2017-06-08T09:09:52.341574 #13180]  INFO -- : Running flat_email on ["stevemojden@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.341574 #13180]  INFO -- : Running flat_email on ["bobmugura@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.341574 #13180]  INFO -- : Running flat_email on [nil, nil, "erin.presseau@silvertech.com", nil]
+I, [2017-06-08T09:09:52.346581 #13180]  INFO -- : Running flat_email on ["zachpatterson720@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.347581 #13180]  INFO -- : Running flat_email on [nil, nil, "timeyo.banda@dignityhealth.org", nil]
+I, [2017-06-08T09:09:52.348581 #13180]  INFO -- : Running flat_email on ["megha.deota@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.348581 #13180]  INFO -- : Running flat_email on [nil, nil, "cstanfield@cleversafe.com", nil]
+I, [2017-06-08T09:09:52.349581 #13180]  INFO -- : Running flat_email on [nil, nil, "avillarreal@appliedsystems.com", nil]
+I, [2017-06-08T09:09:52.349581 #13180]  INFO -- : Running flat_email on ["jessica.mock@aol.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.350583 #13180]  INFO -- : Running flat_email on [nil, nil, "liz.steves.contractor@fujifilm.com", nil]
+I, [2017-06-08T09:09:52.353583 #13180]  INFO -- : Running flat_email on [nil, nil, "anthony.armando@interactivehealthinc.com", nil]
+I, [2017-06-08T09:09:52.353583 #13180]  INFO -- : Running flat_email on [nil, nil, "lindsay.kuhlmann@conversantmedia.com", nil]
+I, [2017-06-08T09:09:52.353583 #13180]  INFO -- : Running flat_email on [nil, nil, "heather@insightsquared.com", nil]
+I, [2017-06-08T09:09:52.354583 #13180]  INFO -- : Running flat_email on [nil, nil, nil, nil]
+I, [2017-06-08T09:09:52.354583 #13180]  INFO -- : Running flat_email on [nil, nil, "mdenton@ezlinksgolf.com", nil]
+I, [2017-06-08T09:09:52.354583 #13180]  INFO -- : Running flat_email on [nil, nil, "eli@casper.com", nil]
+I, [2017-06-08T09:09:52.354583 #13180]  INFO -- : Running flat_email on ["jordan.wells30@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.360589 #13180]  INFO -- : Running flat_email on [nil, nil, "brittany.flanagan@silvertech.com", nil]
+I, [2017-06-08T09:09:52.360589 #13180]  INFO -- : Running flat_email on [nil, nil, "gael.norris@grapeshot.co.uk", nil]
+I, [2017-06-08T09:09:52.360589 #13180]  INFO -- : Running flat_email on ["jlindner@threatmetrix.com", nil, "jlindner@threatmetrix.com", nil]
+I, [2017-06-08T09:09:52.361589 #13180]  INFO -- : Running flat_email on ["john.bivona@gmail.com", nil, "jbivona@sleepys.com", nil]
+I, [2017-06-08T09:09:52.367593 #13180]  INFO -- : Running flat_email on ["tpt.louie@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.367593 #13180]  INFO -- : Running flat_email on ["rodney.apura@gmail.com", nil, "rodneya@slalom.com", nil]
+I, [2017-06-08T09:09:52.367593 #13180]  INFO -- : Running flat_email on [nil, nil, "ryan@litify.com", nil]
+I, [2017-06-08T09:09:52.372597 #13180]  INFO -- : Running flat_email on [nil, nil, "rashmi.bhatnagar@ensono.com", nil]
+I, [2017-06-08T09:09:52.372597 #13180]  INFO -- : Running flat_email on [nil, nil, "mmoyes@berklee.edu", nil]
+I, [2017-06-08T09:09:52.376599 #13180]  INFO -- : Running flat_email on [nil, nil, "truiz@mastercontrol.com", nil]
+I, [2017-06-08T09:09:52.377601 #13180]  INFO -- : Running flat_email on [nil, nil, "mparr@mastercontrol.com", nil]
+I, [2017-06-08T09:09:52.377601 #13180]  INFO -- : Running flat_email on [nil, nil, "asparling@westmonroepartners.com", nil]
+I, [2017-06-08T09:09:52.381603 #13180]  INFO -- : Running flat_email on [nil, nil, "cmullins@partstown.com", nil]
+I, [2017-06-08T09:09:52.382605 #13180]  INFO -- : Running flat_email on [nil, nil, "piyush@comitydesigns.com", nil]
+I, [2017-06-08T09:09:52.386608 #13180]  INFO -- : Running flat_email on [nil, nil, "todd.wilkerson@bakertilly.com", nil]
+I, [2017-06-08T09:09:52.387608 #13180]  INFO -- : Running flat_email on [nil, nil, "eedgerton@tccm.org", nil]
+I, [2017-06-08T09:09:52.390609 #13180]  INFO -- : Running flat_email on ["jessica.mcguire@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.390609 #13180]  INFO -- : Running flat_email on ["valerie.meurice@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.395613 #13180]  INFO -- : Running flat_email on ["sronbutler@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.395613 #13180]  INFO -- : Running flat_email on ["nalexander789@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.396615 #13180]  INFO -- : Running flat_email on ["swapna.kolla28@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.399615 #13180]  INFO -- : Running flat_email on ["chandajo771@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.400617 #13180]  INFO -- : Running flat_email on ["lukenslevin@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.404619 #13180]  INFO -- : Running flat_email on ["ryankbanerjee@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.404619 #13180]  INFO -- : Running flat_email on ["kristinmisko@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.408623 #13180]  INFO -- : Running flat_email on ["jbotruff@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.409624 #13180]  INFO -- : Running flat_email on ["jlzinner@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.412626 #13180]  INFO -- : Running flat_email on ["snowboredscott@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.412626 #13180]  INFO -- : Running flat_email on ["dj28quic@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.416628 #13180]  INFO -- : Running flat_email on ["alexasquitieri@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.417629 #13180]  INFO -- : Running flat_email on ["linkedin@bryanthomas.net", nil, nil, nil]
+I, [2017-06-08T09:09:52.421632 #13180]  INFO -- : Running flat_email on ["derrickk@dentalselect.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.422633 #13180]  INFO -- : Running flat_email on ["mattpbaker1@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.422633 #13180]  INFO -- : Running flat_email on ["wagonista@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.426635 #13180]  INFO -- : Running flat_email on ["hawthornra@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.427636 #13180]  INFO -- : Running flat_email on ["salman.siddiqui@here.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.430638 #13180]  INFO -- : Running flat_email on ["matthewbuczek@charter.net", nil, nil, nil]
+I, [2017-06-08T09:09:52.430638 #13180]  INFO -- : Running flat_email on ["bphaneuf8882@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.434641 #13180]  INFO -- : Running flat_email on ["dan@danpeter.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.434641 #13180]  INFO -- : Running flat_email on ["toddwatkinson@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.435642 #13180]  INFO -- : Running flat_email on ["gary_byington@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.439644 #13180]  INFO -- : Running flat_email on ["jacqueline.abner@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.439644 #13180]  INFO -- : Running flat_email on ["woo2@umail.iu", nil, nil, nil]
+I, [2017-06-08T09:09:52.443647 #13180]  INFO -- : Running flat_email on ["singmicro@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.443647 #13180]  INFO -- : Running flat_email on ["cinbouchard@charter.net", nil, nil, nil]
+I, [2017-06-08T09:09:52.443647 #13180]  INFO -- : Running flat_email on ["gschoemaker@comcast.net", nil, nil, nil]
+I, [2017-06-08T09:09:52.448651 #13180]  INFO -- : Running flat_email on ["mistykup@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.448651 #13180]  INFO -- : Running flat_email on ["danielle.balestra@yahoo.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.453655 #13180]  INFO -- : Running flat_email on ["valdezsteve3@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.454655 #13180]  INFO -- : Running flat_email on ["sharanyaasfdc@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.454655 #13180]  INFO -- : Running flat_email on ["henderson.hilary@gmail.com", nil, nil, nil]
+I, [2017-06-08T09:09:52.464662 #13180]  INFO -- : Finished array hasher [{:email=>"gabe.e.rod@gmail.com", :first_name=>"Gabriel", :last_name=>"Rodriguez", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Joyce", :last_name=>"Saw", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Amanda", :last_name=>"Roach", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ulaguluv@gmail.com", :first_name=>"Ulagammai", :last_name=>"Palaniappan", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"diavonna.spivey@gmail.com", :first_name=>"Diavonna", :last_name=>"Spivey", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"brad4ce@gmail.com", :first_name=>"Bradley", :last_name=>"Rice", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"iudesha@gmail.com", :first_name=>"Don", :last_name=>"Wanigasundara", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"johncoultis3@gmail.com", :first_name=>"John", :last_name=>"Coultis", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ndp75@yahoo.com", :first_name=>"Nicole", :last_name=>"Petsch", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ngvt@live.com", :first_name=>"Thanh", :last_name=>"Ngo", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"svootla@deloitte.com", :first_name=>"sundeep", :last_name=>"chowdary vootla", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"cjonespsu33@gmail.com", :first_name=>"Colin", :last_name=>"Jones", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"amyjo@amyjoyates.com", :first_name=>"Amy Jo", :last_name=>"(McLaughlin) Yates", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"anjaliguptait@gmail.com", :first_name=>"Anjali", :last_name=>"Gupta", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"tjohnson@merit.com", :first_name=>"Teresa", :last_name=>"Johnson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ymahendraraj@gmail.com", :first_name=>"Yadavan", :last_name=>"Mahendraraj", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mandel.carly@gmail.com", :first_name=>"Carly", :last_name=>"Mandel", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"stevemolis@gmail.com", :first_name=>"Steve", :last_name=>"Molis", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dee.berhan@gmail.com", :first_name=>"Dee", :last_name=>"Berhan", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"raj.ahuja567@gmail.com", :first_name=>"Raj", :last_name=>"Ahuja", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"trey@dicksondev.com", :first_name=>"Trey", :last_name=>"Dickson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jmck1982@gmail.com", :first_name=>"Jason", :last_name=>"Mckenzie", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sirish.tenneti@gmail.com", :first_name=>"Sirish", :last_name=>"Tenneti", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"phil.wang89@gmail.com", :first_name=>"Philip", :last_name=>"Wang", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jobsearch@weatherangel.com", :first_name=>"Ilene", :last_name=>"Jones", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rmglasser1@verizon.net", :first_name=>"Rebecca", :last_name=>"Glasser", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"cbrand010@gmail.com", :first_name=>"Chris", :last_name=>"Brand", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"maxinfrared@gmail.com", :first_name=>"Max", :last_name=>"Ingraham-Rakatansky", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"shirelle.n.aiken@gmail.com", :first_name=>"Shirelle", :last_name=>"Aiken", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"shawn.harrs@lennar.com", :first_name=>"Shawn", :last_name=>"Harrs, Ph.D.", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ajagnanan@gmail.com", :first_name=>"Adrian", :last_name=>"Jagnanan", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"thinkfirst29@yahoo.com", :first_name=>"Matt", :last_name=>"Nesci", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mherlihy002@gmail.com", :first_name=>"Mike", :last_name=>"Herlihy", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"john.lyons@pridedata.com", :first_name=>"John", :last_name=>"Lyons", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jbpiii@embarqmail.com", :first_name=>"John", :last_name=>"Pridgen", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"aconde@sequenom.com", :first_name=>"Adam", :last_name=>"Conde", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ssubramanian@datastax.com", :first_name=>"Sathiya", :last_name=>"Subramanian", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"smith196872as@gmail.com", :first_name=>"Andrew", :last_name=>"Smith", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Simon", :last_name=>"Tetelbaum", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mattdeanekins@gmail.com", :first_name=>"Matt", :last_name=>"Ekins", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"nicholasmaloney24@gmail.com", :first_name=>"Nicholas", :last_name=>"Maloney", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Alan", :last_name=>"Dray", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"prove001@yahoo.com", :first_name=>"Elena", :last_name=>"Provenza Gur, MBA", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"avinashrao.us@gmail.com", :first_name=>"Avinash", :last_name=>"(THAKKALAPELLI) Thakkalapelli", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"erny1500@yahoo.com", :first_name=>"Garrett", :last_name=>"Erny", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"adickson@performancetrust.com", :first_name=>"Alex", :last_name=>"Dickson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ramakrishna99.sfdc@gmail.com", :first_name=>"Rama", :last_name=>"kishna K", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"hpatel20@hotmail.com", :first_name=>"Himanshu", :last_name=>"Patel", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Devon", :last_name=>"Kapler", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Kory", :last_name=>"Willis", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"scott.sims@victorytailgate.com", :first_name=>"Scott", :last_name=>"Sims", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"daniel.merz@pressganey.com", :first_name=>"Daniel", :last_name=>"Merz", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"madelinelmiller@me.com", :first_name=>"Madeline", :last_name=>"Miller", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"frankaponce@gmail.com", :first_name=>"Frank", :last_name=>"Ponce", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jmcnabb@erecruit.com", :first_name=>"Jessica", :last_name=>"McNabb", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dougpierce1@gmail.com", :first_name=>"Douglas", :last_name=>"Pierce", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"aroof@godigitalmarketing.com", :first_name=>"Andrew", :last_name=>"Roof", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mike.agrapides@gmail.com", :first_name=>"Mike", :last_name=>"Agrapides", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jlatham@roamingaround.com", :first_name=>"Josh", :last_name=>"Latham", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sushrut.govindwar@gmail.com", :first_name=>"Sushrut", :last_name=>"Govindwar", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dimitri.udis@gmail.com", :first_name=>"Dimitri", :last_name=>"Udis", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rajivsundar@gmail.com", :first_name=>"Rajiv", :last_name=>"Sundar", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kimberly@squaretrade.com", :first_name=>"Kimberly", :last_name=>"Mansager", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"v_2kamd@hotmail.com", :first_name=>"Kam", :last_name=>"Denkers", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jmadderra@gmail.com", :first_name=>"James", :last_name=>"Madderra", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Kortney", :last_name=>"Wall", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"tbarrett@yelp.com", :first_name=>"Taylor", :last_name=>"Barrett-Wilsdon", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"astapleton@salesforce.com", :first_name=>"Andrew", :last_name=>"Stapleton", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Kevin", :last_name=>"Pferdner", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Sandy", :last_name=>"Porritt", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"nbayles@crestfinancial.com", :first_name=>"Nathan", :last_name=>"Bayles", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"d7edwards@gmail.com", :first_name=>"Dawn", :last_name=>"Edwards", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"michelle.hermansen@altium.com", :first_name=>"Michelle", :last_name=>"Hermansen", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"killpack@adobe.com", :first_name=>"Alex", :last_name=>"Killpack", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"agape@si-bone.com", :first_name=>"Agape", :last_name=>"Eleftheriadis", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ppodvin@threatmetrix.com", :first_name=>"Pascal", :last_name=>"Podvin", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"shane.winegard@panduit.com", :first_name=>"Shane", :last_name=>"Winegard", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kristin@nexuminc.com", :first_name=>"Kristin", :last_name=>"Stauner", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"shelby.spears@helix.com", :first_name=>"Shelby", :last_name=>"Spears", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"travis.sanford@gmail.com", :first_name=>"Travis", :last_name=>"Sanford", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sotomayor430@hotmail.com", :first_name=>"Jose", :last_name=>"Sotomayor", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"srohn@acfsolutions.com", :first_name=>"Sarah", :last_name=>"Rohn", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jamie.dennis@quickpivot.com", :first_name=>"Jamie", :last_name=>"Dennis", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"amay@consultems.com", :first_name=>"Angie", :last_name=>"May", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"corleone4life2003@yahoo.com", :first_name=>"Michael", :last_name=>"Reyer", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"enelson@hirevue.com", :first_name=>"Eric", :last_name=>"Nelson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mike.henderson@simplefinance.com", :first_name=>"Mike", :last_name=>"Henderson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"stephen.schilling@lennar.com", :first_name=>"Stephen", :last_name=>"Schilling", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"gita.borovsky@gmail.com", :first_name=>"Gita", :last_name=>"Borovsky", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ckapcar@ezlinksgolf.com", :first_name=>"Christopher", :last_name=>"Kapcar", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"pprickett@ezlinksgolf.com", :first_name=>"Paul", :last_name=>"Prickett", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"helias@procuredhealth.com", :first_name=>"Hani", :last_name=>"Elias", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bcampbell@clearcompany.com", :first_name=>"Brian", :last_name=>"Campbell", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bnijjar@entelli.com", :first_name=>"Brinder", :last_name=>"Nijjar", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"todd@yelp.com", :first_name=>"Todd", :last_name=>"Miner", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"tim.dee@panduit.com", :first_name=>"Tim", :last_name=>"Dee", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bsipraga@theounce.org", :first_name=>"Beca", :last_name=>"Sipraga", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"chris.ksoll@firstmidwest.com", :first_name=>"Chris", :last_name=>"Ksoll", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sbackman@dbdes.com", :first_name=>"Steven", :last_name=>"Backman", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"chris.ireland@taxware.com", :first_name=>"Chris", :last_name=>"Ireland", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"lpugh@deseretdigital.com", :first_name=>"Lori", :last_name=>"Pugh", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"megankleary@gmail.com", :first_name=>"Megan", :last_name=>"Leary", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"john.kouzoukas@hospira.com", :first_name=>"John", :last_name=>"Kouzoukas", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"robbie.evans@invitae.com", :first_name=>"Robbie", :last_name=>"Evans", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jason.wagner@actian.com", :first_name=>"Jason", :last_name=>"Wagner", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dbesso@hightoweradvisors.com", :first_name=>"Doug", :last_name=>"Besso", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"shruti.rawoot@westernunion.com", :first_name=>"Shruti", :last_name=>"Rawoot", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mekhala.k@gmail.com", :first_name=>"Mekhala", :last_name=>"Erande", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"poornimadinu@gmail.com", :first_name=>"Poornima", :last_name=>"N", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kle711@gmail.com", :first_name=>"Kemi", :last_name=>"Le", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"pjputter@gmail.com", :first_name=>"Paula", :last_name=>"(Major) Jarvis", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"emnshump@gmail.com", :first_name=>"Emily", :last_name=>"Walsdorf", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ravigadwal@gmail.com", :first_name=>"Ravi", :last_name=>"Gadwal", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"chase.h.stewart@gmail.com", :first_name=>"Chase", :last_name=>"Stewart", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"adirao9@gmail.com", :first_name=>"Adi", :last_name=>"Kantipudi", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"melisaed@gmail.com", :first_name=>"lizaveta", :last_name=>"melnikava", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bharathkiran@gmail.com", :first_name=>"Bharath", :last_name=>"Ammanamanchi", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"scottie42@gmail.com", :first_name=>"Scottie", :last_name=>"O'Bryan", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"erikchase@gmail.com", :first_name=>"Erik", :last_name=>"Chase", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"andy_foulger@yahoo.com", :first_name=>"Andrew", :last_name=>"Foulger", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rodney.farach@gmail.com", :first_name=>"Rodney", :last_name=>"Farach", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"samir8787@gmail.com", :first_name=>"Samir", :last_name=>"Awuapara Cardenas", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"becoen@yahoo.com", :first_name=>"Bryan", :last_name=>"Coen", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"matt.moynihan@gmail.com", :first_name=>"Matt", :last_name=>"Moynihan", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rschuh129@gmail.com", :first_name=>"Rebecca", :last_name=>"Schuh", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ravi@symbioticconsultinggroup.com", :first_name=>"Ravi", :last_name=>"Kapoor", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"spencerusher@gmail.com", :first_name=>"Spencer", :last_name=>"Usher", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bmartin.it@gmail.com", :first_name=>"Brandon", :last_name=>"R. Martin", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"smorinjr@gmail.com", :first_name=>"Samuel", :last_name=>"Morin Jr", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"roman.a.sloan@gmail.com", :first_name=>"Roman", :last_name=>"Sloan", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"atwalke@gmail.com", :first_name=>"Anne", :last_name=>"Walker", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Jim", :last_name=>"Bajzath", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"33ashlynn33@gmail.com", :first_name=>"Ashlynn", :last_name=>"Cratty", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"andrewhayes1801@gmail.com", :first_name=>"Andrew", :last_name=>"Hayes", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jai.parikhsf@gmail.com", :first_name=>"Jay", :last_name=>"Parikh", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"MURALI", :last_name=>"PATHIVADA", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Luke", :last_name=>"Salsich", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"katek@keyevents.com", :first_name=>"Kate", :last_name=>"Karczewski", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"andrew.goldberg@ncsolutions.com", :first_name=>"Andrew", :last_name=>"Goldberg", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Jude", :last_name=>"Capachietti", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"joseph.kreitzer@enablon.com", :first_name=>"Joseph", :last_name=>"Kreitzer", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"steve@aylanetworks.com", :first_name=>"Steve", :last_name=>"Ruiz", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kaykayyali@gmail.com", :first_name=>"Kaysser", :last_name=>"Kayyali", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"james.fike@incontact.com", :first_name=>"James", :last_name=>"Fike", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"gatkin@instructure.com", :first_name=>"Gordon", :last_name=>"Atkin", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"priya.cochran@ggp.com", :first_name=>"Priya", :last_name=>"Cochran", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bvannoni@guidewire.com", :first_name=>"Brian", :last_name=>"Vannoni", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dnewbold@inmoment.com", :first_name=>"Derek", :last_name=>"Newbold", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rrobinson@enphase.com", :first_name=>"Randall", :last_name=>"Robinson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kyle.andersen@imail.org", :first_name=>"Kyle", :last_name=>"Andersen", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mike.harmer@imail.org", :first_name=>"Mike", :last_name=>"Harmer", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"andy.bogart@lifefitness.com", :first_name=>"Andy", :last_name=>"Bogart", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"alex.stinson12@gmail.com", :first_name=>"Alexander", :last_name=>"Stinson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"poulsonrs@ldschurch.org", :first_name=>"Ron", :last_name=>"Poulson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"myles.grossblatt@gmail.com", :first_name=>"Myles", :last_name=>"Grossblatt", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jay.d.herrera@gmail.com", :first_name=>"Jay", :last_name=>"D Herrera", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"chahaljitender@gmail.com", :first_name=>"Jitender", :last_name=>"Chahal", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dsjanke@gmail.com", :first_name=>"David", :last_name=>"Janke", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rpalikhey@gmail.com", :first_name=>"Rajni", :last_name=>"Palikhey", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rego.lauren@gmail.com", :first_name=>"Lauren", :last_name=>"Rego", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"derick.ratliff@gmail.com", :first_name=>"Derick", :last_name=>"Ratliff", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Leonard", :last_name=>"Roberts", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"narensf@outlook.com", :first_name=>"Naren", :last_name=>"Yendluri", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"niraj.shrikhande@gmail.com", :first_name=>"Niraj", :last_name=>"Shrikhande", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"cgaca@ameritech.net", :first_name=>"Christopher", :last_name=>"Gaca", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jeffkhill@gmail.com", :first_name=>"Jeff", :last_name=>"Hill", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mingarmy@gmail.com", :first_name=>"Nattapong", :last_name=>"Khamnang", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dmytro.voznyak@gmail.com", :first_name=>"Dmytro", :last_name=>"Voznyak", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jhunt12345@mac.com", :first_name=>"Jeff", :last_name=>"Hunt", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bethanyjo.a.johnson@gmail.com", :first_name=>"Bethany-Jo", :last_name=>"Johnson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"akilchisholm@gmail.com", :first_name=>"Akil", :last_name=>"Chisholm", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"utahstew@hotmail.com", :first_name=>"Stewart", :last_name=>"McNaught", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"janae.galindo@gmail.com", :first_name=>"Janae", :last_name=>"Galindo", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"thaskins2@hotmail.com", :first_name=>"Tiffany", :last_name=>"Shabazz", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kristin44hubbard@gmail.com", :first_name=>"Kristin", :last_name=>"Hubbard", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sgmorrell@yahoo.com", :first_name=>"Stuart", :last_name=>"Morrell", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"russell.josh@yahoo.com", :first_name=>"Josh", :last_name=>"Russell", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"paluchbecky@gmail.com", :first_name=>"Becky", :last_name=>"Paluch", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"haleyheather27@gmail.com", :first_name=>"Heather", :last_name=>"Haley", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"juliebialek@yahoo.com", :first_name=>"Julie", :last_name=>"Bialek", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kishorejena@hotmail.com", :first_name=>"Kishore", :last_name=>"Jena", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"erica.champine@coastalcloud.us", :first_name=>"Erica", :last_name=>"Champine", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sarahz@asicorp.org", :first_name=>"Sarah", :last_name=>"Zazueta", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"andrew.lane@fmr.com", :first_name=>"Andrew", :last_name=>"Lane", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dschnell78@yahoo.com", :first_name=>"Dennis", :last_name=>"Schnell", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ajzap@msn.com", :first_name=>"Jay", :last_name=>"(Javier) Zapata", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bmjames82@gmail.com", :first_name=>"Brandon", :last_name=>"James", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jlongsjo@gmail.com", :first_name=>"Jason", :last_name=>"Longsjo", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"magdielhf@gmail.com", :first_name=>"Magdiel", :last_name=>"Herrera", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dutsonx48@gmail.com", :first_name=>"Jake", :last_name=>"Dutson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rutled47@msu.edu", :first_name=>"Alexandra", :last_name=>"Rutledge", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"aayushkaistha@gmail.com", :first_name=>"Aayush", :last_name=>"Kaistha", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"matthew_garrison@rocketmail.com", :first_name=>"Matt", :last_name=>"Garrison", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rbvaldez07@gmail.com", :first_name=>"Rob", :last_name=>"Valdez", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dizzyemjohnson@yahoo.com", :first_name=>"Emily", :last_name=>"Johnson (Ochoa/Gray)", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jaredljones@gmail.com", :first_name=>"Jared", :last_name=>"Jones", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"koto.morioka@gmail.com", :first_name=>"Koto", :last_name=>"Morioka", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Ariana", :last_name=>"Lehrer", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jaron.janson@gmail.com", :first_name=>"Jaron", :last_name=>"Janson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"craig_grove@pediatrix.com", :first_name=>"Craig", :last_name=>"Grove", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"garlocd@hotmail.com", :first_name=>"Denise", :last_name=>"Kojis", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Ridhima", :last_name=>"Arora", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"divyasmail09@gmail.com", :first_name=>"Divya", :last_name=>"Sree", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"beau.gordon@landesk.com", :first_name=>"Beau", :last_name=>"Gordon", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"hai_k_tran@yahoo.com", :first_name=>"Hai", :last_name=>"Tran", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Ryan", :last_name=>"Vong", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Neha", :last_name=>"Gupta", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ctuttle@tuttle.com", :first_name=>"Conor", :last_name=>"Tuttle", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mnelson@columnit.com", :first_name=>"Mark", :last_name=>"Nelson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Brian", :last_name=>"Osborn", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Michelle", :last_name=>"Rayburn", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Meredith", :last_name=>"Bloomquist", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"pete@wistia.com", :first_name=>"Peter", :last_name=>"von Burchard", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Gene", :last_name=>"Zylkuski", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"debdip_mukherjee@hotmail.com", :first_name=>"Debdip", :last_name=>"Mukherjee (Dk)", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"chanale97@gmail.com", :first_name=>"Chana", :last_name=>"Eisenberg", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sschwartz@dataminr.com", :first_name=>"Steven", :last_name=>"Schwartz", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Sheila", :last_name=>"(Reddington) Mennis", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"darlene.byrne23@gmail.com", :first_name=>"Darlene", :last_name=>"Byrne", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Alex", :last_name=>"Yufest", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sara.hosley@altium.com", :first_name=>"Sara", :last_name=>"Hosley", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"oskardiazdeleon@gmail.com", :first_name=>"Oskar", :last_name=>"Diaz de Leon", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"stephenjmcclureit@gmail.com", :first_name=>"Stephen", :last_name=>"McClure", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Bal", :last_name=>"Reddy", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"lisaluczyk@yahoo.com", :first_name=>"Lisa", :last_name=>"Luczyk", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Chris", :last_name=>"Ferrell", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Benjamin", :last_name=>"Gross", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mitchell.lecrone@gmail.com", :first_name=>"Mitchell", :last_name=>"Lecrone", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"priyanka_verma_20@yahoo.com", :first_name=>"Priyanka", :last_name=>"Verma", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"aji.venki@gmail.com", :first_name=>"Venkatesh", :last_name=>"Mohan", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Gustavo", :last_name=>"Melendez", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"annie.cai@allstate.com", :first_name=>"Annie", :last_name=>"Cai", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"m.coutre@interactivehealthinc.com", :first_name=>"Mark", :last_name=>"Coutre", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"grace.goralik@lafargeholcim.com", :first_name=>"Grace", :last_name=>"Goralik", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"pp2chawla@hotmail.com", :first_name=>"Preeti", :last_name=>"Chawla", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"martjin@blueconic.com", :first_name=>"Martijn", :last_name=>"van Berkum", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"cyu@launchpointcorporation.com", :first_name=>"Christopher", :last_name=>"Yu", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"tng@zenefits.com", :first_name=>"Tracy", :last_name=>"Ng", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jay.bahel@karauctionservices.com", :first_name=>"Jay", :last_name=>"Bahel", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"chaoslfg@gmail.com", :first_name=>"Melanie", :last_name=>"Flores", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sami.mohammed@interactivehealthinc.com", :first_name=>"Sami", :last_name=>"Mohammed", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jhoffman@erecruit.com", :first_name=>"Judd", :last_name=>"Hoffman", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"carinob@89degrees.com", :first_name=>"Bill", :last_name=>"Carino", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kdamico@devrygroup.com", :first_name=>"Karen", :last_name=>"D'Amico", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"hboucher@hanover.com", :first_name=>"Heather", :last_name=>"Boucher", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mgsherm@gmail.com", :first_name=>"Matthew", :last_name=>"Sherman", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"karinamcortez@gmail.com", :first_name=>"Karina", :last_name=>"Cortez", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"luguana22@hotmail.com", :first_name=>"David", :last_name=>"Amyotte", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"wcc1954@gmail.com", :first_name=>"Bill", :last_name=>"Calogero", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"edward.salek@gmail.com", :first_name=>"Ted", :last_name=>"Salek", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"wmark@groupon.com", :first_name=>"William", :last_name=>"Mark", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"eeshasingh88@gmail.com", :first_name=>"Eesha", :last_name=>"Singh", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"francisco.gaona@neogenia.com.mx", :first_name=>"Francisco", :last_name=>"Gaona", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"corinneme@aol.com", :first_name=>"Corinne", :last_name=>"Melchior", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rosalin_charath@yahoo.com", :first_name=>"Rosalin", :last_name=>"Zoel Charath", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"anandan02.gce@gmail.com", :first_name=>"Anandhakumar", :last_name=>"Veeramani", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"alexis.feczko@gmail.com", :first_name=>"Alexis", :last_name=>"(Pearson) Feczko", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"courtneylestarge@gmail.com", :first_name=>"Courtney", :last_name=>"Cannata", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"aciteli@aol.com", :first_name=>"Andres", :last_name=>"Citeli", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"krunyon85@yahoo.com", :first_name=>"Kristen", :last_name=>"Roberts", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"paulvas@gmail.com", :first_name=>"Pavel", :last_name=>"Vassiliev", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"eochoco@hotmail.com", :first_name=>"Eric", :last_name=>"Ochoco", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"d.kittinger@yahoo.com", :first_name=>"Dianne", :last_name=>"Kittinger", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"karenxiao@hotmail.com", :first_name=>"Karen", :last_name=>"Xiao", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"lscardino23@yahoo.com", :first_name=>"Lisa", :last_name=>"Scardino", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mdevalla@gmail.com", :first_name=>"Mohan", :last_name=>"Krishna", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"khamberg82@yahoo.com", :first_name=>"Katie", :last_name=>"Hamberg", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"work.williammerritt@gmail.com", :first_name=>"William", :last_name=>"Merritt", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"scott.armitage@mac.com", :first_name=>"Scott", :last_name=>"Armitage", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"choffman1@sbcglobal.net", :first_name=>"Chris", :last_name=>"Hoffman", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"cpoitevien@gmail.com", :first_name=>"Caleb", :last_name=>"Poitevien", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"melissa.m.hudgens@gmail.com", :first_name=>"Melissa", :last_name=>"Hudgens", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sbransten@salesforce.com", :first_name=>"Shelley", :last_name=>"Bransten", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"deptroi2002@yahoo.com", :first_name=>"Mai", :last_name=>"Tran", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"lrapin@procuredhealth.com", :first_name=>"Libby", :last_name=>"Rapin", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"vipinwagh@gmail.com", :first_name=>"Vipin", :last_name=>"Wagh", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"tom.codd@gmail.com", :first_name=>"Tom", :last_name=>"Codd", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"witkewitz@yahoo.com", :first_name=>"Victoria", :last_name=>"(Witkewitz) Gallelli", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Zachary", :last_name=>"Bellamy", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"stephen.newhauser@gmail.com", :first_name=>"Stephen", :last_name=>"Newhauser", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bryan.luvison@acco.com", :first_name=>"Bryan", :last_name=>"Luvison", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Satina", :last_name=>"Isaac", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kmaloney@ceannate.com", :first_name=>"Kristin", :last_name=>"Maloney", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Viral", :last_name=>"Sodha", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Emmy", :last_name=>"Ratner", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"judd.reiffin@anaplan.com", :first_name=>"Judd", :last_name=>"Reiffin", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"steven@litify.com", :first_name=>"Steven", :last_name=>"Mandel", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"caitlin@mixpanel.com", :first_name=>"Caitlin", :last_name=>"Quinlan", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"david.lichtman@americanwell.com", :first_name=>"David", :last_name=>"Lichtman", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"max.christopoulos@brafton.com", :first_name=>"Max", :last_name=>"Christopoulos", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kristinafine@gmail.com", :first_name=>"Kristina", :last_name=>"Fine", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kris_ryan@npd.com", :first_name=>"Kris", :last_name=>"Ryan", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"benjamin.ndubisi@bauintegrated.com", :first_name=>"Benjamin", :last_name=>"Ndubisi", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"loneil@appneta.com", :first_name=>"Leslie", :last_name=>"O'Neil", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"todd.markson@cengage.com", :first_name=>"Todd", :last_name=>"Markson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"miftahul.bari@ggp.com", :first_name=>"Mifta", :last_name=>"Bari", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"akhilesh.jaiswal@synopsys.com", :first_name=>"Akhilesh", :last_name=>"Jaiswal", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bbua@admiralsbank.com", :first_name=>"Bryon", :last_name=>"Bua", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"cgudeczauskas@admiralsbank.com", :first_name=>"Carol", :last_name=>"Gudeczauskas", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"hugh.munoz@ampf.com", :first_name=>"Hugh", :last_name=>"Munoz", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kristin_kiester@yahoo.com", :first_name=>"Kristin", :last_name=>"(Porter) Kiester", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"justicepsych@gmail.com", :first_name=>"Hanif", :last_name=>"Peters-Davis", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"motero777@gmail.com", :first_name=>"Michelle", :last_name=>"(Otero) Flores", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"gkvanvoorhis@gmail.com", :first_name=>"Gregg", :last_name=>"Van Voorhis", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"pooja7051.salesforce@gmail.com", :first_name=>"Pooja", :last_name=>"Nekkalapudi", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"yolabas@aim.com", :first_name=>"Tad", :last_name=>"Svendrys, MBA", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"james.moore.iii@gmail.com", :first_name=>"James", :last_name=>"Moore", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"okuchkin@yahoo.com", :first_name=>"Oleg", :last_name=>"Kuchkin", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"enathan24@gmail.com", :first_name=>"Erin", :last_name=>"Nathan", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"daveo03@gmail.com", :first_name=>"Dave", :last_name=>"Ouellette", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"johnkuhl@gmail.com", :first_name=>"John", :last_name=>"Kuhl", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"lenarunestad@gmail.com", :first_name=>"Lena", :last_name=>"Runestad", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"marcusdietz@me.com", :first_name=>"Marcus", :last_name=>"Dietz", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"abrisenojr@yahoo.com", :first_name=>"Alfredo", :last_name=>"Briseno", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jeff.rogers@gmail.com", :first_name=>"Jeff", :last_name=>"Rogers", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"emma.adewale@gmail.com", :first_name=>"Emmanuel", :last_name=>"Adewale", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"lanata75@gmail.com", :first_name=>"Stephanie", :last_name=>"Strunk", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"artemanikitin@gmail.com", :first_name=>"Artem", :last_name=>"Nikitin", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"riccomagno82@yahoo.com.ar", :first_name=>"Francisco", :last_name=>"Riccomagno", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"pooj2003@gmail.com", :first_name=>"Pooja", :last_name=>"Pendharkar", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rmora1117@gmail.com", :first_name=>"Ray", :last_name=>"Mora", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"nicole.bright@gmail.com", :first_name=>"Nicole", :last_name=>"Barrett", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"andy@centericeofdupage.com", :first_name=>"Andrew", :last_name=>"Kuharich", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"vashistha.rachna12@gmail.com", :first_name=>"Rachna", :last_name=>"Vashistha", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mike.demille@observepoint.com", :first_name=>"Mike", :last_name=>"DeMille", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rvkswe@gmail.com", :first_name=>"RaviKiran", :last_name=>"Salesforce Certified Platfrom 1 developer and Admin", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"achuayap@gmail.com", :first_name=>"Apple", :last_name=>"Chua Yap", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"lauramckevitt@gmail.com", :first_name=>"Laura", :last_name=>"J. McKevitt", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"seankbeckett@gmail.com", :first_name=>"Sean", :last_name=>"Beckett", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rerice@gmail.com", :first_name=>"Randy", :last_name=>"Rice", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"avsaltarelli@gmail.com", :first_name=>"Alicia", :last_name=>"Verica Saltarelli", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"aridolfi@ceannate.com", :first_name=>"Anthony", :last_name=>"Ridolfi", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"teffani.zadeh@aon.com", :first_name=>"Teffani", :last_name=>"Zadeh", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"David", :last_name=>"Roy", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mlocascio3@comcast.net", :first_name=>"Mike", :last_name=>"LoCascio", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"gbaran@tenable.com", :first_name=>"Gregory", :last_name=>"Baran, PMP, ITIL", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ed.avila@synaptics.com", :first_name=>"Edward", :last_name=>"Avila", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bevans@vlocity.com", :first_name=>"Brynna", :last_name=>"Evans", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Dan", :last_name=>"Courtenay", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Patricia", :last_name=>"J. Williams, PMP", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rob.h.gilmore@gmail.com", :first_name=>"Robert", :last_name=>"Gilmore", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jake.backues@gmail.com", :first_name=>"Jake", :last_name=>"Backues", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"yash.dct@gmail.com", :first_name=>"Yashvinder", :last_name=>"Singh", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"naterichardson2007@gmail.com", :first_name=>"Nate", :last_name=>"Richardson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"stevemojden@gmail.com", :first_name=>"Steven", :last_name=>"Mojden", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bobmugura@gmail.com", :first_name=>"Jasper", :last_name=>"Lee", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"erin.presseau@silvertech.com", :first_name=>"Erin", :last_name=>"Presseau", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"zachpatterson720@yahoo.com", :first_name=>"Zach", :last_name=>"Patterson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"timeyo.banda@dignityhealth.org", :first_name=>"Timeyo", :last_name=>"Banda", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"megha.deota@gmail.com", :first_name=>"Megha", :last_name=>"Deota", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"cstanfield@cleversafe.com", :first_name=>"Crystal", :last_name=>"Stanfield", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"avillarreal@appliedsystems.com", :first_name=>"Amy", :last_name=>"Villarreal", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jessica.mock@aol.com", :first_name=>"Jessica", :last_name=>"Mock", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"liz.steves.contractor@fujifilm.com", :first_name=>"Liz", :last_name=>"Steves", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"anthony.armando@interactivehealthinc.com", :first_name=>"Anthony", :last_name=>"Armando", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"lindsay.kuhlmann@conversantmedia.com", :first_name=>"Lindsay", :last_name=>"Kuhlmann", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"heather@insightsquared.com", :first_name=>"Heather", :last_name=>"Mason", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"No Email Found", :first_name=>"Clinton", :last_name=>"Giles", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mdenton@ezlinksgolf.com", :first_name=>"Mike", :last_name=>"Denton", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"eli@casper.com", :first_name=>"Eli", :last_name=>"Bosworth", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jordan.wells30@gmail.com", :first_name=>"Jordan", :last_name=>"Wells", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"brittany.flanagan@silvertech.com", :first_name=>"Brittany", :last_name=>"Flanagan", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"gael.norris@grapeshot.co.uk", :first_name=>"Gael", :last_name=>"Norris", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jlindner@threatmetrix.com", :first_name=>"John", :last_name=>"Lindner", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"john.bivona@gmail.com", :first_name=>"John", :last_name=>"Bivona", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"tpt.louie@gmail.com", :first_name=>"Adam", :last_name=>"Louie", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rodney.apura@gmail.com", :first_name=>"Rodney", :last_name=>"Apura", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ryan@litify.com", :first_name=>"Ryan", :last_name=>"Hallman", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"rashmi.bhatnagar@ensono.com", :first_name=>"Rashmi", :last_name=>"Bhatnagar", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mmoyes@berklee.edu", :first_name=>"Michael", :last_name=>"Moyes", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"truiz@mastercontrol.com", :first_name=>"Travis", :last_name=>"Ruiz", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mparr@mastercontrol.com", :first_name=>"Matthew", :last_name=>"Parr", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"asparling@westmonroepartners.com", :first_name=>"Amy", :last_name=>"Sparling", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"cmullins@partstown.com", :first_name=>"Courtney", :last_name=>"Mullins", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"piyush@comitydesigns.com", :first_name=>"Piyush", :last_name=>"Pandya", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"todd.wilkerson@bakertilly.com", :first_name=>"Todd", :last_name=>"Wilkerson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"eedgerton@tccm.org", :first_name=>"Eric", :last_name=>"Edgerton", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jessica.mcguire@gmail.com", :first_name=>"Jessica", :last_name=>"McGuire", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"valerie.meurice@gmail.com", :first_name=>"Valerie", :last_name=>"Meurice", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sronbutler@gmail.com", :first_name=>"Ron", :last_name=>"Butler", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"nalexander789@gmail.com", :first_name=>"Nick", :last_name=>"Alexander", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"swapna.kolla28@gmail.com", :first_name=>"Swapna", :last_name=>"Kolla", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"chandajo771@yahoo.com", :first_name=>"Chanda", :last_name=>"Leonard", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"lukenslevin@gmail.com", :first_name=>"Luke", :last_name=>"Slevin", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"ryankbanerjee@gmail.com", :first_name=>"Ryan", :last_name=>"Banerjee", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"kristinmisko@gmail.com", :first_name=>"Kristin", :last_name=>"Misko", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jbotruff@gmail.com", :first_name=>"Jessika", :last_name=>"Botruff (Eckhardt)", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jlzinner@gmail.com", :first_name=>"Jennifer", :last_name=>"Zinner", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"snowboredscott@gmail.com", :first_name=>"Scott", :last_name=>"Jaworski", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dj28quic@gmail.com", :first_name=>"Daniel", :last_name=>"Quickenton", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"alexasquitieri@yahoo.com", :first_name=>"Alexa", :last_name=>"Squitieri", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"linkedin@bryanthomas.net", :first_name=>"Bryan", :last_name=>"Thomas", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"derrickk@dentalselect.com", :first_name=>"Derrick", :last_name=>"Knighton", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mattpbaker1@gmail.com", :first_name=>"Matt", :last_name=>"Baker", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"wagonista@gmail.com", :first_name=>"Alex", :last_name=>"Brady", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"hawthornra@gmail.com", :first_name=>"Rob", :last_name=>"Hawthorn", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"salman.siddiqui@here.com", :first_name=>"Salman", :last_name=>"Siddiqui", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"matthewbuczek@charter.net", :first_name=>"Matthew", :last_name=>"Buczek", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"bphaneuf8882@gmail.com", :first_name=>"Brad", :last_name=>"Phaneuf", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"dan@danpeter.com", :first_name=>"Daniel", :last_name=>"Peter", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"toddwatkinson@gmail.com", :first_name=>"Todd", :last_name=>"Atkinson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"gary_byington@yahoo.com", :first_name=>"Gary", :last_name=>"Byington", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"jacqueline.abner@gmail.com", :first_name=>"Jacqueline", :last_name=>"Abner-Pongratz", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"woo2@umail.iu", :first_name=>"Esther", :last_name=>"Woo", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"singmicro@yahoo.com", :first_name=>"Nicholas", :last_name=>"Winch", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"cinbouchard@charter.net", :first_name=>"Cindy", :last_name=>"Bouchard", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"gschoemaker@comcast.net", :first_name=>"George", :last_name=>"Schoemaker", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"mistykup@gmail.com", :first_name=>"Misty", :last_name=>"Kuprevich", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"danielle.balestra@yahoo.com", :first_name=>"Danielle", :last_name=>"Balestra", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"valdezsteve3@gmail.com", :first_name=>"Steve", :last_name=>"Valdez", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"sharanyaasfdc@gmail.com", :first_name=>"Sharanya", :last_name=>"Inugala", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}, {:email=>"henderson.hilary@gmail.com", :first_name=>"Hilary", :last_name=>"Henderson", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}]
+I, [2017-06-08T09:09:52.464662 #13180]  INFO -- : Starting the SFDC Hashify grab
+I, [2017-06-08T09:09:52.468665 #13180]  INFO -- : Testing hashify on first el: {:campaign=>{:campaign_id=>44919}, :update=>"true", :prospects=>[{:email=>"gabe.e.rod@gmail.com", :first_name=>"Gabriel", :last_name=>"Rodriguez", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}]}

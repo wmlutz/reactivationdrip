@@ -31,8 +31,8 @@ def flat_email(emails)
 
   logger.info("Running flat_email on #{emails}")
   emails.each do |email|
-    logger.level("trying #{email}")
-    return email unless email.empty?
+    # logger.level("trying #{email}")
+    return email unless email.nil?
   end
   return "No Email Found"
 end

@@ -13,6 +13,7 @@ prospects = grab_SFDC_contacts
 # formats contacts for woodpecker
 logger.info('Starting the SFDC Hashify grab')
 logger.info("Testing hashify on first el: #{hashify([prospects[0]])}")
+
 prehash = hashify(prospects)
 puts prehash
 
