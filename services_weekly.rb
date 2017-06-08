@@ -21,6 +21,7 @@ def grab_woodpecker_config
   key
 end
 
+# Gets Salesforce configurations
 def grab_salesforce_config
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/weekly.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
@@ -58,23 +59,79 @@ def flat_email(emails)
   return "No Email Found"
 end
 
+# Works through client and candidate status logic
+def c_or_c(client, candidate)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/weekly.log", 0, 100 * 1024 * 1024)
+  logger.level = Logger::DEBUG
+
+  x = case client
+      when 'Wrong Contact', 'Not Applicable', 'Employee-Placement', 'LEFT'
+        'Candidate'
+      when 'Hiring Manager', 'Human Resources', 'Interviewer', 'M.A.N.'
+        'Client'
+      when 'Target'
+        case candidate
+        when 'Prospect', 'Not Applicable'
+          'Client'
+        else
+          'Candidate'
+        end
+      else
+        'Client'
+      end
+
+  logger.info("For client val of '#{client}' and candidate of '#{candidate}', returning '#{x}'")
+  x
+end
+
+def co_type_snip(cust_type)
+  return case cust_type
+         when 'ISV'
+           'Software Vendor'
+         when 'Consulting Partner'
+           'Consulting Partner'
+         else
+           'Customer'
+         end
+end
+
 # Converts Restforce Collection object to hash
 def arr_hasher(sfdcObj)
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/weekly.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
   logger.info("Starting array hasher")
-  arr = Array.new
+  cli_arr = Array.new
+  can_arr = Array.new
+
   sfdcObj.each do |line|
-    arr << { email: flat_email([line['MKT_Personal_Email__c'], line['email'], line['TR1__Work_Email__c'], line['TR1__Secondary_Email__c']]),
-             first_name: line['FirstName'],
-             last_name: line['LastName'],
-             status: "ACTIVE",
-             tags: "#FROMWKLYSCRPT"
-           }
+    contact_type = c_or_c(line['TR1__Client_Status__c'], line['TR1__Candidate_Status__c'])
+    co_type = co_type_snip(line['Account.Customer_Type__c'])
+    case contact_type
+    when 'Candidate'
+      can_arr << { email: flat_email([line['MKT_Personal_Email__c'], line['email'], line['TR1__Work_Email__c'], line['TR1__Secondary_Email__c']]),
+                   first_name: line['FirstName'],
+                   last_name: line['LastName'],
+                   contact_type: contact_type,
+                   co_name: line['Account.Name'],
+                   co_type: co_type,
+                   function: line['TR1__Function__c'],
+                   status: "ACTIVE",
+                   tags: "#FROMWKLYSCRPT" }
+    else
+       cli_arr << { email: flat_email([line['MKT_Personal_Email__c'], line['email'], line['TR1__Work_Email__c'], line['TR1__Secondary_Email__c']]),
+                    first_name: line['FirstName'],
+                    last_name: line['LastName'],
+                    contact_type: contact_type,
+                    co_name: line['Account.Name'],
+                    co_type: co_type,
+                    function: line['TR1__Function__c'],
+                    status: "ACTIVE",
+                    tags: "#FROMWKLYSCRPT" }
     end
-    logger.info("Finished array hasher #{arr}")
-    arr
+  end
+  logger.info("Finished array hasher #{arr}")
+  return { clients: cli_arr, candidates: can_arr }
 end
 
 # gets the contacts from SFDC
@@ -99,7 +156,7 @@ def grab_SFDC_contacts
   #
   # # Get the contacts between 120 and 127 days since last activity
   # begin
-  #   rawContacts = client.query("SELECT FirstName,LastName,email,TR1__Work_Email__c,TR1__Secondary_Email__c,MKT_Personal_Email__c,Last_Activity_Date__c FROM contact WHERE Last_Activity_Date__c < N_DAYS_AGO:120 AND Last_Activity_Date__c > N_DAYS_AGO:128 ORDER BY Last_Activity_Date__c ASC")
+  #   rawContacts = client.query("SELECT FirstName,LastName,email,TR1__Work_Email__c,TR1__Secondary_Email__c,Account.Customer_Type__c,Account.Name,MKT_Personal_Email__c,TR1__Client_Status__c,TR1__Function__c,TR1__Candidate_Status__c,Last_Activity_Date__c FROM contact WHERE Last_Activity_Date__c < N_DAYS_AGO:120 AND Last_Activity_Date__c > N_DAYS_AGO:128 ORDER BY Last_Activity_Date__c ASC")
   # rescue h
   #   logger.info("Failed to grab query: #{h}")
   # end
