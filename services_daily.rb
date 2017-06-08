@@ -9,12 +9,13 @@ def turn_JSON(arr)
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
-  jsonStr = "{'prospect':{"
-  arr.each{ |v| jsonStr = jsonStr << "'email':'#{v}'," }
-  jsonStr = jsonStr[0, jsonStr.length - 1]
-  jsonStr = jsonStr + '}}'
-  logger.info("converted to JSON String #{jsonStr}")
-  return jsonStr
+  jsonArr = Array.new
+
+  arr.each do |row|
+    jsonArr << "{'prospect':{'email':'#{row}'}}"
+    logger.info("{'prospect':{'email':'#{row}'}}")
+  end
+  jsonArr
 end
 
 # Gets the email from prospects list sent in from pardot
@@ -113,13 +114,16 @@ def put_into_blacklist(payload)
   pass = "X"
 
   uri = URI("https://api.woodpecker.co/rest/v1/stop_followups")
+  header = {'Content-Type' => 'text/json'}
 
   begin
-    Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
-                    :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
+    Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
 
-      req = Net::HTTP::Post.new(uri.request_uri, payload)
+      req = Net::HTTP::Post.new(uri.request_uri, header)
+      req.body = payload.to_json
       req.basic_auth key, pass
+
+      # Send request, get response
       res = http.request req
 
       logger.info("Got response of: #{res}")

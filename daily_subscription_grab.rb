@@ -21,8 +21,6 @@ logger.info("blacklist: #{blacklist}")
 logger.info("Blacklist length: #{blacklist.length}")
 
 payload = turn_JSON(blacklist)
-puts "payload class: #{payload.class}"
-puts "Payload: #{payload}"
 put_into_blacklist(payload)
 
 logger.info("End of run -----------------------------")
