@@ -1,8 +1,0 @@
-# Logfile created on 2017-06-08 12:44:38 -0400 by logger.rb/56504
-I, [2017-06-08T12:44:38.309897 #4496]  INFO -- : starting the SFDC Contact grab
-I, [2017-06-08T12:44:38.309897 #4496]  INFO -- : Starting the SFDC Hashify grab
-I, [2017-06-08T12:44:38.309897 #4496]  INFO -- : Testing hashify on first el: {:campaign=>{:campaign_id=>44919}, :update=>"true", :prospects=>[{:email=>"test1@gmail.com", :first_name=>"Winter", :last_name=>"Bucky", :status=>"ACTIVE", :tags=>"#FROMWKLYSCRPT"}]}
-I, [2017-06-08T12:44:38.310900 #4496]  INFO -- : getting woodpecker config file
-I, [2017-06-08T12:44:38.310900 #4496]  INFO -- : got key
-I, [2017-06-08T12:44:40.764331 #4496]  INFO -- : Got response of: #<Net::HTTPOK:0x34a6a18>
-I, [2017-06-08T12:44:40.765281 #4496]  INFO -- : Got response body of: {"prospects":[{"email":"test1@gmail.com","id":15659989},{"email":"test2@here.com","id":15659990},{"email":"test3@mail.com","id":15659991}],"status":{"status":"OK","code":"OK","msg":"OK"}}
