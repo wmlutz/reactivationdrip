@@ -112,20 +112,20 @@ def arr_hasher(sfdcObj)
       can_arr << { email: flat_email([line['MKT_Personal_Email__c'], line['email'], line['TR1__Work_Email__c'], line['TR1__Secondary_Email__c']]),
                    first_name: line['FirstName'],
                    last_name: line['LastName'],
-                   contact_type: contact_type,
-                   co_name: line['Account.Name'],
-                   co_type: co_type,
-                   function: line['TR1__Function__c'],
+                   snipet1: contact_type,
+                   company: line['Account.Name'],
+                   snipet2: co_type,
+                   snipet3: line['TR1__Function__c'],
                    status: "ACTIVE",
                    tags: "#FROMWKLYSCRPT" }
     else
        cli_arr << { email: flat_email([line['MKT_Personal_Email__c'], line['email'], line['TR1__Work_Email__c'], line['TR1__Secondary_Email__c']]),
                     first_name: line['FirstName'],
                     last_name: line['LastName'],
-                    contact_type: contact_type,
-                    co_name: line['Account.Name'],
-                    co_type: co_type,
-                    function: line['TR1__Function__c'],
+                    snipet1: contact_type,
+                    company: line['Account.Name'],
+                    snipet2: co_type,
+                    snipet3: line['TR1__Function__c'],
                     status: "ACTIVE",
                     tags: "#FROMWKLYSCRPT" }
     end
@@ -175,10 +175,10 @@ def grab_SFDC_contacts
               contacts
 end
 
-def hashify(prospects)
+def hashify(prospects, camp_id)
   return {
     campaign: {
-      campaign_id: 44919
+      campaign_id: camp_id
     },
     update: 'true',
     prospects: prospects
