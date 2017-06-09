@@ -10,11 +10,14 @@ logger.info("Beginning of run ----------------")
 
 news_list = grab_newsletter_list # gets the most recent newsletter list
 woodies = grab_woodies # Gets the woodies
+# Get most recent list from SFDC to supress XXXXXXXXXXXXXX
 blacklist = []
 
 news_list.each do |prospect| # checks each newsltr entry for being in woodpecker
   blacklist << prospect unless woodies.select { |w| w['email'] == prospect }.empty?
 end
+
+# for each email in SFDC recent contact list, add to blacklist if email is in woodies list XXXXXXXXXXXXX
 
 logger.info("blacklist: #{blacklist}")
 logger.info("Blacklist length: #{blacklist.length}")
