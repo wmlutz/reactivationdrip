@@ -88,7 +88,8 @@ def arr_hasher(sfdcObj)
                     tags: "#FROMWKLYSCRPT" }
     end
   end
-  logger.info("Finished array hasher #{arr}")
+  logger.info("Finished candidate array hasher #{can_arr}")
+  logger.info("Finished candidate array hasher #{cli_arr}")
   return { clients: cli_arr, candidates: can_arr }
 end
 
@@ -97,41 +98,42 @@ def grab_SFDC_contacts
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/weekly.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
-  # # Get Salesforce config info
-  # config = grab_salesforce_config
-  #
-  # # Authenticate Salesforce connection
-  # begin
-  #   client = Restforce.new(username: config[:username],
-  #                          password: config[:password],
-  #                          security_token: config[:security_token],
-  #                          client_id: config[:client_id],
-  #                          client_secret: config[:client_secret],
-  #                          api_version: '38.0')
-  #   client.authenticate!
-  # rescue Exception => g
-  #   logger.info("failed to authenticate SFDC: #{g}")
-  # end
-  #
-  # # Get the contacts between 120 and 127 days since last activity
-  # begin
-  #   rawContacts = client.query("SELECT FirstName,LastName,email,TR1__Work_Email__c,TR1__Secondary_Email__c,Account.Customer_Type__c,Account.Name,MKT_Personal_Email__c,TR1__Client_Status__c,TR1__Function__c,TR1__Candidate_Status__c,Last_Activity_Date__c FROM contact WHERE Last_Activity_Date__c < N_DAYS_AGO:120 AND Last_Activity_Date__c > N_DAYS_AGO:128 ORDER BY Last_Activity_Date__c ASC")
-  # rescue Exception => h
-  #   logger.info("Failed to grab query: #{h}")
-  # end
-  # logger.info("Got #{rawContacts.length} rawContacts.")
-  # logger.info("grabbed rawContacts: #{rawContacts}")
-  #
-  # # converting raw contacts into a array of hashes
-  # contacts = arr_hasher(rawContacts)
- # contacts
-  # Commenting everything above for testing purposes
-  contacts = [{:email => "test1@gmail.com", :first_name => "Winter", :last_name => "Bucky", :status => "ACTIVE", :tags => "#FROMWKLYSCRPT"
-              }, {:email => "test2@here.com", :first_name => "Steve", :last_name => "Rogers", :status => "ACTIVE", :tags => "#FROMWKLYSCRPT"
-              }, {:email => "test3@mail.com", :first_name => "Tony", :last_name => "Stark", :status => "ACTIVE", :tags => "#FROMWKLYSCRPT"
+  # Get Salesforce config info
+  config = grab_salesforce_config
 
-              }]
-              contacts
+  # Authenticate Salesforce connection
+  begin
+    client = Restforce.new(username: config[:username],
+                           password: config[:password],
+                           security_token: config[:security_token],
+                           client_id: config[:client_id],
+                           client_secret: config[:client_secret],
+                           api_version: '38.0')
+    client.authenticate!
+  rescue StandardError => g
+    logger.info("failed to authenticate SFDC: #{g}")
+  end
+
+  # Get the contacts between 120 and 127 days since last activity
+  begin
+    rawContacts = client.query("SELECT FirstName,LastName,email,TR1__Work_Email__c,TR1__Secondary_Email__c,Account.Customer_Type__c,Account.Name,MKT_Personal_Email__c,TR1__Client_Status__c,TR1__Function__c,TR1__Candidate_Status__c,Last_Activity_Date__c FROM contact WHERE Last_Activity_Date__c < N_DAYS_AGO:120 AND Last_Activity_Date__c > N_DAYS_AGO:128 ORDER BY Last_Activity_Date__c ASC")
+  rescue StandardError => h
+    logger.info("Failed to grab query: #{h}")
+  end
+  logger.info("Got #{rawContacts.length} rawContacts.")
+  logger.info("grabbed rawContacts: #{rawContacts}")
+
+  # converting raw contacts into a array of hashes
+  contacts = arr_hasher(rawContacts)
+  contacts
+
+  # Commenting below for testing
+  # contacts = [{:email => "test1@gmail.com", :first_name => "Winter", :last_name => "Bucky", :status => "ACTIVE", :tags => "#FROMWKLYSCRPT"
+  #             }, {:email => "test2@here.com", :first_name => "Steve", :last_name => "Rogers", :status => "ACTIVE", :tags => "#FROMWKLYSCRPT"
+  #             }, {:email => "test3@mail.com", :first_name => "Tony", :last_name => "Stark", :status => "ACTIVE", :tags => "#FROMWKLYSCRPT"
+  #
+  #             }]
+  #             contacts
 end
 
 def hashify(prospects, camp_id)
