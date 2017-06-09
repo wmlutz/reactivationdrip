@@ -6,6 +6,8 @@ logger = Logger.new("#{File.dirname(__FILE__)}/etc/weekly.log", 0, 100 * 1024 * 
 logger.level = Logger::DEBUG
 
 puts 'Starting Weekly. . .'
+logger.info('Starting weekly ------------')
+
 # Get contacts from SFDC
 logger.info('starting the SFDC Contact grab')
 prospects = grab_SFDC_contacts
@@ -30,3 +32,4 @@ send_to_campaign(payload_can)
 send_to_campaign(payload_cli)
 
 puts "And we're done."
+logger.info('End of weekly ------------')
