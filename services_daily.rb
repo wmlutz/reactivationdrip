@@ -137,3 +137,43 @@ def grab_woodies()
   return [{"id"=>14506062, "email"=>"test@gmail.com", "first_name"=>"Rocky", "last_name"=>"", "company"=>"Sofar Sounds", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"","snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"},{"id"=>14506063, "email"=>"wlutz@twentypine.com", "first_name"=>"Mark", "last_name"=>"", "company"=>"Solstice Benefits", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"", "snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"},{"id"=>14506064, "email"=>"william.meany.lutz@gmail.com", "first_name"=>"Katie", "last_name"=>"", "company"=>"SplashThat.com", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"", "snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"}]
 
 end
+
+def grab_recent_SFDCs
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
+  logger.level = Logger::DEBUG
+
+  # Get Salesforce config info
+  config = grab_salesforce_config
+
+  # Authenticate Salesforce connection
+  begin
+    client = Restforce.new(username: config[:username],
+                           password: config[:password],
+                           security_token: config[:security_token],
+                           client_id: config[:client_id],
+                           client_secret: config[:client_secret],
+                           api_version: '38.0')
+  rescue g
+    logger.info("failed to authenticate SFDC: #{g}")
+  end
+
+  # Get the contacts between 120 and 127 days since last activity
+  begin
+    rawEmails = client.query("SELECT email,TR1__Work_Email__c,TR1__Secondary_Email__c,MKT_Personal_Email__c,Last_Activity_Date__c FROM contact WHERE Last_Activity_Date__c > N_DAYS_AGO:9 AND Last_Activity_Date__c < N_DAYS_AGO:0")
+  rescue h
+    logger.info("Failed to grab query: #{h}")
+  end
+  logger.info("Got #{rawEmails.length} contacts and their emails.")
+  # logger.info("grabbed rawEmails: #{rawEmails}")
+
+  emails = Array.new
+
+  # converting SFDC Obj to array of emails to be suppressed
+  rawEmails.each do |line|
+    emails << line['email'] unless line['email'].nil?
+    emails << line['TR1__Work_Email__c'] unless line['TR1__Work_Email__c'].nil?
+    emails << line['TR1__Secondary_Email__c'] unless line['TR1__Secondary_Email__c'].nil?
+    emails << line['MKT_Personal_Email__c'] unless line['MKT_Personal_Email__c'].nil?
+  end
+  emails
+end
