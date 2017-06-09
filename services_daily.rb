@@ -3,6 +3,7 @@ require 'logger'
 require 'json'
 require 'uri'
 require 'net/http'
+require_relative 'api_services'
 
 # turns array into json formatted string for passing to woodpecker blacklist
 def turn_JSON(arr)
@@ -30,28 +31,6 @@ def email_grab(prospects)
   end
   logger.info("Got signups #{signups}")
   signups
-end
-
-# Gets pardot configuration key and password data
-def grab_pardot_config
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
-  logger.level = Logger::DEBUG
-
-  config = Hash.new
-
-  logger.info('getting config file')
-  open "#{File.dirname(__FILE__)}/etc/pardot.conf" do |config_file|
-    config_file.each_line do |line|
-      unless line.chomp.empty? || line =~ /^#/
-        email, pass, key = line.split ','
-        config = { user_email: email,
-                   user_pass: pass,
-                   user_key: key }
-      end
-    end
-  end
-  logger.info("got config for #{config[:user_email]}")
-  config
 end
 
 # Gets the list of the most recent newsletter from Pardot
@@ -84,25 +63,6 @@ def grab_newsletter_list
 
   # All above commented out for testing
   return ["evan@twentypine.com", "max@twentypine.com", "wlutz@twentypine.com", "test@gmail.com", "testing@gmail.com"]
-end
-
-# Gets the woodpecker configuration api key
-def grab_woodpecker_config
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
-  logger.level = Logger::DEBUG
-
-  key = ""
-
-  logger.info('getting woodpecker config file')
-  open "#{File.dirname(__FILE__)}/etc/woodpecker.conf" do |config_file|
-    config_file.each_line do |line|
-      unless line.chomp.empty? || line =~ /^#/
-        key = line.split ','
-      end
-    end
-  end
-  logger.info("got key")
-  key
 end
 
 # Sends payload to woodpecker for suprression
