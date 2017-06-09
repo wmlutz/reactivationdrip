@@ -2,6 +2,7 @@ require 'json'
 require 'uri'
 require 'net/http'
 require 'logger'
+require 'facets'
 require_relative 'api_services'
 
 # Takes 4 emails, returns one
@@ -66,27 +67,42 @@ def arr_hasher(sfdcObj)
     co_type = co_type_snip(line['Account.Customer_Type__c'])
     email = flat_email([line['MKT_Personal_Email__c'], line['email'], line['TR1__Work_Email__c'], line['TR1__Secondary_Email__c']])
 
+    begin
+      co_name = line['Account']['Name']
+      co_name = co_name.titlecase
+
+      co_name = case co_name.downcase
+      when "n/a", "independent consultant", "funemployed"
+        nil
+      else
+        co_name
+      end
+    rescue StandardError => err
+      co_name = nil
+      logger.info("Contact #{line['FirstName']} #{line['LastName']} doesn't have a company")
+    end
+
     case contact_type
     when 'Candidate'
       can_arr << { email: email,
                    first_name: line['FirstName'],
                    last_name: line['LastName'],
                    snipet1: contact_type,
-                   company: line['Account.Name'],
+                   company: co_name,
                    snippet2: co_type,
                    snippet3: line['TR1__Function__c'],
                    status: "ACTIVE",
-                   tags: "#FROMWKLYSCRPT" } unless email.nil?
+                   tags: "#FROMWKLYSCRPT" } unless ( email.nil? or line['TR1__Function__c'] )
     else
        cli_arr << { email: email,
                     first_name: line['FirstName'],
                     last_name: line['LastName'],
                     snippet1: contact_type,
-                    company: line['Account.Name'],
+                    company: line['Account']['Name'],
                     snippet2: co_type,
                     snippet3: line['TR1__Function__c'],
                     status: "ACTIVE",
-                    tags: "#FROMWKLYSCRPT" } unless email.nil?
+                    tags: "#FROMWKLYSCRPT" } unless (email.nil? or contact_type.nil?)
     end
   end
   logger.info("Finished candidate array hasher #{can_arr}")
@@ -117,7 +133,7 @@ def grab_SFDC_contacts
 
   # Get the contacts between 120 and 127 days since last activity
   begin
-    rawContacts = client.query("SELECT FirstName,LastName,email,TR1__Work_Email__c,TR1__Secondary_Email__c,Account.Customer_Type__c,Account.Name,MKT_Personal_Email__c,TR1__Client_Status__c,TR1__Function__c,TR1__Candidate_Status__c,Last_Activity_Date__c FROM contact WHERE Last_Activity_Date__c < N_DAYS_AGO:120 AND Last_Activity_Date__c > N_DAYS_AGO:128 ORDER BY Last_Activity_Date__c ASC")
+    rawContacts = client.query("SELECT FirstName,LastName,email,TR1__Work_Email__c,TR1__Secondary_Email__c,Account.Customer_Type__c,Account.Name,MKT_Personal_Email__c,TR1__Client_Status__c,TR1__Function__c,TR1__Candidate_Status__c,Last_Activity_Date__c FROM contact WHERE Last_Activity_Date__c < N_DAYS_AGO:120 AND Last_Activity_Date__c > N_DAYS_AGO:128")
   rescue StandardError => h
     logger.info("Failed to grab query: #{h}")
   end
@@ -127,14 +143,6 @@ def grab_SFDC_contacts
   contacts = arr_hasher(rawContacts)
   # puts "contacts class from grab sfdc contacts #{contacts.class}"
   contacts
-
-  # Commenting below for testing
-  # contacts = [{:email => "test1@gmail.com", :first_name => "Winter", :last_name => "Bucky", :status => "ACTIVE", :tags => "#FROMWKLYSCRPT"
-  #             }, {:email => "test2@here.com", :first_name => "Steve", :last_name => "Rogers", :status => "ACTIVE", :tags => "#FROMWKLYSCRPT"
-  #             }, {:email => "test3@mail.com", :first_name => "Tony", :last_name => "Stark", :status => "ACTIVE", :tags => "#FROMWKLYSCRPT"
-  #
-  #             }]
-  #             contacts
 end
 
 def hashify(prospects, camp_id)
