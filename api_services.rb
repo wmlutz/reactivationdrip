@@ -3,7 +3,7 @@ require 'logger'
 
 # Gets the woodpecker configuration api key
 def grab_woodpecker_config
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/api.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
   key = ""
@@ -22,7 +22,7 @@ end
 
 # Gets pardot configuration key and password data
 def grab_pardot_config
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/api.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
   config = Hash.new
@@ -44,7 +44,7 @@ end
 
 # Gets Salesforce configurations
 def grab_salesforce_config
-  logger = Logger.new("#{File.dirname(__FILE__)}/etc/weekly.log", 0, 100 * 1024 * 1024)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/api.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
   config = Hash.new

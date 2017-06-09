@@ -3,6 +3,7 @@ require 'logger'
 require 'json'
 require 'uri'
 require 'net/http'
+require 'restforce'
 require_relative 'api_services'
 
 # turns array into json formatted string for passing to woodpecker blacklist
@@ -35,34 +36,35 @@ end
 
 # Gets the list of the most recent newsletter from Pardot
 def grab_newsletter_list
-  # logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
-  # logger.level = Logger::DEBUG
-  #
-  # # Starts by getting Pardot config
-  # config = grab_pardot_config
-  #
-  # # Authenticate pardot connection
-  # logger.info('Attempting authentication . . .')
-  # begin
-  #   client = Pardot::Client.new config[:user_email], config[:user_pass], config[:user_key]
-  #   client.authenticate
-  #   logger.info('Authentication successful')
-  # rescue e
-  #   logger.info("Could not authenticate: #{e}")
-  # end
-  #
-  # begin
-  #   prospects = client.prospects.query(:list_id => 613, :sort_by => "last_activity_at")
-  #   logger.info("Found #{prospects["total_results"]} Newsletter subscribers")
-  # rescue f
-  #   logger.info("Could not get newsletter subscribers: #{f} backtrace #{f.backtrace}")
-  # end
-  #
-  # signups = email_grab(prospects) # sends back the email element
-  # signups
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
+  logger.level = Logger::DEBUG
 
-  # All above commented out for testing
-  return ["evan@twentypine.com", "max@twentypine.com", "wlutz@twentypine.com", "test@gmail.com", "testing@gmail.com"]
+  # Starts by getting Pardot config
+  config = grab_pardot_config
+
+  # Authenticate pardot connection
+  logger.info('Attempting authentication . . .')
+
+  begin
+    client = Pardot::Client.new config[:user_email], config[:user_pass], config[:user_key]
+    client.authenticate
+    logger.info('Authentication successful')
+  rescue StandardError => e
+    logger.info("Could not authenticate: #{e}")
+  end
+
+  begin
+    prospects = client.prospects.query(:list_id => 613, :sort_by => "last_activity_at")
+    logger.info("Found #{prospects["total_results"]} Newsletter subscribers")
+  rescue StandardError => f
+    logger.info("Could not get newsletter subscribers: #{f} backtrace #{f.backtrace}")
+  end
+
+  signups = email_grab(prospects) # sends back the email element
+  signups
+
+  # Alternate commenting for testing
+  # return ["evanl@twentypine.com", "maxl@twentypine.com", "wlutz@twentypine.com", "test@gmail.com", "testing@gmail.com"]
 end
 
 # Sends payload to woodpecker for suprression
@@ -102,39 +104,37 @@ end
 
 # Grabs the woodpecker full propsect list
 def grab_woodies()
-  # logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
-  # logger.level = Logger::DEBUG
-  #
-  # key = grab_woodpecker_config[0]
-  # pass = 'X'
-  # woodies = []
-  # pullrun = []
-  # num = 1
-  #
-  # loop do # gets every page of wp prospects until no more left
-  #   uri = URI("https://api.woodpecker.co/rest/v1/prospects?page=#{num}&per_page=500")
-  #   logger.info("grabbing from URI of #{uri}")
-  #   Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
-  #     :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
-  #     request = Net::HTTP::Get.new uri.request_uri
-  #     sleep(1)
-  #     request.basic_auth key, pass
-  #     response = http.request request # Net::HTTPResponse object
-  #
-  #     pullrun = JSON.parse(response.body)
-  #     puts "Grabbed #{pullrun.length} woodies"
-  #     logger.info("Grabbed #{pullrun.length} woodies")
-  #     woodies.concat(pullrun)
-  #   end
-  #   break if pullrun.length < 500
-  #   num = num + 1
-  # end
-  # logger.info("Grabbed #{woodies.length} Woodies in total")
-  # puts "End of grabbing woodies: #{woodies.length}"
-  # woodies
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
+  logger.level = Logger::DEBUG
 
-  # XXXXXXX everything above commented out for testing
-  return [{"id"=>14506062, "email"=>"test@gmail.com", "first_name"=>"Rocky", "last_name"=>"", "company"=>"Sofar Sounds", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"","snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"},{"id"=>14506063, "email"=>"wlutz@twentypine.com", "first_name"=>"Mark", "last_name"=>"", "company"=>"Solstice Benefits", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"", "snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"},{"id"=>14506064, "email"=>"william.meany.lutz@gmail.com", "first_name"=>"Katie", "last_name"=>"", "company"=>"SplashThat.com", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"", "snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"}]
+  key = grab_woodpecker_config[0]
+  pass = 'X'
+  woodies = []
+  pullrun = []
+  num = 1
+
+  loop do # gets every page of wp prospects until no more left
+    uri = URI("https://api.woodpecker.co/rest/v1/prospects?page=#{num}&per_page=500")
+    logger.info("grabbing from URI of #{uri}")
+    Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
+      :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
+      request = Net::HTTP::Get.new uri.request_uri
+      sleep(1)
+      request.basic_auth key, pass
+      response = http.request request # Net::HTTPResponse object
+
+      pullrun = JSON.parse(response.body)
+      logger.info("Grabbed #{pullrun.length} woodies")
+      woodies.concat(pullrun)
+    end
+    break if pullrun.length < 500
+    num = num + 1
+  end
+  logger.info("Grabbed #{woodies.length} Woodies in total")
+  woodies
+
+  #  everything below is for testing
+  # return [{"id"=>14506062, "email"=>"test@gmail.com", "first_name"=>"Rocky", "last_name"=>"", "company"=>"Sofar Sounds", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"","snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"},{"id"=>14506063, "email"=>"wlutz@twentypine.com", "first_name"=>"Mark", "last_name"=>"", "company"=>"Solstice Benefits", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"", "snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"},{"id"=>14506064, "email"=>"william.meany.lutz@gmail.com", "first_name"=>"Katie", "last_name"=>"", "company"=>"SplashThat.com", "industry"=>"", "website"=>"", "tags"=>"", "title"=>"", "phone"=>"", "address"=>"", "city"=>"", "state"=>"", "country"=>"", "last_contacted"=>"", "last replied"=>"", "updated"=>"2017-05-18T19:18:22+0200", "snipet1"=>"", "snipet2"=>"", "snipet3"=>"", "snipet4"=>"", "snippet5"=>"", "snippet6"=>"", "snippet7"=>"", "snippet8"=>"", "snippet9"=>"", "snippet10"=>"", "snippet11"=>"", "snippet12"=>"", "snippet13"=>"", "snippet14"=>"", "snippet15"=>"", "status"=>"ACTIVE"}]
 
 end
 
@@ -153,20 +153,22 @@ def grab_recent_SFDCs
                            client_id: config[:client_id],
                            client_secret: config[:client_secret],
                            api_version: '38.0')
-  rescue g
+    client.authenticate!
+  rescue StandardError => g
     logger.info("failed to authenticate SFDC: #{g}")
   end
+  logger.info("Authenticated SFDC")
 
   # Get the contacts between 120 and 127 days since last activity
   begin
     rawEmails = client.query("SELECT email,TR1__Work_Email__c,TR1__Secondary_Email__c,MKT_Personal_Email__c,Last_Activity_Date__c FROM contact WHERE Last_Activity_Date__c > N_DAYS_AGO:9 AND Last_Activity_Date__c < N_DAYS_AGO:0")
-  rescue h
+  rescue StandardError => h
     logger.info("Failed to grab query: #{h}")
   end
   logger.info("Got #{rawEmails.length} contacts and their emails.")
   # logger.info("grabbed rawEmails: #{rawEmails}")
 
-  emails = Array.new
+  emails = []
 
   # converting SFDC Obj to array of emails to be suppressed
   rawEmails.each do |line|
@@ -175,5 +177,6 @@ def grab_recent_SFDCs
     emails << line['TR1__Secondary_Email__c'] unless line['TR1__Secondary_Email__c'].nil?
     emails << line['MKT_Personal_Email__c'] unless line['MKT_Personal_Email__c'].nil?
   end
+  logger.info("Sending a total of #{emails.length} emails from SFDC")
   emails
 end

@@ -108,14 +108,15 @@ def grab_SFDC_contacts
   #                          client_id: config[:client_id],
   #                          client_secret: config[:client_secret],
   #                          api_version: '38.0')
-  # rescue g
+  #   client.authenticate!
+  # rescue Exception => g
   #   logger.info("failed to authenticate SFDC: #{g}")
   # end
   #
   # # Get the contacts between 120 and 127 days since last activity
   # begin
   #   rawContacts = client.query("SELECT FirstName,LastName,email,TR1__Work_Email__c,TR1__Secondary_Email__c,Account.Customer_Type__c,Account.Name,MKT_Personal_Email__c,TR1__Client_Status__c,TR1__Function__c,TR1__Candidate_Status__c,Last_Activity_Date__c FROM contact WHERE Last_Activity_Date__c < N_DAYS_AGO:120 AND Last_Activity_Date__c > N_DAYS_AGO:128 ORDER BY Last_Activity_Date__c ASC")
-  # rescue h
+  # rescue Exception => h
   #   logger.info("Failed to grab query: #{h}")
   # end
   # logger.info("Got #{rawContacts.length} rawContacts.")
