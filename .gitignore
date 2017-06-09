@@ -1,3 +1,4 @@
 etc/pardot.conf
 etc/woodpecker.conf
 etc/salesforce.conf
+etc/*.log

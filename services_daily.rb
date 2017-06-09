@@ -6,14 +6,14 @@ require 'net/http'
 require_relative 'api_services'
 
 # turns array into json formatted string for passing to woodpecker blacklist
-def turn_JSON(arr)
+def turn_into_JSONHashArray(arr)
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
 
   jsonArr = Array.new
 
   arr.each do |row|
-    jsonArr << "{'prospect':{'email':'#{row}'}}"
+    jsonArr << { prospect: { email: row } }
     logger.info("{'prospect':{'email':'#{row}'}}")
   end
   jsonArr
