@@ -76,8 +76,8 @@ def put_into_blacklist(payload)
   uri = URI("https://api.woodpecker.co/rest/v1/stop_followups")
   header = {'Content-Type' => 'text/json'}
 
-
-  Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https') do |http|
+  logger.info("Starting HTTP with the following uri: #{uri} uri.host:#{uri.host} uri.port: #{uri.port}")
+  Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https', :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
 
     req = Net::HTTP::Post.new(uri.request_uri, header)
     req.basic_auth key, pass
@@ -85,6 +85,7 @@ def put_into_blacklist(payload)
     payload.each do |entry|
       sleep(1)
       req.body = entry.to_json
+      logger.info("Setting req.body to #{req.body}")
       begin
         res = http.request req
 
@@ -97,7 +98,6 @@ def put_into_blacklist(payload)
       end
     end
   end
-
 end
 
 # Grabs the woodpecker full propsect list

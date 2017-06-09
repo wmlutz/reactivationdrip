@@ -1,0 +1,16 @@
+# Logfile created on 2017-06-09 08:43:58 -0400 by logger.rb/56504
+I, [2017-06-09T08:43:58.845820 #16932]  INFO -- : Beginning of run ----------------
+I, [2017-06-09T08:43:58.846819 #16932]  INFO -- : blacklist: ["wlutz@twentypine.com", "test@gmail.com"]
+I, [2017-06-09T08:43:58.846819 #16932]  INFO -- : Blacklist length: 2
+I, [2017-06-09T08:43:58.846819 #16932]  INFO -- : {'prospect':{'email':'wlutz@twentypine.com'}}
+I, [2017-06-09T08:43:58.846819 #16932]  INFO -- : {'prospect':{'email':'test@gmail.com'}}
+I, [2017-06-09T08:43:58.846819 #16932]  INFO -- : getting woodpecker config file
+I, [2017-06-09T08:43:58.847823 #16932]  INFO -- : got key
+I, [2017-06-09T08:43:58.847823 #16932]  INFO -- : Starting HTTP with the following uri: https://api.woodpecker.co/rest/v1/stop_followups uri.host:api.woodpecker.co uri.port: 443
+I, [2017-06-09T08:44:04.517471 #16932]  INFO -- : Setting req.body to "{'prospect':{'email':'wlutz@twentypine.com'}}"
+I, [2017-06-09T08:44:04.614847 #16932]  INFO -- : Got response of: #<Net::HTTPBadRequest:0x2d88d10>
+I, [2017-06-09T08:44:04.614847 #16932]  INFO -- : Got response body of: {"status":{"status":"ERROR","code":"E_UNNOWN","msg":"Unknown error."}}
+I, [2017-06-09T08:44:05.616776 #16932]  INFO -- : Setting req.body to "{'prospect':{'email':'test@gmail.com'}}"
+I, [2017-06-09T08:44:05.703313 #16932]  INFO -- : Got response of: #<Net::HTTPBadRequest:0x2d77aa8>
+I, [2017-06-09T08:44:05.704207 #16932]  INFO -- : Got response body of: {"status":{"status":"ERROR","code":"E_UNNOWN","msg":"Unknown error."}}
+I, [2017-06-09T08:44:05.704207 #16932]  INFO -- : End of run ----------------
