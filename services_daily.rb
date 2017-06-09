@@ -41,7 +41,6 @@ def grab_newsletter_list
 
   # Starts by getting Pardot config
   config = grab_pardot_config
-  logger.info("Config of: #{config}")
   # Authenticate pardot connection
   logger.info('Attempting authentication . . .')
 
