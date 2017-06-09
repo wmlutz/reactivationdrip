@@ -55,7 +55,7 @@ def grab_pardot_config
 end
 
 # Gets the list of the most recent newsletter from Pardot
-def newsletter_list
+def grab_newsletter_list
   # logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   # logger.level = Logger::DEBUG
   #
@@ -74,12 +74,12 @@ def newsletter_list
   #
   # begin
   #   prospects = client.prospects.query(:list_id => 613, :sort_by => "last_activity_at")
-  #   logger.info("Found #{prospects["total_results"]} Prospects")
+  #   logger.info("Found #{prospects["total_results"]} Newsletter subscribers")
   # rescue f
-  #   logger.info("Could not get prospects: #{f}")
+  #   logger.info("Could not get newsletter subscribers: #{f} backtrace #{f.backtrace}")
   # end
   #
-  # signups = email_grab(prospects)
+  # signups = email_grab(prospects) # sends back the email element
   # signups
 
   # All above commented out for testing
@@ -105,7 +105,7 @@ def grab_woodpecker_config
   key
 end
 
-# Will be where I put the actual blacklisting of contacts in Woodpecker
+# Sends payload to woodpecker for suprression
 def put_into_blacklist(payload)
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   logger.level = Logger::DEBUG
@@ -140,7 +140,7 @@ def put_into_blacklist(payload)
 
 end
 
-# Grabs the woodpecker propsect list
+# Grabs the woodpecker full propsect list
 def grab_woodies()
   # logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
   # logger.level = Logger::DEBUG
@@ -150,9 +150,9 @@ def grab_woodies()
   # woodies = []
   # pullrun = []
   # num = 1
-  # loop do
+  #
+  # loop do # gets every page of wp prospects until no more left
   #   uri = URI("https://api.woodpecker.co/rest/v1/prospects?page=#{num}&per_page=500")
-  #   puts "URI of #{uri}"
   #   logger.info("grabbing from URI of #{uri}")
   #   Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
   #     :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
