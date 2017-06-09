@@ -11,10 +11,9 @@ def flat_email(emails)
 
   logger.info("Running flat_email on #{emails}")
   emails.each do |email|
-    # logger.level("trying #{email}")
     return email unless email.nil?
   end
-  return "No Email Found"
+  return nil
 end
 
 # Works through client and candidate status logic
@@ -65,9 +64,11 @@ def arr_hasher(sfdcObj)
   sfdcObj.each do |line|
     contact_type = c_or_c(line['TR1__Client_Status__c'], line['TR1__Candidate_Status__c'])
     co_type = co_type_snip(line['Account.Customer_Type__c'])
+    email = flat_email([line['MKT_Personal_Email__c'], line['email'], line['TR1__Work_Email__c'], line['TR1__Secondary_Email__c']])
+
     case contact_type
     when 'Candidate'
-      can_arr << { email: flat_email([line['MKT_Personal_Email__c'], line['email'], line['TR1__Work_Email__c'], line['TR1__Secondary_Email__c']]),
+      can_arr << { email: email,
                    first_name: line['FirstName'],
                    last_name: line['LastName'],
                    snipet1: contact_type,
@@ -75,9 +76,9 @@ def arr_hasher(sfdcObj)
                    snipet2: co_type,
                    snipet3: line['TR1__Function__c'],
                    status: "ACTIVE",
-                   tags: "#FROMWKLYSCRPT" }
+                   tags: "#FROMWKLYSCRPT" } unless email.nil?
     else
-       cli_arr << { email: flat_email([line['MKT_Personal_Email__c'], line['email'], line['TR1__Work_Email__c'], line['TR1__Secondary_Email__c']]),
+       cli_arr << { email: email,
                     first_name: line['FirstName'],
                     last_name: line['LastName'],
                     snipet1: contact_type,
@@ -85,7 +86,7 @@ def arr_hasher(sfdcObj)
                     snipet2: co_type,
                     snipet3: line['TR1__Function__c'],
                     status: "ACTIVE",
-                    tags: "#FROMWKLYSCRPT" }
+                    tags: "#FROMWKLYSCRPT" } unless email.nil?
     end
   end
   logger.info("Finished candidate array hasher #{can_arr}")
@@ -121,10 +122,10 @@ def grab_SFDC_contacts
     logger.info("Failed to grab query: #{h}")
   end
   logger.info("Got #{rawContacts.length} rawContacts.")
-  logger.info("grabbed rawContacts: #{rawContacts}")
 
   # converting raw contacts into a array of hashes
   contacts = arr_hasher(rawContacts)
+  # puts "contacts class from grab sfdc contacts #{contacts.class}"
   contacts
 
   # Commenting below for testing
@@ -169,8 +170,6 @@ def send_to_campaign(payload)
 
       logger.info("Got response of: #{res}")
       logger.info("Got response body of: #{res.body}")
-      puts res
-      puts res.body
     end
   rescue => j
     logger.info("Rescuing: #{j}")

@@ -9,13 +9,18 @@ puts 'Starting Weekly. . .'
 # Get contacts from SFDC
 logger.info('starting the SFDC Contact grab')
 prospects = grab_SFDC_contacts
+# puts "prospects class #{prospects.class}"
 
-can_prospects = prospects['candidates']
-cli_prospects = prospects['clients']
+can_prospects = prospects[:candidates]
+cli_prospects = prospects[:clients]
+
+# puts "can prospects class #{can_prospects.class}"
+# puts "cli prospects class #{cli_prospects.class}"
 
 # formats contacts for woodpecker
 logger.info('Starting the SFDC Hashify grab')
-logger.info("Testing hashify on first el: #{hashify([prospects[0]])}")
+logger.info("Number of candidates: #{can_prospects.length}")
+logger.info("Number of clients: #{cli_prospects.length}")
 
 payload_can = hashify(can_prospects, 44919)
 payload_cli = hashify(cli_prospects, 45127)
