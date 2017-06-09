@@ -73,18 +73,18 @@ def arr_hasher(sfdcObj)
                    last_name: line['LastName'],
                    snipet1: contact_type,
                    company: line['Account.Name'],
-                   snipet2: co_type,
-                   snipet3: line['TR1__Function__c'],
+                   snippet2: co_type,
+                   snippet3: line['TR1__Function__c'],
                    status: "ACTIVE",
                    tags: "#FROMWKLYSCRPT" } unless email.nil?
     else
        cli_arr << { email: email,
                     first_name: line['FirstName'],
                     last_name: line['LastName'],
-                    snipet1: contact_type,
+                    snippet1: contact_type,
                     company: line['Account.Name'],
-                    snipet2: co_type,
-                    snipet3: line['TR1__Function__c'],
+                    snippet2: co_type,
+                    snippet3: line['TR1__Function__c'],
                     status: "ACTIVE",
                     tags: "#FROMWKLYSCRPT" } unless email.nil?
     end
