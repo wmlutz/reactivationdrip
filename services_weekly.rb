@@ -98,7 +98,7 @@ def arr_hasher(sfdcObj)
                     first_name: line['FirstName'],
                     last_name: line['LastName'],
                     snippet1: contact_type,
-                    company: line['Account']['Name'],
+                    company: co_name,
                     snippet2: co_type,
                     snippet3: line['TR1__Function__c'],
                     status: "ACTIVE",
