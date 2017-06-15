@@ -14,11 +14,11 @@ recent_SFDC = grab_recent_SFDCs
 blacklist = []
 
 news_list.each do |prospect| # checks each newsltr entry for being in woodpecker
-  blacklist << prospect unless woodies.select { |w| w['email'] == prospect }.empty?
+  blacklist << prospect unless woodies.select { |w| w['email'].downcase! == prospect.downcase! }.empty?
 end
 
 recent_SFDC.each do |email| # checks recent activity SFDC contacts for being in wp
-  blacklist << email unless woodies.select { |y| y['email'] == email }.empty?
+  blacklist << email unless woodies.select { |y| y['email'].downcase! == email.downcase! }.empty?
 end
 
 logger.info("blacklist: #{blacklist}")
