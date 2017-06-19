@@ -8,3 +8,4 @@ end
 gem "ruby-pardot"
 gem 'restforce', '~> 2.5.3'
 gem 'facets'
+gem 'whenever', :require => false
