@@ -13,20 +13,20 @@ puts "Getting woodies list #{DateTime.now}"
 woodies = grab_woodies # Gets the woodies
 puts "Getting SFDC recents list #{DateTime.now}"
 recent_SFDC = grab_recent_SFDCs
+logger.info("Woodies grab class = #{woodies.class}")
 blacklist = []
 
 puts "Checking Pardot newsletter list to woodies list #{DateTime.now}"
-news_list.each do |prospect| # checks each newsltr entry for being in woodpecker
-  blacklist << prospect unless woodies.select { |w| w['email'].downcase! == prospect.downcase! }.empty?
-end
-
+blacklist << ret_common(news_list, woodies)
 puts "Checking recent SFDC list to woodies list #{DateTime.now}"
-recent_SFDC.each do |email| # checks recent activity SFDC contacts for being in wp
-  blacklist << email unless woodies.select { |y| y['email'].downcase! == email.downcase! }.empty?
-end
+blacklist << ret_common(recent_SFDC, woodies)
 
-logger.info("blacklist: #{blacklist}")
+blacklist.flatten!.uniq!
+
+logger.info("woodies length: #{woodies.length}")
+logger.info("news_list length: #{news_list.length}")
 logger.info("Blacklist length: #{blacklist.length}")
+logger.info("blacklist: #{blacklist}")
 
 puts "Sending blacklist to supression #{DateTime.now}"
 if blacklist.length > 0

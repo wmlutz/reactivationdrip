@@ -6,6 +6,19 @@ require 'net/http'
 require 'restforce'
 require_relative 'api_services'
 
+# returns common elements from the arrays
+def ret_common(arr_a, arr_b)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
+  logger.level = Logger::DEBUG
+  logger.info("array a class: #{arr_a.class}")
+  logger.info("array b class: #{arr_b.class}")
+  logger.info("array a first: #{arr_a[0]}")
+  logger.info("array b first: #{arr_b[0]}")
+  logger.info("array a first class: #{arr_a[0].class}")
+  logger.info("array b first class: #{arr_b[0].class}")
+  return arr_a & arr_b
+end
+
 # turns array into json formatted string for passing to woodpecker blacklist
 def turn_into_JSONHashArray(arr)
   logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
@@ -27,10 +40,9 @@ def email_grab(prospects)
 
   signups = []
   prospects["prospect"].each do |prospect|
-    logger.info("Getting #{prospect['email']} Prospect")
     signups << prospect["email"]
   end
-  logger.info("Got signups #{signups}")
+  logger.info("Got prospects signed up #{signups.length}")
   signups
 end
 
@@ -92,13 +104,29 @@ def put_into_blacklist(payload)
 
         logger.info("Got response of: #{res}")
         logger.info("Got response body of: #{res.body}")
-      rescue => j
+      rescue StandardError => j
         logger.info("Rescuing: #{j}")
         logger.info("Backtrace: #{j.backtrace}")
         puts "Rescue: #{j}"
       end
     end
   end
+end
+
+#grab woodies returns an array of hashes, this strips it down to just emails
+def just_email(myArr)
+  logger = Logger.new("#{File.dirname(__FILE__)}/etc/daily.log", 0, 100 * 1024 * 1024)
+  logger.level = Logger::DEBUG
+  emails = Array.new
+
+  logger.info("Just_email starting array #{myArr[0]}")
+  myArr.each do |i|
+    # logger.info("i is #{i}")
+    # logger.info("email element of i as clled is #{i[:email]}")
+    emails << i['email']
+  end
+  logger.info("Ending array of #{emails[0]}")
+  emails
 end
 
 # Grabs the woodpecker full propsect list
@@ -115,7 +143,8 @@ def grab_woodies()
   loop do # gets every page of wp prospects until no more left
     uri = URI("https://api.woodpecker.co/rest/v1/prospects?page=#{num}&per_page=500")
     logger.info("grabbing from URI of #{uri}")
-    Net::HTTP.start(uri.host, uri.port, :use_ssl => uri.scheme == 'https',
+    begin
+      Net::HTTP.start(uri.host, uri.port, :read_timeout => 500, :use_ssl => uri.scheme == 'https',
       :verify_mode => OpenSSL::SSL::VERIFY_NONE) do |http|
       request = Net::HTTP::Get.new uri.request_uri
       sleep(1)
@@ -126,11 +155,16 @@ def grab_woodies()
       logger.info("Grabbed #{pullrun.length} woodies")
       woodies.concat(pullrun)
     end
+    rescue StandardError => m
+      logger.info("Standard error #{m}")
+      puts("Standard error #{m}")
+    end
     break if pullrun.length < 500
     num = num + 1
   end
   logger.info("Grabbed #{woodies.length} Woodies in total")
-  woodies
+
+  return just_email(woodies)
 end
 
 def grab_recent_SFDCs
