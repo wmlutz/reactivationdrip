@@ -29,6 +29,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
   x86-mingw32
 
 DEPENDENCIES
@@ -38,4 +39,4 @@ DEPENDENCIES
   whenever
 
 BUNDLED WITH
-   1.15.0
+   1.15.2

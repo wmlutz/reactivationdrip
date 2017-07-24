@@ -25,7 +25,6 @@ logger.info("Number of candidates: #{can_prospects.length}")
 logger.info("Number of clients: #{cli_prospects.length}")
 
 payload_can = hashify(can_prospects, 44919)
-payload_cli = hashify(cli_prospects, 45127)
 
 # send that list to woodpecker
 send_to_campaign(payload_can)
